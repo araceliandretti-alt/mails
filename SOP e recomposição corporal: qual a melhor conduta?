@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pos UNIGUACU</title>
+    <!--[if mso]><xml>
+  <w:WordDocument xmlns:w="urn:schemas-microsoft-com:office:word">
+    <w:DontUseAdvancedTypographyReadingMail/>
+  </w:WordDocument>
+  </xml><![endif]-->
+    <!--[if !mso]><!-- -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet">
+    <!--<![endif]-->
+</head>
+
+<body style="margin:0;padding:0;background:#EBF7F8;">
+    <table width="600" cellpadding="0" cellspacing="0" align="center" style="max-width:600px;margin:0 auto;">
+        <tbody>
+            <!-- Barra topo -->
+            <tr>
+                <td style="background:#0B8E9B;height:5px;font-size:0;" class="esd-text">&nbsp;</td>
+            </tr><!-- Header -->
+            <tr>
+                <td style="background:#0B8E9B;padding:28px 36px 24px;" align="left" class="esd-text">
+                    <p style="margin:0;font-family:Georgia,serif;font-size:24px;line-height:1.35;color:#fff;">Restaurando a sensibilidade à insulina<br><em>no tratamento da SOP</em></p>
+                </td>
+            </tr><!-- Corpo -->
+            <tr>
+                <td style="background:#fff;padding:32px 36px;border-left:1px solid #D4EEF0;border-right:1px solid #D4EEF0;font-family:Arial,sans-serif;font-size:15px;line-height:1.7;color:#1A3A3C;" align="left" class="esd-text">
+                    <p style="margin:0 0 18px;">Nutricionista, sabe qual é o mecanismo metabólico que impede uma paciente com SOP de responder à dieta?</p>
+                    <p style="margin:0 0 18px;">Muitas pacientes apresentam <strong>resistência à insulina (RI)</strong>, gerando um estado de hiperandrogenismo que bloqueia a oxidação de gordura. Se a estratégia foca no superávit calórico antes de ajustar a RI, corre o risco de, inadvertidamente, alimentar a fisiopatologia da desordem.</p><!-- Subtítulo -->
+                    <p style="margin:0 0 10px;font-family:Georgia,serif;font-size:17px;color:#0B8E9B;font-weight:bold;">Como manipular a insulina para restaurar a oxidação lipídica?</p>
+                    <p style="margin:0 0 18px;">A estratégia nutricional deve priorizar a sensibilização dos receptores de insulina: dieta hipocalórica, aporte estratégico de fibras e substituição de gorduras saturadas por insaturadas.</p>
+                    <p style="margin:0 0 18px;">Somente quando o metabolismo recupera a eficiência na oxidação é que o ambiente hormonal se torna favorável ao anabolismo.</p>
+                    <p style="margin:0 0 20px;">A <strong>Prof.ª Tanise Michelotti</strong> preparou um vídeo explicativo detalhando o manejo nutricional e a organização das fases dietéticas para pacientes com esta condição.</p><!-- Botão vídeo -->
+                    <table width="100%" cellpadding="0" cellspacing="0" class=" cke_show_border">
+                        <tbody>
+                            <tr>
+                                <td align="center" style="padding:0 0 28px;"><a href="https://www.instagram.com/p/DYSByjfiLVx/" target="_blank" style="display:inline-block;background:#0B8E9B;color:#fff;font-family:Arial,sans-serif;font-size:15px;font-weight:bold;text-decoration:none;padding:14px 38px;border-radius:8px;">▶&nbsp;&nbsp;Entender esse protocolo clínico</a></td>
+                            </tr>
+                        </tbody>
+                    </table><!-- Divisória -->
+                    <table width="100%" cellpadding="0" cellspacing="0" class=" cke_show_border">
+                        <tbody>
+                            <tr>
+                                <td style="border-top:1px solid #D4EEF0;padding:0 0 24px;font-size:0;"><br></td>
+                            </tr>
+                        </tbody>
+                    </table><!-- CTA Pós -->
+                    <p style="margin:0 0 16px;font-family:Georgia,serif;font-size:18px;color:#0B8E9B;">Quer ir além?</p>
+                    <p style="margin:0 0 20px;">Se o seu objetivo é dominar a fisiologia aplicada e o manejo de variáveis hormonais que impactam os resultados estéticos e de saúde, conheça a <b>Pós-Graduação da UNIGUAÇU</b>.</p><!-- Botão CTA -->
+                    <table width="100%" cellpadding="0" cellspacing="0" class=" cke_show_border">
+                        <tbody>
+                            <tr>
+                                <td align="center"><a href="https://www.posuniguacupremium.com.br/pos-graduacao?utm_source=mail&utm_medium=organic&utm_content=nutricao&utm_campaign=newsletter&utm_term=sop-recomposicao-corporal" target="_blank" style="display:inline-block;background:#1A3A3C;color:#C8F5F7;font-family:Arial,sans-serif;font-size:15px;font-weight:bold;text-decoration:none;padding:14px 38px;border-radius:8px;">Quero dominar o manejo de variáveis na nutrição →</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr><!-- Barra rodapé -->
+            <tr>
+                <td style="background:#0B8E9B;height:4px;font-size:0;" class="esd-text">&nbsp;</td>
+            </tr><!-- Footer -->
+            <tr>
+                <td style="padding:18px 36px;text-align:center;background:#EBF7F8;font-family:Arial,sans-serif;" class="esd-text">
+                    <p style="margin:0 0 5px;font-size:12px;color:#5A8A8E;">Enviado para: %EMAIL%</p>
+                    <p style="margin:0 0 5px;font-size:12px;color:#5A8A8E;"><a href="%UNSUBSCRIBELINK%" style="color:#0B8E9B;">Cancelar inscrição</a></p>
+                    <p style="margin:0;font-size:11px;color:#8ABBBE;">%SENDER-INFO-SINGLELINE%</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
