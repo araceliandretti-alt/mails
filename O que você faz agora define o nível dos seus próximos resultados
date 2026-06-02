@@ -11,58 +11,63 @@
     </w:WordDocument>
     </xml><![endif]-->
     <!--[if !mso]><!-- -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet">
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&display=swap');
+        body, table, td, p, a, h1, h2, h3, h4, h5, h6, span, li, ul, strong, em {
+            font-family: 'Roboto', Arial, Helvetica, sans-serif !important;
+        }
+    </style>
     <!--<![endif]-->
 </head>
 
-<body style="margin:0;padding:0;background-color:#f4f4f0;">
-    <table width="620" cellpadding="0" cellspacing="0" align="center" style="max-width:620px;margin:0 auto;">
+<body style="margin:0;padding:0;background-color:#f4f4f0;font-family:'Roboto', Arial, Helvetica, sans-serif;">
+    <table width="620" cellpadding="0" cellspacing="0" align="center" style="max-width:620px;margin:0 auto;font-family:'Roboto', Arial, Helvetica, sans-serif;">
         <tbody>
             <tr>
-                <td style="background:#6FE000;height:5px;font-size:0;" class="esd-text">&nbsp;</td>
+                <td style="background:#6FE000;height:5px;font-size:0;font-family:'Roboto', Arial, Helvetica, sans-serif;" class="esd-text">&nbsp;</td>
             </tr>
             <tr>
-                <td style="background:#111;padding:32px;" class="esd-text" align="left">
-                    <h3 style="margin:0 0 16px;font-size:20px;font-weight:700;line-height:1.4;color:#fff;">Você já percebeu onde a prática começa a limitar seus resultados?<span style="color:#6FE000;"></span></h3>
+                <td style="background:#111;padding:32px;font-family:'Roboto', Arial, Helvetica, sans-serif;" class="esd-text" align="left">
+                    <h3 style="margin:0 0 16px;font-size:20px;font-weight:700;line-height:1.4;color:#fff;font-family:'Roboto', Arial, Helvetica, sans-serif;">Você já percebeu onde a prática começa a limitar seus resultados?<span style="color:#6FE000;font-family:'Roboto', Arial, Helvetica, sans-serif;"></span></h3>
                 </td>
             </tr>
             <tr>
-                <td style="background:#fff;padding:24px 32px;border-left:1px solid #e8e8e2;border-right:1px solid #e8e8e2;" class="esd-text" align="left">
-                    <p>Talvez você tenha entendido que não é só a execução que conta. Não é apenas o volume de estratégias ou o quanto você está treinando.</p>
-                    <p><br></p>
-                    <p>A forma como você interpreta os sinais fisiológicos, como estrutura o seu treino, como planeja a nutrição e entende as adaptações do corpo durante o processo.</p>
-                    <p><br></p>
-                    <p>A verdadeira evolução vem quando você decide abandonar os protocolos generalistas e se conectar com o conhecimento fundamentado, científico e aplicado.</p>
-                    <p><br></p>
-                    <p>O <em>Bodybuilding Science & Performance Summit</em> é a oportunidade de elevar a sua carreira. Este evento não é apenas mais uma aula, é a chance de integrar ciência, nutrição e treino em um raciocínio estratégico único.</p>
-                    <p><br></p>
-                    <p>⏳ <strong>As vagas são limitadas</strong> e, com o evento se aproximando, as últimas inscrições estão se esgotando. Não deixe para amanhã o que pode transformar sua prática hoje.</p>
+                <td style="background:#fff;padding:24px 32px;border-left:1px solid #e8e8e2;border-right:1px solid #e8e8e2;font-family:'Roboto', Arial, Helvetica, sans-serif;" class="esd-text" align="left">
+                    <p style="font-family:'Roboto', Arial, Helvetica, sans-serif;">Talvez você tenha entendido que não é só a execução que conta. Não é apenas o volume de estratégias ou o quanto você está treinando.</p>
+                    <p style="font-family:'Roboto', Arial, Helvetica, sans-serif;"><br></p>
+                    <p style="font-family:'Roboto', Arial, Helvetica, sans-serif;">A forma como você interpreta os sinais fisiológicos, como estrutura o seu treino, como planeja a nutrição e entende as adaptações do corpo durante o processo.</p>
+                    <p style="font-family:'Roboto', Arial, Helvetica, sans-serif;"><br></p>
+                    <p style="font-family:'Roboto', Arial, Helvetica, sans-serif;">A verdadeira evolução vem quando você decide abandonar os protocolos generalistas e se conectar com o conhecimento fundamentado, científico e aplicado.</p>
+                    <p style="font-family:'Roboto', Arial, Helvetica, sans-serif;"><br></p>
+                    <p style="font-family:'Roboto', Arial, Helvetica, sans-serif;">O <em>Bodybuilding Science & Performance Summit</em> é a oportunidade de elevar a sua carreira. Este evento não é apenas mais uma aula, é a chance de integrar ciência, nutrição e treino em um raciocínio estratégico único.</p>
+                    <p style="font-family:'Roboto', Arial, Helvetica, sans-serif;"><br></p>
+                    <p style="font-family:'Roboto', Arial, Helvetica, sans-serif;">⏳ <strong>As vagas são limitadas</strong> e, com o evento se aproximando, as últimas inscrições estão se esgotando. Não deixe para amanhã o que pode transformar sua prática hoje.</p>
                 </td>
             </tr>
             <tr>
-                <td style="background:#6FE000;padding:0;">
+                <td style="background:#6FE000;padding:0;font-family:'Roboto', Arial, Helvetica, sans-serif;">
                     <table width="100%" cellpadding="0" cellspacing="0">
                         <tbody>
                             <tr>
-                                <td width="33%" style="padding:16px 20px;border-right:1px solid rgba(0,0,0,0.12);vertical-align:top;" class="esd-text"><span style="display:block;font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:#2d5c00;font-weight:700;">Data</span><span style="display:block;font-size:14px;font-weight:700;color:#0d1f00;margin-top:3px;">17 de maio</span><span style="display:block;font-size:13px;color:#1a3800;margin-top:2px;">Os maiores do mercado</span></td>
-                                <td width="33%" style="padding:16px 20px;border-right:1px solid rgba(0,0,0,0.12);vertical-align:top;" class="esd-text"><span style="display:block;font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:#2d5c00;font-weight:700;">Horário</span><span style="display:block;font-size:14px;font-weight:700;color:#0d1f00;margin-top:3px;">9h às 18h30</span><span style="display:block;font-size:13px;color:#1a3800;margin-top:2px;">Carga horária: 8 horas</span></td>
-                                <td width="34%" style="padding:16px 20px;vertical-align:top;" class="esd-text"><span style="display:block;font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:#2d5c00;font-weight:700;">Formato</span><span style="display:block;font-size:14px;font-weight:700;color:#0d1f00;margin-top:3px;">Online e ao vivo</span><span style="display:block;font-size:13px;color:#1a3800;margin-top:2px;">Certificado de participação</span></td>
+                                <td width="33%" style="padding:16px 20px;border-right:1px solid rgba(0,0,0,0.12);vertical-align:top;" class="esd-text"><span style="display:block;font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:#2d5c00;font-weight:700;font-family:'Roboto', Arial, Helvetica, sans-serif;">Data</span><span style="display:block;font-size:14px;font-weight:700;color:#0d1f00;margin-top:3px;font-family:'Roboto', Arial, Helvetica, sans-serif;">17 de maio</span><span style="display:block;font-size:13px;color:#1a3800;margin-top:2px;font-family:'Roboto', Arial, Helvetica, sans-serif;">Os maiores do mercado</span></td>
+                                <td width="33%" style="padding:16px 20px;border-right:1px solid rgba(0,0,0,0.12);vertical-align:top;" class="esd-text"><span style="display:block;font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:#2d5c00;font-weight:700;font-family:'Roboto', Arial, Helvetica, sans-serif;">Horário</span><span style="display:block;font-size:14px;font-weight:700;color:#0d1f00;margin-top:3px;font-family:'Roboto', Arial, Helvetica, sans-serif;">9h às 18h30</span><span style="display:block;font-size:13px;color:#1a3800;margin-top:2px;font-family:'Roboto', Arial, Helvetica, sans-serif;">Carga horária: 8 horas</span></td>
+                                <td width="34%" style="padding:16px 20px;vertical-align:top;" class="esd-text"><span style="display:block;font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:#2d5c00;font-weight:700;font-family:'Roboto', Arial, Helvetica, sans-serif;">Formato</span><span style="display:block;font-size:14px;font-weight:700;color:#0d1f00;margin-top:3px;font-family:'Roboto', Arial, Helvetica, sans-serif;">Online e ao vivo</span><span style="display:block;font-size:13px;color:#1a3800;margin-top:2px;font-family:'Roboto', Arial, Helvetica, sans-serif;">Certificado de participação</span></td>
                             </tr>
                         </tbody>
                     </table>
                 </td>
             </tr>
             <tr>
-                <td style="background:#fff;padding:24px 32px 32px;text-align:center;border-left:1px solid #e8e8e2;border-right:1px solid #e8e8e2;border-bottom:1px solid #e8e8e2;" class="esd-text" align="left" esd-links-underline="underline">
-                    <p style="margin:0 0 20px;font-size:16px;font-weight:700;color:#111;">🔥 <strong>Garanta sua vaga agora</strong> e esteja no evento com as maiores referências do mercado</p>
-                    <p style="margin:0 0 20px;font-size:16px;font-weight:700;color:#111;"><a href="https://uplaygo.com.br/bodybuilding-science-performance-summit-org/?utm_source=mail&utm_medium=organic&utm_content=bbc&utm_campaign=low-ticket&utm_term=o-que-voce-faz-agora" target="_blank" style="display: inline-block; background: #6fe000; color: #0d1f00; padding: 14px 40px; border-radius: 4px;">Me inscrever antes que acabe</a></p>
+                <td style="background:#fff;padding:24px 32px 32px;text-align:center;border-left:1px solid #e8e8e2;border-right:1px solid #e8e8e2;border-bottom:1px solid #e8e8e2;font-family:'Roboto', Arial, Helvetica, sans-serif;" class="esd-text" align="left" esd-links-underline="underline">
+                    <p style="margin:0 0 20px;font-size:16px;font-weight:700;color:#111;font-family:'Roboto', Arial, Helvetica, sans-serif;">🔥 <strong>Garanta sua vaga agora</strong> e esteja no evento com as maiores referências do mercado</p>
+                    <p style="margin:0 0 20px;font-size:16px;font-weight:700;color:#111;font-family:'Roboto', Arial, Helvetica, sans-serif;"><a href="https://uplaygo.com.br/bodybuilding-science-performance-summit-org/?utm_source=mail&utm_medium=organic&utm_content=bbc&utm_campaign=low-ticket&utm_term=o-que-voce-faz-agora" target="_blank" style="display: inline-block; background: #6fe000; color: #0d1f00; padding: 14px 40px; border-radius: 4px;">Me inscrever antes que acabe</a></p>
                 </td>
             </tr>
             <tr>
-                <td style="padding:20px 32px;text-align:center;background:#f4f4f0;" class="esd-text">
-                    <p style="margin:0 0 6px;font-size:12px;color:#888;">Enviado para: %EMAIL%</p>
-                    <p style="margin:0 0 6px;font-size:12px;color:#888;"><a href="%UNSUBSCRIBELINK%" style="color:#555;">Cancelar inscrição</a></p>
-                    <p style="margin:0;font-size:12px;color:#aaa;">%SENDER-INFO-SINGLELINE%</p>
+                <td style="padding:20px 32px;text-align:center;background:#f4f4f0;font-family:'Roboto', Arial, Helvetica, sans-serif;" class="esd-text">
+                    <p style="margin:0 0 6px;font-size:12px;color:#888;font-family:'Roboto', Arial, Helvetica, sans-serif;">Enviado para: %EMAIL%</p>
+                    <p style="margin:0 0 6px;font-size:12px;color:#888;font-family:'Roboto', Arial, Helvetica, sans-serif;"><a href="%UNSUBSCRIBELINK%" style="color:#555;">Cancelar inscrição</a></p>
+                    <p style="margin:0;font-size:12px;color:#aaa;font-family:'Roboto', Arial, Helvetica, sans-serif;">%SENDER-INFO-SINGLELINE%</p>
                 </td>
             </tr>
         </tbody>
