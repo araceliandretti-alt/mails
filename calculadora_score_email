@@ -16,11 +16,6 @@
   }
   html { scroll-behavior: smooth; }
   body { background: var(--bg); color: var(--text); font-family: var(--font-body); min-height: 100vh; -webkit-font-smoothing: antialiased; }
-  .strip { background: var(--orange); overflow: hidden; padding: 8px 0; white-space: nowrap; }
-  .strip-inner { display: inline-flex; gap: 48px; animation: marquee 18s linear infinite; }
-  .strip-item { font-family: var(--font-head); font-weight: 700; font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: #fff; display: flex; align-items: center; gap: 10px; }
-  .strip-item::before { content: '●'; font-size: 7px; opacity: .7; }
-  @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
   .hero { text-align: center; padding: 56px 24px 48px; position: relative; }
   .hero::after { content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 1px; height: 40px; background: linear-gradient(to bottom, var(--orange), transparent); }
   .hero-eyebrow { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,109,1,.12); border: 1px solid var(--border-orange); border-radius: 2px; padding: 5px 14px; font-size: 11px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--orange); margin-bottom: 20px; }
@@ -106,21 +101,6 @@
 </style>
 </head>
 <body>
-
-<div class="strip">
-  <div class="strip-inner">
-    <span class="strip-item">Score de Engajamento</span>
-    <span class="strip-item">Taxa de Abertura</span>
-    <span class="strip-item">CTOR = Cliques ÷ Aberturas</span>
-    <span class="strip-item">Cliques Únicos</span>
-    <span class="strip-item">Volume de Aberturas</span>
-    <span class="strip-item">Score de Engajamento</span>
-    <span class="strip-item">Taxa de Abertura</span>
-    <span class="strip-item">CTOR = Cliques ÷ Aberturas</span>
-    <span class="strip-item">Cliques Únicos</span>
-    <span class="strip-item">Volume de Aberturas</span>
-  </div>
-</div>
 
 <div class="hero">
   <div class="hero-eyebrow"><span></span>Email Marketing</div>
