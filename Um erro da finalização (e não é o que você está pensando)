@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pós UNIGUAÇU</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700&display=swap" rel="stylesheet">
+<style type="text/css">
+body, table, td, p, a, span, strong, em, b, i {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif !important;
+    margin:0;
+    padding:0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: Tahoma, Verdana, Segoe, sans-serif !important;
+}
+table {
+    border-collapse: collapse;
+}
+a {
+    text-decoration: none;
+}
+</style>
+</head>
+
+<body style="margin:0;padding:0;background:#F4F4F4;font-family:'Roboto', Arial, Helvetica, sans-serif !important;">
+<table width="600" cellpadding="0" cellspacing="0" align="center" style="max-width:600px;margin:0 auto;background:#F4F4F4;font-family:'Roboto', Arial, Helvetica, sans-serif !important;">
+<tbody>
+<tr>
+<td style="background:#070707;padding:32px 36px 28px;border-bottom:7px solid #70E000;border-top:4px solid #70E000;" align="left">
+<p style="margin:0 0 8px;line-height:1.12;font-weight:800;color:#FFFFFF;font-size:27px;letter-spacing:-0.4px;text-transform:uppercase;font-family:Tahoma,Verdana,Segoe,sans-serif !important;">
+DESIDRATAÇÃO NA finalização:<br>
+<span style="color:#70E000;font-size:20px;line-height:1.18;letter-spacing:0;text-transform:none;font-weight:400;font-family:'Roboto', Arial, Helvetica, sans-serif !important;">
+O impacto da manipulação de carboidratos na densidade muscular
+</span>
+</p>
+</td>
+</tr>
+
+<tr>
+<td style="background:#FFFFFF;padding:34px 36px;border-left:1px solid #1E1E1E;border-right:1px solid #1E1E1E;font-size:15px;line-height:1.68;color:#1F1F1F;font-family:'Roboto', Arial, Helvetica, sans-serif;" align="left">
+<p style="margin:0 0 18px;font-weight:800;color:#0B0B0B;">Oii %FIRSTNAME%! 👋</p>
+<p style="margin:0 0 18px;">Sabe aquela tensão absurda da semana de finalização? A pressão muitas vezes transforma estratégias em impulsos. E é exatamente aí que os maiores erros acontecem</p>
+<p style="margin:0 0 18px;">O erro mais recorrente é tentar compensar o excesso de gordura residual na última semana por meio de uma <b>desidratação severa</b>. O problema é que, diante de um físico atrasado a sete dias do show, essa imposição de um protocolo agressivo apenas destrói a estética do atleta no palco.</p>
+
+<p style="margin:0 0 6px;font-size:17px;line-height:1.35;color:#0B0B0B;font-weight:900;text-transform:uppercase;letter-spacing:0.3px;font-family:Tahoma,Verdana,Segoe,sans-serif !important;">
+O Impacto Fisiológico da Desidratação em Físicos Não Condicionados
+</p>
+
+<p style="margin:0 0 18px;">A justificativa teórica para restringir fluidos é conhecida: busca-se a supressão temporária do <b>Hormônio Antidiurético (ADH)</b> para eliminar o líquido subcutâneo e colar a pele na fáscia muscular.</p>
+<p style="margin:0 0 18px;">Ocorre que a desidratação não possui a capacidade de induzir a lipólise de forma aguda.</p>
+<p style="margin:0 0 18px;">Portanto, ao cortar a água de forma abrupta com a dobra cutânea ainda alta, o líquido é retirado prioritariamente do <b>meio intracelular</b>. O resultado prático? O músculo perde volume e tônus, a capa de gordura permanece intacta e o atleta sobe ao palco plano e sem cortes.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
