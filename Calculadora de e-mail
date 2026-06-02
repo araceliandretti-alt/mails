@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Score de Engajamento de E-mail</title>
+<link href="https://fonts.googleapis.com/css2?family=Chivo:wght@400;500;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --orange: #FF6D01; --orange-dim: #CC5700;
+    --bg: #0D0D0D; --bg2: #141414; --bg3: #1C1C1C; --bg4: #242424;
+    --border: rgba(255,255,255,0.08); --border-orange: rgba(255,109,1,0.35);
+    --text: #F5F0E8; --text-muted: rgba(245,240,232,0.5); --text-dim: rgba(245,240,232,0.25);
+    --font-head: 'Chivo', sans-serif; --font-body: 'Inter', sans-serif;
+  }
+  html { scroll-behavior: smooth; }
+  body { background: var(--bg); color: var(--text); font-family: var(--font-body); min-height: 100vh; -webkit-font-smoothing: antialiased; }
+  .hero { text-align: center; padding: 56px 24px 48px; position: relative; }
+  .hero::after { content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 1px; height: 40px; background: linear-gradient(to bottom, var(--orange), transparent); }
+  .hero-eyebrow { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,109,1,.12); border: 1px solid var(--border-orange); border-radius: 2px; padding: 5px 14px; font-size: 11px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--orange); margin-bottom: 20px; }
+  .hero-eyebrow span { width: 6px; height: 6px; background: var(--orange); border-radius: 50%; animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.3} }
+  .hero h1 { font-family: var(--font-head); font-size: clamp(28px, 5vw, 46px); font-weight: 900; line-height: 1.08; letter-spacing: -.02em; margin-bottom: 12px; }
+  .hero h1 em { font-style: normal; color: var(--orange); }
+  .hero p { font-size: 15px; color: var(--text-muted); max-width: 420px; margin: 0 auto; line-height: 1.6; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 20px 64px; }
+  .sec-label { display: flex; align-items: center; gap: 10px; margin-bottom: 16px; }
+  .sec-label-line { height: 1px; flex: 1; background: var(--border); }
+  .sec-label-text { font-family: var(--font-head); font-size: 10px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--text-dim); }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px; }
+  @media (max-width: 600px) { .grid2 { grid-template-columns: 1fr; } }
+  .card { background: var(--bg2); border: 1px solid var(--border); border-radius: 4px; padding: 20px; position: relative; overflow: hidden; transition: border-color .2s; }
+  .card:hover { border-color: rgba(255,109,1,.25); }
+  .card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; }
+  .card.card-ref::before { background: rgba(255,255,255,.12); }
+  .card.card-camp::before { background: var(--orange); }
+  .card-head { display: flex; align-items: center; gap: 10px; margin-bottom: 18px; }
+  .card-icon { width: 34px; height: 34px; border-radius: 3px; display: flex; align-items: center; justify-content: center; font-size: 15px; flex-shrink: 0; }
+  .ci-ref { background: var(--bg4); color: var(--text-muted); }
+  .ci-camp { background: rgba(255,109,1,.15); color: var(--orange); }
+  .card-title { font-family: var(--font-head); font-size: 13px; font-weight: 700; letter-spacing: .02em; color: var(--text); }
+  .card-sub { font-size: 11px; color: var(--text-dim); margin-top: 1px; }
+  /* CTOR derived display */
+  .ctor-derived { display: flex; align-items: center; gap: 10px; margin-top: 12px; padding: 9px 12px; background: var(--bg); border: 1px dashed var(--border); border-radius: 3px; }
+  .ctor-derived-label { font-size: 12px; color: var(--text-muted); width: 108px; flex-shrink: 0; line-height: 1.3; }
+  .ctor-derived-formula { flex: 1; font-family: 'Courier New', monospace; font-size: 11px; color: var(--text-dim); }
+  .ctor-derived-val { font-family: var(--font-head); font-size: 13px; font-weight: 700; color: var(--orange); min-width: 48px; text-align: right; }
+  .ctor-badge { font-size: 9px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; background: rgba(255,109,1,.1); color: var(--orange); border: 1px solid var(--border-orange); border-radius: 2px; padding: 2px 6px; margin-left: 4px; }
+  /* Sliders */
+  .sl-row { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+  .sl-row:last-child { margin-bottom: 0; }
+  .sl-label { font-size: 12px; color: var(--text-muted); width: 108px; flex-shrink: 0; line-height: 1.3; }
+  input[type=range] { flex: 1; appearance: none; height: 3px; background: var(--bg4); border-radius: 2px; outline: none; cursor: pointer; }
+  input[type=range]::-webkit-slider-thumb { appearance: none; width: 14px; height: 14px; border-radius: 50%; background: var(--orange); border: 2px solid var(--bg); box-shadow: 0 0 0 1px var(--orange); transition: transform .15s; }
+  input[type=range]::-webkit-slider-thumb:hover { transform: scale(1.2); }
+  .sl-val { font-family: var(--font-head); font-size: 13px; font-weight: 700; color: var(--text); min-width: 42px; text-align: right; }
+  .sl-status { font-size: 10px; font-weight: 600; padding: 1px 5px; border-radius: 2px; margin-left: 4px; vertical-align: middle; }
+  .st-up { background: rgba(76,175,80,.15); color: #81C784; }
+  .st-dn { background: rgba(229,57,53,.15); color: #EF9A9A; }
+  .st-eq { background: var(--bg4); color: var(--text-dim); }
+  .divider { border: none; border-top: 1px solid var(--border); margin: 28px 0; }
+  .divider-orange { border: none; border-top: 1px solid var(--border-orange); margin: 28px 0; }
+  .comp-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 12px; }
+  @media (max-width: 560px) { .comp-grid { grid-template-columns: 1fr; } }
+  .comp-card { background: var(--bg3); border: 1px solid var(--border); border-radius: 4px; padding: 14px 16px; transition: border-color .2s; }
+  .comp-card:hover { border-color: rgba(255,109,1,.2); }
+  .comp-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+  .comp-tag { font-size: 10px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; padding: 3px 9px; border-radius: 2px; }
+  .ct-blue { background: rgba(55,138,221,.15); color: #64B5F6; border: 1px solid rgba(55,138,221,.2); }
+  .ct-orange { background: rgba(255,109,1,.12); color: var(--orange); border: 1px solid var(--border-orange); }
+  .ct-green { background: rgba(76,175,80,.12); color: #81C784; border: 1px solid rgba(76,175,80,.2); }
+  .comp-weight { font-size: 11px; color: var(--text-dim); }
+  .comp-formula { font-family: 'Courier New', monospace; font-size: 10.5px; color: var(--text-dim); background: var(--bg); border: 1px solid var(--border); border-radius: 3px; padding: 5px 9px; margin-bottom: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .comp-bar-wrap { height: 4px; background: var(--bg); border-radius: 2px; overflow: hidden; margin-bottom: 10px; }
+  .comp-bar-fill { height: 100%; border-radius: 2px; transition: width .5s cubic-bezier(.4,0,.2,1); }
+  .fill-blue { background: #378ADD; }
+  .fill-orange { background: var(--orange); }
+  .fill-green { background: #4CAF50; }
+  .comp-nums { display: flex; justify-content: space-between; align-items: baseline; }
+  .comp-score { font-family: var(--font-head); font-size: 22px; font-weight: 900; }
+  .cs-blue { color: #64B5F6; }
+  .cs-orange { color: var(--orange); }
+  .cs-green { color: #81C784; }
+  .comp-result { font-size: 11px; color: var(--text-dim); }
+  .final-card { background: var(--bg2); border: 1px solid var(--border-orange); border-radius: 4px; padding: 32px 24px 28px; text-align: center; position: relative; overflow: hidden; }
+  .final-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: var(--orange); }
+  .final-glow { position: absolute; top: -60px; left: 50%; transform: translateX(-50%); width: 200px; height: 120px; background: radial-gradient(ellipse, rgba(255,109,1,.18) 0%, transparent 70%); pointer-events: none; }
+  .final-formula { font-family: 'Courier New', monospace; font-size: 12px; color: var(--text-dim); background: var(--bg); border: 1px solid var(--border); border-radius: 3px; padding: 7px 14px; display: inline-block; margin-bottom: 20px; }
+  .final-score { font-family: var(--font-head); font-size: 72px; font-weight: 900; line-height: 1; color: var(--text); letter-spacing: -.04em; margin-bottom: 14px; transition: color .4s; }
+  .final-badge { display: inline-block; padding: 7px 24px; border-radius: 2px; font-family: var(--font-head); font-size: 13px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 14px; border: 1px solid currentColor; }
+  .final-interp { font-size: 13px; color: var(--text-muted); line-height: 1.6; max-width: 400px; margin: 0 auto; }
+  .badge-ex  { color: #81C784; background: rgba(76,175,80,.1); }
+  .badge-bom { color: #64B5F6; background: rgba(55,138,221,.1); }
+  .badge-reg { color: var(--orange); background: rgba(255,109,1,.1); }
+  .badge-rui { color: #EF9A9A; background: rgba(229,57,53,.1); }
+  .legend { display: flex; flex-wrap: wrap; gap: 16px; justify-content: center; margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--border); }
+  .legend-item { display: flex; align-items: center; gap: 6px; font-size: 11px; color: var(--text-dim); }
+  .legend-dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }
+  .footer { text-align: center; padding: 20px; font-size: 11px; color: var(--text-dim); border-top: 1px solid var(--border); letter-spacing: .04em; }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-eyebrow"><span></span>Email Marketing</div>
+  <h1>Score de<br><em>Engajamento</em></h1>
+  <p>Ajuste os valores e veja o score calculado em tempo real</p>
+</div>
+
+<div class="wrap">
+
+  <div class="sec-label">
+    <div class="sec-label-line"></div>
+    <span class="sec-label-text">Parâmetros</span>
+    <div class="sec-label-line"></div>
+  </div>
+
+  <div class="grid2">
+    <div class="card card-ref">
+      <div class="card-head">
+        <div class="card-icon ci-ref">📊</div>
+        <div>
+          <div class="card-title">Médias de referência</div>
+          <div class="card-sub">Benchmark histórico</div>
+        </div>
+      </div>
+      <div class="sl-row">
+        <span class="sl-label">% abertura média</span>
+        <input type="range" min="5" max="50" step="1" value="25" id="m_aber">
+        <span class="sl-val" id="m_aber_v">25%</span>
+      </div>
+      <div class="sl-row">
+        <span class="sl-label">Vol. aberturas médio</span>
+        <input type="range" min="100" max="2000" step="50" value="500" id="m_vol_aber">
+        <span class="sl-val" id="m_vol_aber_v">500</span>
+      </div>
+      <div class="sl-row">
+        <span class="sl-label">Cliques únicos médios</span>
+        <input type="range" min="5" max="1000" step="5" value="100" id="m_cliq">
+        <span class="sl-val" id="m_cliq_v">100</span>
+      </div>
+      <div class="ctor-derived">
+        <span class="ctor-derived-label">CTOR médio <span class="ctor-badge">auto</span></span>
+        <span class="ctor-derived-formula" id="m_ctor_formula">100 ÷ 500</span>
+        <span class="ctor-derived-val" id="m_ctor_v">20,0%</span>
+      </div>
+    </div>
+
+    <div class="card card-camp">
+      <div class="card-head">
+        <div class="card-icon ci-camp">✉️</div>
+        <div>
+          <div class="card-title">Valores da campanha</div>
+          <div class="card-sub">Resultados desta campanha</div>
+        </div>
+      </div>
+      <div class="sl-row">
+        <span class="sl-label">% abertura <span class="sl-status" id="s_aber"></span></span>
+        <input type="range" min="5" max="50" step="1" value="20" id="c_aber">
+        <span class="sl-val" id="c_aber_v">20%</span>
+      </div>
+      <div class="sl-row">
+        <span class="sl-label">Vol. aberturas <span class="sl-status" id="s_vol_aber"></span></span>
+        <input type="range" min="100" max="2000" step="50" value="800" id="c_vol_aber">
+        <span class="sl-val" id="c_vol_aber_v">800</span>
+      </div>
+      <div class="sl-row">
+        <span class="sl-label">Cliques únicos <span class="sl-status" id="s_cliq"></span></span>
+        <input type="range" min="5" max="1000" step="5" value="160" id="c_cliq">
+        <span class="sl-val" id="c_cliq_v">160</span>
+      </div>
+      <div class="ctor-derived" style="border-color: var(--border-orange);">
+        <span class="ctor-derived-label">CTOR campanha <span class="ctor-badge">auto</span></span>
+        <span class="ctor-derived-formula" id="c_ctor_formula">160 ÷ 800</span>
+        <span class="ctor-derived-val" id="c_ctor_v">20,0%</span>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="sec-label">
+    <div class="sec-label-line"></div>
+    <span class="sec-label-text">Composição do score</span>
+    <div class="sec-label-line"></div>
+  </div>
+
+  <div class="comp-grid">
+    <div class="comp-card">
+      <div class="comp-top">
+        <span class="comp-tag ct-blue">% Abertura</span>
+        <span class="comp-weight">peso 16%</span>
+      </div>
+      <div class="comp-formula" id="f_aber">–</div>
+      <div class="comp-bar-wrap"><div class="comp-bar-fill fill-blue" id="b_aber" style="width:0%"></div></div>
+      <div class="comp-nums">
+        <span class="comp-score cs-blue" id="sc_aber">–</span>
+        <span class="comp-result" id="pr_aber">–</span>
+      </div>
+    </div>
+
+    <div class="comp-card">
+      <div class="comp-top">
+        <span class="comp-tag ct-blue">Vol. Aberturas</span>
+        <span class="comp-weight">peso 24%</span>
+      </div>
+      <div class="comp-formula" id="f_vol_aber">–</div>
+      <div class="comp-bar-wrap"><div class="comp-bar-fill fill-blue" id="b_vol_aber" style="width:0%"></div></div>
+      <div class="comp-nums">
+        <span class="comp-score cs-blue" id="sc_vol_aber">–</span>
+        <span class="comp-result" id="pr_vol_aber">–</span>
+      </div>
+    </div>
+
+    <div class="comp-card">
+      <div class="comp-top">
+        <span class="comp-tag ct-green">CTOR <span style="font-size:9px;opacity:.6;text-transform:none;letter-spacing:0">cliques ÷ aberturas</span></span>
+        <span class="comp-weight">peso 24%</span>
+      </div>
+      <div class="comp-formula" id="f_ctor">–</div>
+      <div class="comp-bar-wrap"><div class="comp-bar-fill fill-green" id="b_ctor" style="width:0%"></div></div>
+      <div class="comp-nums">
+        <span class="comp-score cs-green" id="sc_ctor">–</span>
+        <span class="comp-result" id="pr_ctor">–</span>
+      </div>
+    </div>
+
+    <div class="comp-card">
+      <div class="comp-top">
+        <span class="comp-tag ct-orange">Cliques únicos</span>
+        <span class="comp-weight">peso 36%</span>
+      </div>
+      <div class="comp-formula" id="f_cliq">–</div>
+      <div class="comp-bar-wrap"><div class="comp-bar-fill fill-orange" id="b_cliq" style="width:0%"></div></div>
+      <div class="comp-nums">
+        <span class="comp-score cs-orange" id="sc_cliq">–</span>
+        <span class="comp-result" id="pr_cliq">–</span>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider-orange">
+
+  <div class="sec-label">
+    <div class="sec-label-line"></div>
+    <span class="sec-label-text">Resultado</span>
+    <div class="sec-label-line"></div>
+  </div>
+
+  <div class="final-card">
+    <div class="final-glow"></div>
+    <div class="final-formula" id="soma_desc">–</div>
+    <div class="final-score" id="score_final">–</div>
+    <div><span class="final-badge" id="badge_class">–</span></div>
+    <p class="final-interp" id="interpretacao">–</p>
+  </div>
+
+  <div class="legend">
+    <div class="legend-item"><div class="legend-dot" style="background:#64B5F6"></div>Abertura (taxa + volume)</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#81C784"></div>CTOR (cliques ÷ aberturas)</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#FF6D01"></div>Cliques únicos</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#81C784"></div>Excelente ≥ 0.80</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#64B5F6"></div>Bom ≥ 0.60</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#FF6D01"></div>Regular ≥ 0.40</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#EF9A9A"></div>Ruim &lt; 0.40</div>
+  </div>
+</div>
+
+<div class="footer">Score de Engajamento de E-mail · CTOR calculado automaticamente: cliques únicos ÷ volume de aberturas</div>
+
+<script>
+function status(val, media) {
+  if (val > media) return '<span class="sl-status st-up">↑ acima</span>';
+  if (val < media) return '<span class="sl-status st-dn">↓ abaixo</span>';
+  return '<span class="sl-status st-eq">= média</span>';
+}
+function classificar(s) {
+  if (s >= 0.80) return { texto:'Excelente', cls:'badge-ex',  cor:'#81C784' };
+  if (s >= 0.60) return { texto:'Bom',       cls:'badge-bom', cor:'#64B5F6' };
+  if (s >= 0.40) return { texto:'Regular',   cls:'badge-reg', cor:'#FF6D01' };
+  return              { texto:'Ruim',       cls:'badge-rui', cor:'#EF9A9A' };
+}
+function fmtPct(n) { return n.toFixed(1).replace('.', ',') + '%'; }
+function g(id) { return document.getElementById(id); }
+
+function calc() {
+  const ma    = +g('m_aber').value;
+  const mva   = +g('m_vol_aber').value;
+  const mcliq = +g('m_cliq').value;
+  const ca    = +g('c_aber').value;
+  const cva   = +g('c_vol_aber').value;
+  const ccliq = +g('c_cliq').value;
+
+  // CTOR calculado: cliques ÷ aberturas (fixo, derivado)
+  const m_ctor = mva > 0 ? mcliq / mva : 0;
+  const c_ctor = cva > 0 ? ccliq / cva : 0;
+
+  // Atualizar valores dos sliders
+  g('m_aber_v').textContent     = ma + '%';
+  g('m_vol_aber_v').textContent = mva;
+  g('m_cliq_v').textContent     = mcliq;
+  g('c_aber_v').textContent     = ca + '%';
+  g('c_vol_aber_v').textContent = cva;
+  g('c_cliq_v').textContent     = ccliq;
+
+  // Atualizar CTOR calculado
+  g('m_ctor_formula').textContent = mcliq + ' ÷ ' + mva;
+  g('m_ctor_v').textContent       = fmtPct(m_ctor * 100);
+  g('c_ctor_formula').textContent = ccliq + ' ÷ ' + cva;
+  g('c_ctor_v').textContent       = fmtPct(c_ctor * 100);
+
+  // Status comparativos
+  g('s_aber').innerHTML     = status(ca, ma);
+  g('s_vol_aber').innerHTML = status(cva, mva);
+  g('s_cliq').innerHTML     = status(ccliq, mcliq);
+
+  // Scores dos componentes
+  const sc_aber     = Math.min(1, ca / Math.max(ca, ma));
+  const sc_vol_aber = cva / (cva + mva);
+  const max_ctor    = Math.max(c_ctor, m_ctor);
+  const sc_ctor     = max_ctor > 0 ? Math.min(1, c_ctor / max_ctor) : 0;
+  const sc_cliq     = ccliq / (ccliq + mcliq);
+
+  const p_aber     = sc_aber     * 0.16;
+  const p_vol_aber = sc_vol_aber * 0.24;
+  const p_ctor     = sc_ctor     * 0.24;
+  const p_cliq     = sc_cliq     * 0.36;
+  const total      = Math.min(1, p_aber + p_vol_aber + p_ctor + p_cliq);
+
+  // Fórmulas nos comp-cards
+  g('f_aber').textContent     = ca + ' / máx(' + ca + ';' + ma + ') → ' + sc_aber.toFixed(2);
+  g('f_vol_aber').textContent = cva + ' / (' + cva + '+' + mva + ') → ' + sc_vol_aber.toFixed(2);
+  g('f_ctor').textContent     = fmtPct(c_ctor*100) + ' / máx(' + fmtPct(c_ctor*100) + ';' + fmtPct(m_ctor*100) + ') → ' + sc_ctor.toFixed(2);
+  g('f_cliq').textContent     = ccliq + ' / (' + ccliq + '+' + mcliq + ') → ' + sc_cliq.toFixed(2);
+
+  // Barras
+  g('b_aber').style.width     = (sc_aber     * 100).toFixed(1) + '%';
+  g('b_vol_aber').style.width = (sc_vol_aber * 100).toFixed(1) + '%';
+  g('b_ctor').style.width     = (sc_ctor     * 100).toFixed(1) + '%';
+  g('b_cliq').style.width     = (sc_cliq     * 100).toFixed(1) + '%';
+
+  // Scores numéricos
+  g('sc_aber').textContent     = sc_aber.toFixed(2);
+  g('sc_vol_aber').textContent = sc_vol_aber.toFixed(2);
+  g('sc_ctor').textContent     = sc_ctor.toFixed(2);
+  g('sc_cliq').textContent     = sc_cliq.toFixed(2);
+
+  g('pr_aber').textContent     = '× 16% = ' + p_aber.toFixed(3);
+  g('pr_vol_aber').textContent = '× 24% = ' + p_vol_aber.toFixed(3);
+  g('pr_ctor').textContent     = '× 24% = ' + p_ctor.toFixed(3);
+  g('pr_cliq').textContent     = '× 36% = ' + p_cliq.toFixed(3);
+
+  // Resultado final
+  g('soma_desc').textContent    = p_aber.toFixed(3) + ' + ' + p_vol_aber.toFixed(3) + ' + ' + p_ctor.toFixed(3) + ' + ' + p_cliq.toFixed(3) + ' = ' + total.toFixed(3);
+  g('score_final').textContent  = total.toFixed(3);
+
+  const cls = classificar(total);
+  g('score_final').style.color  = cls.cor;
+  const badge = g('badge_class');
+  badge.textContent = cls.texto;
+  badge.className   = 'final-badge ' + cls.cls;
+
+  // Interpretação
+  const partes = [];
+  partes.push(ca < ma ? 'taxa de abertura abaixo da média' : 'taxa de abertura acima da média');
+  if (cva > mva) partes.push('volume de aberturas expressivo');
+  partes.push(c_ctor >= m_ctor ? 'CTOR acima da média' : 'CTOR abaixo da média');
+  if (ccliq > mcliq) partes.push('cliques únicos acima da média');
+  g('interpretacao').textContent = partes.join(', ') + '.';
+}
+
+document.querySelectorAll('input[type=range]').forEach(el => el.addEventListener('input', calc));
+calc();
+</script>
+</body>
+</html>
