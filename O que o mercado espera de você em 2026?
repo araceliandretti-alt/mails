@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+<head>
+    <!--[if mso]><xml>
+    <w:WordDocument xmlns:w="urn:schemas-microsoft-com:office:word">
+      <w:DontUseAdvancedTypographyReadingMail/>
+    </w:WordDocument>
+    </xml><![endif]-->
+</head>
+
+<body>
+    <style>
+        @media(max-width:620px) {
+            .card {
+                width: 100% !important
+            }
+
+            .box {
+                padding: 26px 20px !important
+            }
+
+            .title {
+                font-size: 21px !important
+            }
+
+            .txt {
+                font-size: 15px !important
+            }
+
+            .btn {
+                display: block !important;
+                padding: 16px 18px !important
+            }
+
+            .banner {
+                width: 100% !important;
+                height: auto !important
+            }
+        }
+    </style>
+    <table role="presentation" width="600" align="center" cellpadding="0" cellspacing="0" class="card" style="width:600px;max-width:600px;background:#fff;border-radius:24px;overflow:hidden;box-shadow:0 10px 30px rgba(17,24,39,.08)">
+        <tbody>
+            <tr>
+                <td class="box esd-text" style="padding:34px;background:linear-gradient(180deg,#fff 0%,#f8fbff 100%);font-family:'Inter','Segoe UI',Roboto,Arial,sans-serif;color:#334155">
+                    <p class="txt" style="font-size:15px;line-height:1.65;margin:0 0 18px;color:#536174">Olá %FIRSTNAME%!</p>
+                    <h2 class="title" style="font-size:24px;line-height:1.22;margin:0 0 18px;color:#0f172a;font-weight:800;letter-spacing:-.4px">O que acontece quando os maiores especialistas do país param um dia inteiro para atualizar o mercado?</h2>
+                    <div style="height:4px;width:100%;background:linear-gradient(90deg,#1d4ed8 0%,#22c55e 28%,#e9eef7 28%);border-radius:999px;margin:0 0 24px"><br></div>
+                    <p class="txt" style="font-size:16px;line-height:1.75;margin:0 0 16px">O momento para atualizar suas condutas de treino e dieta acabou de chegar.</p>
+                    <p class="txt" style="font-size:16px;line-height:1.75;margin:0 0 18px">Na <strong style="color:#0f172a">3ª edição</strong>, o <strong style="color:#0f172a">UNIGUAÇU Desafia 2026</strong> volta a reunir os principais profissionais das áreas de <strong style="color:#1657d9">Treinamento</strong> e <strong style="color:#1657d9">Nutrição</strong>, consolidando-se como o ponto de encontro estratégico para atualização profissional.</p>
+                    <p class="txt" style="font-size:15px;line-height:1.65;margin:24px 0;padding:18px 20px;border-radius:22px;background:linear-gradient(135deg,#eef6ff 0%,#f0fff7 100%);color:#174ea6;font-weight:700">Mais de 8h de conhecimento aplicado, com microaulas, provocações e insights que conectam ciência e aplicabilidade prática. Tudo 100% gratuito e online.</p>
+                    <p class="txt" style="font-size:16px;line-height:1.75;margin:0 0 24px">Se você quer <strong style="color:#0f172a">desafiar a média</strong> e se atualizar com quem está na vanguarda, este é o seu momento.</p>
+                    <p style="text-align:center;margin:30px 0 20px"><a href="https://pos.faculdadeuniguacu.com.br/desafia-uniguacu-2026-org?utm_source=mail&utm_medium=organic&utm_content=geral&utm_campaign=desafia-2026&utm_term=mercado-espera" target="_blank" class="btn" style="display:inline-block;background:#16a34a;color:#fff;font-size:15px;font-weight:800;text-decoration:none;padding:17px 34px;border-radius:999px;letter-spacing:.8px;text-transform:uppercase;box-shadow:0 10px 22px rgba(34,197,94,.28)">QUERO CONFERIR TODAS AS AULAS</a></p><a href="https://pos.faculdadeuniguacu.com.br/desafia-uniguacu-2026-org?utm_source=mail&utm_medium=organic&utm_content=geral&utm_campaign=desafia-2026&utm_term=mercado-espera" target="_blank"><img src="https://uniguacu24074.activehosted.com/content/xdRQOD/2026/05/26/6a9aafb4-65dc-425a-82fc-21bbd83277f6.png?id=1052338" width="600" alt="UNIGUAÇU Desafia 2026 - 3ª edição, trilhas de conhecimento para treinamento e nutrição" class="banner" style="display:block;width:100%;max-width:600px;height:auto;border:0;border-radius:22px;box-shadow:0 12px 28px rgba(15,23,42,.16)" data-cf-ir-is-resized="true" data-cf-ir-should-resize-image="true" srcset="https://uniguacu24074.activehosted.com/cdn-cgi/image/redirect,width=532,dpr=1,fit=scale-down,format=auto/content/xdRQOD/2026/05/26/6a9aafb4-65dc-425a-82fc-21bbd83277f6.png 1x,https://uniguacu24074.activehosted.com/cdn-cgi/image/redirect,width=532,dpr=2,fit=scale-down,format=auto/content/xdRQOD/2026/05/26/6a9aafb4-65dc-425a-82fc-21bbd83277f6.png 2x,https://uniguacu24074.activehosted.com/cdn-cgi/image/redirect,width=532,dpr=3,fit=scale-down,format=auto/content/xdRQOD/2026/05/26/6a9aafb4-65dc-425a-82fc-21bbd83277f6.png 3x,https://uniguacu24074.activehosted.com/cdn-cgi/image/redirect,width=532,dpr=4,fit=scale-down,format=auto/content/xdRQOD/2026/05/26/6a9aafb4-65dc-425a-82fc-21bbd83277f6.png 4x" data-cf-ir-no-srcset="true"></a>
+                    <p style="font-size:12px;color:#8a94a6;text-align:center;margin:16px 0 0;line-height:1.5">Vagas limitadas&nbsp;&nbsp;·&nbsp;&nbsp;Evento gratuito&nbsp;&nbsp;·&nbsp;&nbsp;Certificação de 8h</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
