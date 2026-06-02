@@ -39,7 +39,6 @@
   .sl-label { font-size: 12px; color: var(--text-muted); width: 110px; flex-shrink: 0; }
   input[type=range] { flex: 1; appearance: none; height: 3px; background: var(--bg4); border-radius: 2px; outline: none; cursor: pointer; }
   input[type=range]::-webkit-slider-thumb { appearance: none; width: 14px; height: 14px; border-radius: 50%; background: var(--orange); border: 2px solid var(--bg); }
-
   .sl-val { font-family: var(--font-head); font-size: 13px; font-weight: 700; color: var(--text); min-width: 40px; text-align: right; }
 
   .ctor-derived { display: flex; align-items: center; gap: 10px; padding: 6px 10px; background: var(--bg); border: 1px dashed var(--border); border-radius: 3px; margin-top: 6px; }
@@ -48,10 +47,19 @@
   .ctor-derived-val { font-family: var(--font-head); font-size: 13px; font-weight: 700; color: var(--orange); text-align: right; min-width: 48px; }
 
   .final-card { background: var(--bg2); border: 1px solid var(--border-orange); border-radius: 4px; padding: 28px 20px 20px; text-align: center; position: relative; margin-top: 20px; }
-  .final-score { font-family: var(--font-head); font-size: 60px; font-weight: 900; line-height: 1; color: var(--text); letter-spacing: -.04em; margin-bottom: 12px; }
-  .final-badge { display: inline-block; padding: 6px 20px; border-radius: 2px; font-family: var(--font-head); font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; border: 1px solid currentColor; margin-bottom: 10px; }
-  .final-interp { font-size: 13px; color: var(--text-muted); line-height: 1.4; max-width: 400px; margin: 0 auto; }
+  .final-score { font-family: var(--font-head); font-size: 60px; font-weight: 900; line-height: 1; color: var(--text); letter-spacing: -.04em; margin-bottom: 8px; }
+  .final-badge { display: inline-block; padding: 6px 20px; border-radius: 2px; font-family: var(--font-head); font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; border: 1px solid currentColor; margin-bottom: 8px; }
+  .final-interp { font-size: 13px; color: var(--text-muted); line-height: 1.4; max-width: 400px; margin: 0 auto 12px; }
 
+  .comp-grid { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 10px; margin-top: 10px; }
+  @media (max-width: 600px) { .comp-grid { grid-template-columns: 1fr; } }
+  .comp-card { background: var(--bg3); border: 1px solid var(--border); border-radius: 4px; padding: 14px 16px; }
+  .comp-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+  .comp-tag { font-size: 10px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; padding: 3px 6px; border-radius: 2px; }
+  .ct-blue { background: rgba(55,138,221,.15); color: #64B5F6; border: 1px solid rgba(55,138,221,.2); }
+  .ct-orange { background: rgba(255,109,1,.12); color: var(--orange); border: 1px solid var(--border-orange); }
+  .ct-green { background: rgba(76,175,80,.12); color: #81C784; border: 1px solid rgba(76,175,80,.2); }
+  .comp-weight { font-size: 11px; color: var(--text-dim); }
 </style>
 </head>
 <body>
@@ -64,8 +72,7 @@
 <div class="wrap">
 
   <div class="grid2">
-
-    <!-- Card Médias de referência -->
+    <!-- Médias de referência -->
     <div class="card card-ref">
       <div class="card-head">
         <div class="card-icon ci-ref">📊</div>
@@ -96,7 +103,7 @@
       </div>
     </div>
 
-    <!-- Card Valores da campanha -->
+    <!-- Valores da campanha -->
     <div class="card card-camp">
       <div class="card-head">
         <div class="card-icon ci-camp">✉️</div>
@@ -126,7 +133,6 @@
         <span class="ctor-derived-val" id="c_ctor_v">20,0%</span>
       </div>
     </div>
-
   </div>
 
   <!-- Resultado final -->
@@ -134,11 +140,44 @@
     <div class="final-score" id="score_final">–</div>
     <div class="final-badge" id="badge_class">–</div>
     <p class="final-interp" id="interpretacao">–</p>
+
+    <!-- Composição do Score -->
+    <div class="comp-grid">
+      <div class="comp-card">
+        <div class="comp-top">
+          <span class="comp-tag ct-blue">% Abertura</span>
+          <span class="comp-weight">peso 16%</span>
+        </div>
+        <div class="comp-formula" id="f_aber">–</div>
+      </div>
+      <div class="comp-card">
+        <div class="comp-top">
+          <span class="comp-tag ct-blue">Vol. Aberturas</span>
+          <span class="comp-weight">peso 24%</span>
+        </div>
+        <div class="comp-formula" id="f_vol_aber">–</div>
+      </div>
+      <div class="comp-card">
+        <div class="comp-top">
+          <span class="comp-tag ct-green">CTOR</span>
+          <span class="comp-weight">peso 24%</span>
+        </div>
+        <div class="comp-formula" id="f_ctor">–</div>
+      </div>
+      <div class="comp-card">
+        <div class="comp-top">
+          <span class="comp-tag ct-orange">Cliques únicos</span>
+          <span class="comp-weight">peso 36%</span>
+        </div>
+        <div class="comp-formula" id="f_cliq">–</div>
+      </div>
+    </div>
   </div>
 
 </div>
 
 <script>
+// Funções JavaScript para atualizar os sliders e scores
 function g(id){ return document.getElementById(id); }
 function fmtPct(n){ return n.toFixed(1).replace('.',',')+'%'; }
 
@@ -189,6 +228,11 @@ function calc(){
   g('score_final').textContent = total.toFixed(3);
   g('score_final').style.color = cls.cor;
   g('badge_class').textContent = cls.texto;
+
+  g('f_aber').textContent = sc_aber.toFixed(2);
+  g('f_vol_aber').textContent = sc_vol_aber.toFixed(2);
+  g('f_ctor').textContent = sc_ctor.toFixed(2);
+  g('f_cliq').textContent = sc_cliq.toFixed(2);
 
   g('interpretacao').textContent = 
     (ca<ma?'taxa de abertura abaixo da média':'taxa de abertura acima da média')+', '+
