@@ -6,195 +6,146 @@
 <title>Score de Engajamento de E-mail</title>
 <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@400;500;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
 <style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  :root {
-    --orange: #FF6D01; --orange-dim: #CC5700;
-    --bg: #0D0D0D; --bg2: #141414; --bg3: #1C1C1C; --bg4: #242424;
-    --border: rgba(255,255,255,0.08); --border-orange: rgba(255,109,1,0.35);
-    --text: #F5F0E8; --text-muted: rgba(245,240,232,0.5); --text-dim: rgba(245,240,232,0.25);
-    --font-head: 'Chivo', sans-serif; --font-body: 'Inter', sans-serif;
-  }
-  body { background: var(--bg); color: var(--text); font-family: var(--font-body); min-height: 100vh; -webkit-font-smoothing: antialiased; }
-  html { scroll-behavior: smooth; }
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --orange: #FF6D01; --orange-dim: #CC5700;
+  --bg: #0D0D0D; --bg2: #141414; --bg3: #1C1C1C; --bg4: #242424;
+  --border: rgba(255,255,255,0.08); --border-orange: rgba(255,109,1,0.35);
+  --text: #F5F0E8; --text-muted: rgba(245,240,232,0.5); --text-dim: rgba(245,240,232,0.25);
+  --font-head: 'Chivo', sans-serif; --font-body: 'Inter', sans-serif;
+}
+body { background: var(--bg); color: var(--text); font-family: var(--font-body); min-height: 100vh; -webkit-font-smoothing: antialiased; }
+html { scroll-behavior: smooth; }
 
-  /* Hero compacto */
-  .hero { text-align: center; padding: 20px 24px 20px; }
-  .hero h1 { font-family: var(--font-head); font-size: clamp(28px, 4vw, 40px); font-weight: 900; line-height: 1.1; letter-spacing: -.02em; white-space: nowrap; display: inline-block; }
-  .hero h1 em { font-style: normal; color: var(--orange); }
-  .hero p { font-size: 14px; color: var(--text-muted); max-width: 420px; margin: 8px auto 0; line-height: 1.4; }
+.hero { text-align:center; padding:20px 24px 20px; }
+.hero h1 { font-family:var(--font-head); font-size:clamp(28px,4vw,40px); font-weight:900; line-height:1.1; letter-spacing:-.02em; white-space:nowrap; display:inline-block; }
+.hero h1 em { font-style:normal; color:var(--orange); }
+.hero p { font-size:14px; color:var(--text-muted); max-width:420px; margin:8px auto 0; line-height:1.4; }
 
-  .wrap { max-width: 860px; margin: 0 auto; padding: 0 20px 40px; }
-  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 20px; }
-  @media (max-width: 600px) { .grid2 { grid-template-columns: 1fr; } }
+.wrap { max-width:860px; margin:0 auto; padding:0 20px 40px; }
+.grid2 { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:20px; }
+@media(max-width:600px){.grid2{grid-template-columns:1fr;}}
 
-  .card { background: var(--bg2); border: 1px solid var(--border); border-radius: 4px; padding: 20px; position: relative; }
-  .card-head { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
-  .card-icon { width: 34px; height: 34px; display: flex; align-items: center; justify-content: center; font-size: 15px; flex-shrink: 0; }
-  .ci-ref { background: var(--bg4); color: var(--text-muted); border-radius: 4px; display: flex; align-items: center; justify-content: center; }
-  .ci-camp { background: rgba(255,109,1,.15); color: var(--orange); border-radius: 4px; display: flex; align-items: center; justify-content: center; }
-  .card-title { font-family: var(--font-head); font-size: 13px; font-weight: 700; color: var(--text); }
-  .card-sub { font-size: 11px; color: var(--text-dim); margin-top: 2px; }
+.card { background:var(--bg2); border:1px solid var(--border); border-radius:4px; padding:20px; position:relative; }
+.card-head { display:flex; align-items:center; gap:10px; margin-bottom:12px; }
+.card-icon { width:34px; height:34px; display:flex; align-items:center; justify-content:center; font-size:15px; flex-shrink:0; }
+.ci-ref { background:var(--bg4); color:var(--text-muted); border-radius:4px; display:flex; align-items:center; justify-content:center; }
+.ci-camp { background:rgba(255,109,1,.15); color:var(--orange); border-radius:4px; display:flex; align-items:center; justify-content:center; }
+.card-title { font-family:var(--font-head); font-size:13px; font-weight:700; color:var(--text); }
+.card-sub { font-size:11px; color:var(--text-dim); margin-top:2px; }
 
-  .sl-row { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
-  .sl-label { font-size: 12px; color: var(--text-muted); width: 110px; flex-shrink: 0; }
-  input[type=range] { flex: 1; appearance: none; height: 3px; background: var(--bg4); border-radius: 2px; outline: none; cursor: pointer; }
-  input[type=range]::-webkit-slider-thumb { appearance: none; width: 14px; height: 14px; border-radius: 50%; background: var(--orange); border: 2px solid var(--bg); }
-  .sl-val { font-family: var(--font-head); font-size: 13px; font-weight: 700; color: var(--text); min-width: 40px; text-align: right; }
+.sl-row { display:flex; align-items:center; gap:10px; margin-bottom:10px; }
+.sl-label { font-size:12px; color:var(--text-muted); width:110px; flex-shrink:0; }
+input[type=range] { flex:1; appearance:none; height:3px; background:var(--bg4); border-radius:2px; outline:none; cursor:pointer; }
+input[type=range]::-webkit-slider-thumb { appearance:none; width:14px; height:14px; border-radius:50%; background:var(--orange); border:2px solid var(--bg); }
+.sl-val { font-family:var(--font-head); font-size:13px; font-weight:700; color:var(--text); min-width:40px; text-align:right; }
 
-  .ctor-derived { display: flex; align-items: center; gap: 10px; padding: 6px 10px; background: var(--bg); border: 1px dashed var(--border); border-radius: 3px; margin-top: 6px; }
-  .ctor-derived-label { font-size: 12px; color: var(--text-muted); width: 110px; flex-shrink: 0; }
-  .ctor-derived-formula { flex: 1; font-family: 'Courier New', monospace; font-size: 11px; color: var(--text-dim); }
-  .ctor-derived-val { font-family: var(--font-head); font-size: 13px; font-weight: 700; color: var(--orange); text-align: right; min-width: 48px; }
+.ctor-derived { display:flex; align-items:center; gap:10px; padding:6px 10px; background:var(--bg); border:1px dashed var(--border); border-radius:3px; margin-top:6px; }
+.ctor-derived-label { font-size:12px; color:var(--text-muted); width:110px; flex-shrink:0; }
+.ctor-derived-formula { flex:1; font-family:'Courier New', monospace; font-size:11px; color:var(--text-dim); }
+.ctor-derived-val { font-family:var(--font-head); font-size:13px; font-weight:700; color:var(--orange); text-align:right; min-width:48px; }
 
-  .final-card { background: var(--bg2); border: 1px solid var(--border-orange); border-radius: 4px; padding: 28px 20px 20px; text-align: center; position: relative; margin-top: 20px; }
-  .final-score { font-family: var(--font-head); font-size: 60px; font-weight: 900; line-height: 1; color: var(--text); letter-spacing: -.04em; margin-bottom: 8px; }
-  .final-badge { display: inline-block; padding: 6px 20px; border-radius: 2px; font-family: var(--font-head); font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; border: 1px solid currentColor; margin-bottom: 8px; }
-  .final-interp { font-size: 13px; color: var(--text-muted); line-height: 1.4; max-width: 400px; margin: 0 auto 12px; }
+.final-card { background:var(--bg2); border:1px solid var(--border-orange); border-radius:4px; padding:28px 20px 20px; text-align:center; position:relative; margin-top:20px; }
+.final-score { font-family:var(--font-head); font-size:60px; font-weight:900; line-height:1; color:var(--text); letter-spacing:-.04em; margin-bottom:8px; }
+.final-badge { display:inline-block; padding:6px 20px; border-radius:2px; font-family:var(--font-head); font-size:12px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; border:1px solid currentColor; margin-bottom:8px; }
+.final-interp { font-size:13px; color:var(--text-muted); line-height:1.4; max-width:400px; margin:0 auto 12px; }
 
-  .score-composition-inside { margin-top: 28px; text-align: left; }
-  .score-composition-inside .sec-label { margin-bottom: 16px; }
-  .score-composition-inside .comp-grid { margin-bottom: 0; display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 10px; }
-  @media (max-width: 600px) { .score-composition-inside .comp-grid { grid-template-columns: 1fr; } }
-  .comp-card { background: var(--bg3); border: 1px solid var(--border); border-radius: 4px; padding: 14px 16px; }
-  .comp-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
-  .comp-tag { font-size: 10px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; padding: 3px 6px; border-radius: 2px; }
-  .ct-blue { background: rgba(55,138,221,.15); color: #64B5F6; border: 1px solid rgba(55,138,221,.2); }
-  .ct-orange { background: rgba(255,109,1,.12); color: var(--orange); border: 1px solid var(--border-orange); }
-  .ct-green { background: rgba(76,175,80,.12); color: #81C784; border: 1px solid rgba(76,175,80,.2); }
-  .comp-weight { font-size: 11px; color: var(--text-dim); }
+.score-composition-inside { margin-top:28px; text-align:left; }
+.score-composition-inside .sec-label { margin-bottom:16px; }
+.score-composition-inside .comp-grid { margin-bottom:0; display:grid; grid-template-columns:1fr 1fr 1fr 1fr; gap:10px; }
+@media(max-width:600px){.score-composition-inside .comp-grid{grid-template-columns:1fr;}}
+.comp-card { background:var(--bg3); border:1px solid var(--border); border-radius:4px; padding:14px 16px; }
+.comp-top { display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; }
+.comp-tag { font-size:10px; font-weight:600; letter-spacing:.08em; text-transform:uppercase; padding:3px 6px; border-radius:2px; }
+.ct-blue { background:rgba(55,138,221,.15); color:#64B5F6; border:1px solid rgba(55,138,221,.2); }
+.ct-orange { background:rgba(255,109,1,.12); color:var(--orange); border:1px solid var(--border-orange); }
+.ct-green { background:rgba(76,175,80,.12); color:#81C784; border:1px solid rgba(76,175,80,.2); }
+.comp-weight { font-size:11px; color:var(--text-dim); }
+
 </style>
 </head>
 <body>
 
 <div class="hero">
-  <h1>Score de <em>Engajamento</em></h1>
-  <p>Ajuste os valores e veja o score calculado em tempo real</p>
+<h1>Score de <em>Engajamento</em></h1>
+<p>Ajuste os valores e veja o score calculado em tempo real</p>
 </div>
 
 <div class="wrap">
-
-  <div class="grid2">
-    <!-- Card Médias de referência -->
-    <div class="card card-ref">
-      <div class="card-head">
-        <div class="card-icon ci-ref">📊</div>
-        <div>
-          <div class="card-title">Médias de referência</div>
-          <div class="card-sub">Benchmark histórico</div>
-        </div>
-      </div>
-      <div class="sl-row">
-        <span class="sl-label">% abertura média</span>
-        <input type="range" min="5" max="50" step="1" value="25" id="m_aber">
-        <span class="sl-val" id="m_aber_v">25%</span>
-      </div>
-      <div class="sl-row">
-        <span class="sl-label">Vol. aberturas médio</span>
-        <input type="range" min="100" max="2000" step="50" value="500" id="m_vol_aber">
-        <span class="sl-val" id="m_vol_aber_v">500</span>
-      </div>
-      <div class="sl-row">
-        <span class="sl-label">Cliques únicos médios</span>
-        <input type="range" min="5" max="1000" step="5" value="100" id="m_cliq">
-        <span class="sl-val" id="m_cliq_v">100</span>
-      </div>
-      <div class="ctor-derived">
-        <span class="ctor-derived-label">CTOR médio <span class="ctor-badge">auto</span></span>
-        <span class="ctor-derived-formula" id="m_ctor_formula">100 ÷ 500</span>
-        <span class="ctor-derived-val" id="m_ctor_v">20,0%</span>
+<div class="grid2">
+  <!-- Médias de referência -->
+  <div class="card card-ref">
+    <div class="card-head">
+      <div class="card-icon ci-ref">📊</div>
+      <div>
+        <div class="card-title">Médias de referência</div>
+        <div class="card-sub">Benchmark histórico</div>
       </div>
     </div>
+    <div class="sl-row"><span class="sl-label">% abertura média</span><input type="range" min="5" max="50" step="1" value="25" id="m_aber"><span class="sl-val" id="m_aber_v">25%</span></div>
+    <div class="sl-row"><span class="sl-label">Vol. aberturas médio</span><input type="range" min="100" max="2000" step="50" value="500" id="m_vol_aber"><span class="sl-val" id="m_vol_aber_v">500</span></div>
+    <div class="sl-row"><span class="sl-label">Cliques únicos médios</span><input type="range" min="5" max="1000" step="5" value="100" id="m_cliq"><span class="sl-val" id="m_cliq_v">100</span></div>
+    <div class="ctor-derived"><span class="ctor-derived-label">CTOR médio <span class="ctor-badge">auto</span></span><span class="ctor-derived-formula" id="m_ctor_formula">100 ÷ 500</span><span class="ctor-derived-val" id="m_ctor_v">20,0%</span></div>
+  </div>
 
-    <!-- Card Valores da campanha -->
-    <div class="card card-camp">
-      <div class="card-head">
-        <div class="card-icon ci-camp">✉️</div>
-        <div>
-          <div class="card-title">Valores da campanha</div>
-          <div class="card-sub">Resultados desta campanha</div>
-        </div>
+  <!-- Valores da campanha -->
+  <div class="card card-camp">
+    <div class="card-head">
+      <div class="card-icon ci-camp">✉️</div>
+      <div>
+        <div class="card-title">Valores da campanha</div>
+        <div class="card-sub">Resultados desta campanha</div>
       </div>
-      <div class="sl-row">
-        <span class="sl-label">% abertura</span>
-        <input type="range" min="5" max="50" step="1" value="20" id="c_aber">
-        <span class="sl-val" id="c_aber_v">20%</span>
+    </div>
+    <div class="sl-row"><span class="sl-label">% abertura</span><input type="range" min="5" max="50" step="1" value="20" id="c_aber"><span class="sl-val" id="c_aber_v">20%</span></div>
+    <div class="sl-row"><span class="sl-label">Vol. aberturas</span><input type="range" min="100" max="2000" step="50" value="800" id="c_vol_aber"><span class="sl-val" id="c_vol_aber_v">800</span></div>
+    <div class="sl-row"><span class="sl-label">Cliques únicos</span><input type="range" min="5" max="1000" step="5" value="160" id="c_cliq"><span class="sl-val" id="c_cliq_v">160</span></div>
+    <div class="ctor-derived" style="border-color: var(--border-orange);"><span class="ctor-derived-label">CTOR campanha <span class="ctor-badge">auto</span></span><span class="ctor-derived-formula" id="c_ctor_formula">160 ÷ 800</span><span class="ctor-derived-val" id="c_ctor_v">20,0%</span></div>
+  </div>
+</div>
+
+<!-- Resultado final -->
+<div class="final-card">
+  <div class="final-glow"></div>
+  <div class="final-formula" id="soma_desc">–</div>
+  <div class="final-score" id="score_final">–</div>
+  <div><span class="final-badge" id="badge_class">–</span></div>
+  <p class="final-interp" id="interpretacao">–</p>
+
+  <!-- Composição do score abaixo -->
+  <div class="score-composition-inside">
+    <div class="sec-label"><div class="sec-label-line"></div><span class="sec-label-text">Composição do score</span><div class="sec-label-line"></div></div>
+    <div class="comp-grid">
+      <div class="comp-card">
+        <div class="comp-top"><span class="comp-tag ct-blue">% Abertura</span><span class="comp-weight">peso 16%</span></div>
+        <div class="comp-formula" id="f_aber">–</div>
+        <div class="comp-bar-wrap"><div class="comp-bar-fill fill-blue" id="b_aber" style="width:0%"></div></div>
+        <div class="comp-nums"><span class="comp-score cs-blue" id="sc_aber">–</span><span class="comp-result" id="pr_aber">–</span></div>
       </div>
-      <div class="sl-row">
-        <span class="sl-label">Vol. aberturas</span>
-        <input type="range" min="100" max="2000" step="50" value="800" id="c_vol_aber">
-        <span class="sl-val" id="c_vol_aber_v">800</span>
+
+      <div class="comp-card">
+        <div class="comp-top"><span class="comp-tag ct-blue">Vol. Aberturas</span><span class="comp-weight">peso 24%</span></div>
+        <div class="comp-formula" id="f_vol_aber">–</div>
+        <div class="comp-bar-wrap"><div class="comp-bar-fill fill-blue" id="b_vol_aber" style="width:0%"></div></div>
+        <div class="comp-nums"><span class="comp-score cs-blue" id="sc_vol_aber">–</span><span class="comp-result" id="pr_vol_aber">–</span></div>
       </div>
-      <div class="sl-row">
-        <span class="sl-label">Cliques únicos</span>
-        <input type="range" min="5" max="1000" step="5" value="160" id="c_cliq">
-        <span class="sl-val" id="c_cliq_v">160</span>
+
+      <div class="comp-card">
+        <div class="comp-top"><span class="comp-tag ct-green">CTOR <span style="font-size:9px;opacity:.6;text-transform:none;letter-spacing:0">cliques ÷ aberturas</span></span><span class="comp-weight">peso 24%</span></div>
+        <div class="comp-formula" id="f_ctor">–</div>
+        <div class="comp-bar-wrap"><div class="comp-bar-fill fill-green" id="b_ctor" style="width:0%"></div></div>
+        <div class="comp-nums"><span class="comp-score cs-green" id="sc_ctor">–</span><span class="comp-result" id="pr_ctor">–</span></div>
       </div>
-      <div class="ctor-derived" style="border-color: var(--border-orange);">
-        <span class="ctor-derived-label">CTOR campanha <span class="ctor-badge">auto</span></span>
-        <span class="ctor-derived-formula" id="c_ctor_formula">160 ÷ 800</span>
-        <span class="ctor-derived-val" id="c_ctor_v">20,0%</span>
+
+      <div class="comp-card">
+        <div class="comp-top"><span class="comp-tag ct-orange">Cliques únicos</span><span class="comp-weight">peso 36%</span></div>
+        <div class="comp-formula" id="f_cliq">–</div>
+        <div class="comp-bar-wrap"><div class="comp-bar-fill fill-orange" id="b_cliq" style="width:0%"></div></div>
+        <div class="comp-nums"><span class="comp-score cs-orange" id="sc_cliq">–</span><span class="comp-result" id="pr_cliq">–</span></div>
       </div>
     </div>
   </div>
-
-  <!-- Resultado final com composição do score abaixo -->
-  <div class="final-card">
-    <div class="final-glow"></div>
-    <div class="final-formula" id="soma_desc">–</div>
-    <div class="final-score" id="score_final">–</div>
-    <div><span class="final-badge" id="badge_class">–</span></div>
-    <p class="final-interp" id="interpretacao">–</p>
-
-    <div class="score-composition-inside">
-      <div class="sec-label">
-        <div class="sec-label-line"></div>
-        <span class="sec-label-text">Composição do score</span>
-        <div class="sec-label-line"></div>
-      </div>
-
-      <div class="comp-grid">
-        <div class="comp-card">
-          <div class="comp-top">
-            <span class="comp-tag ct-blue">% Abertura</span>
-            <span class="comp-weight">peso 16%</span>
-          </div>
-          <div class="comp-formula" id="f_aber">–</div>
-          <div class="comp-bar-wrap"><div class="comp-bar-fill fill-blue" id="b_aber" style="width:0%"></div></div>
-          <div class="comp-nums"><span class="comp-score cs-blue" id="sc_aber">–</span><span class="comp-result" id="pr_aber">–</span></div>
-        </div>
-
-        <div class="comp-card">
-          <div class="comp-top">
-            <span class="comp-tag ct-blue">Vol. Aberturas</span>
-            <span class="comp-weight">peso 24%</span>
-          </div>
-          <div class="comp-formula" id="f_vol_aber">–</div>
-          <div class="comp-bar-wrap"><div class="comp-bar-fill fill-blue" id="b_vol_aber" style="width:0%"></div></div>
-          <div class="comp-nums"><span class="comp-score cs-blue" id="sc_vol_aber">–</span><span class="comp-result" id="pr_vol_aber">–</span></div>
-        </div>
-
-        <div class="comp-card">
-          <div class="comp-top">
-            <span class="comp-tag ct-green">CTOR <span style="font-size:9px;opacity:.6;text-transform:none;letter-spacing:0">cliques ÷ aberturas</span></span>
-            <span class="comp-weight">peso 24%</span>
-          </div>
-          <div class="comp-formula" id="f_ctor">–</div>
-          <div class="comp-bar-wrap"><div class="comp-bar-fill fill-green" id="b_ctor" style="width:0%"></div></div>
-          <div class="comp-nums"><span class="comp-score cs-green" id="sc_ctor">–</span><span class="comp-result" id="pr_ctor">–</span></div>
-        </div>
-
-        <div class="comp-card">
-          <div class="comp-top">
-            <span class="comp-tag ct-orange">Cliques únicos</span>
-            <span class="comp-weight">peso 36%</span>
-          </div>
-          <div class="comp-formula" id="f_cliq">–</div>
-          <div class="comp-bar-wrap"><div class="comp-bar-fill fill-orange" id="b_cliq" style="width:0%"></div></div>
-          <div class="comp-nums"><span class="comp-score cs-orange" id="sc_cliq">–</span><span class="comp-result" id="pr_cliq">–</span></div>
-        </div>
-      </div>
-    </div>
-  </div>
+</div>
 
 </div>
 
@@ -223,6 +174,27 @@ function calc(){
 
   const sc_aber=Math.min(1, ca/Math.max(ca, ma));
   const sc_vol_aber=cva/(cva+mva);
-  const max_ctor=Math.max(c_ctor, m_ctor);
+  const max_ctor=Math.max(c_ctor,m_ctor);
   const sc_ctor=max_ctor>0?Math.min(1,c_ctor/max_ctor):0;
-  const sc_cl
+  const sc_cliq=ccliq/(ccliq+mcliq);
+  const total=Math.min(1,sc_aber*0.16 + sc_vol_aber*0.24 + sc_ctor*0.24 + sc_cliq*0.36);
+
+  const cls=classificar(total);
+  g('score_final').textContent=total.toFixed(3);
+  g('score_final').style.color=cls.cor;
+  g('badge_class').textContent=cls.texto;
+
+  g('f_aber').textContent=sc_aber.toFixed(2);
+  g('f_vol_aber').textContent=sc_vol_aber.toFixed(2);
+  g('f_ctor').textContent=sc_ctor.toFixed(2);
+  g('f_cliq').textContent=sc_cliq.toFixed(2);
+
+  g('sc_aber').textContent=sc_aber.toFixed(2);
+  g('sc_vol_aber').textContent=sc_vol_aber.toFixed(2);
+  g('sc_ctor').textContent=sc_ctor.toFixed(2);
+  g('sc_cliq').textContent=sc_cliq.toFixed(2);
+
+  g('pr_aber').textContent='×16% = '+(sc_aber*0.16).toFixed(3);
+  g('pr_vol_aber').textContent='×24% = '+(sc_vol_aber*0.24).toFixed(3);
+  g('pr_ctor').textContent='×24% = '+(sc_ctor*0.24).toFixed(3);
+  g('pr_cliq').text
