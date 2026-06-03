@@ -51,8 +51,10 @@
   .final-badge { display: inline-block; padding: 6px 20px; border-radius: 2px; font-family: var(--font-head); font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; border: 1px solid currentColor; margin-bottom: 8px; }
   .final-interp { font-size: 13px; color: var(--text-muted); line-height: 1.4; max-width: 400px; margin: 0 auto 12px; }
 
-  .comp-grid { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 10px; margin-top: 10px; }
-  @media (max-width: 600px) { .comp-grid { grid-template-columns: 1fr; } }
+  .score-composition-inside { margin-top: 28px; text-align: left; }
+  .score-composition-inside .sec-label { margin-bottom: 16px; }
+  .score-composition-inside .comp-grid { margin-bottom: 0; display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 10px; }
+  @media (max-width: 600px) { .score-composition-inside .comp-grid { grid-template-columns: 1fr; } }
   .comp-card { background: var(--bg3); border: 1px solid var(--border); border-radius: 4px; padding: 14px 16px; }
   .comp-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
   .comp-tag { font-size: 10px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; padding: 3px 6px; border-radius: 2px; }
@@ -72,7 +74,7 @@
 <div class="wrap">
 
   <div class="grid2">
-    <!-- Médias de referência -->
+    <!-- Card Médias de referência -->
     <div class="card card-ref">
       <div class="card-head">
         <div class="card-icon ci-ref">📊</div>
@@ -103,7 +105,7 @@
       </div>
     </div>
 
-    <!-- Valores da campanha -->
+    <!-- Card Valores da campanha -->
     <div class="card card-camp">
       <div class="card-head">
         <div class="card-icon ci-camp">✉️</div>
@@ -135,41 +137,61 @@
     </div>
   </div>
 
-  <!-- Resultado final -->
+  <!-- Resultado final com composição do score abaixo -->
   <div class="final-card">
+    <div class="final-glow"></div>
+    <div class="final-formula" id="soma_desc">–</div>
     <div class="final-score" id="score_final">–</div>
-    <div class="final-badge" id="badge_class">–</div>
+    <div><span class="final-badge" id="badge_class">–</span></div>
     <p class="final-interp" id="interpretacao">–</p>
 
-    <!-- Composição do Score -->
-    <div class="comp-grid">
-      <div class="comp-card">
-        <div class="comp-top">
-          <span class="comp-tag ct-blue">% Abertura</span>
-          <span class="comp-weight">peso 16%</span>
-        </div>
-        <div class="comp-formula" id="f_aber">–</div>
+    <div class="score-composition-inside">
+      <div class="sec-label">
+        <div class="sec-label-line"></div>
+        <span class="sec-label-text">Composição do score</span>
+        <div class="sec-label-line"></div>
       </div>
-      <div class="comp-card">
-        <div class="comp-top">
-          <span class="comp-tag ct-blue">Vol. Aberturas</span>
-          <span class="comp-weight">peso 24%</span>
+
+      <div class="comp-grid">
+        <div class="comp-card">
+          <div class="comp-top">
+            <span class="comp-tag ct-blue">% Abertura</span>
+            <span class="comp-weight">peso 16%</span>
+          </div>
+          <div class="comp-formula" id="f_aber">–</div>
+          <div class="comp-bar-wrap"><div class="comp-bar-fill fill-blue" id="b_aber" style="width:0%"></div></div>
+          <div class="comp-nums"><span class="comp-score cs-blue" id="sc_aber">–</span><span class="comp-result" id="pr_aber">–</span></div>
         </div>
-        <div class="comp-formula" id="f_vol_aber">–</div>
-      </div>
-      <div class="comp-card">
-        <div class="comp-top">
-          <span class="comp-tag ct-green">CTOR</span>
-          <span class="comp-weight">peso 24%</span>
+
+        <div class="comp-card">
+          <div class="comp-top">
+            <span class="comp-tag ct-blue">Vol. Aberturas</span>
+            <span class="comp-weight">peso 24%</span>
+          </div>
+          <div class="comp-formula" id="f_vol_aber">–</div>
+          <div class="comp-bar-wrap"><div class="comp-bar-fill fill-blue" id="b_vol_aber" style="width:0%"></div></div>
+          <div class="comp-nums"><span class="comp-score cs-blue" id="sc_vol_aber">–</span><span class="comp-result" id="pr_vol_aber">–</span></div>
         </div>
-        <div class="comp-formula" id="f_ctor">–</div>
-      </div>
-      <div class="comp-card">
-        <div class="comp-top">
-          <span class="comp-tag ct-orange">Cliques únicos</span>
-          <span class="comp-weight">peso 36%</span>
+
+        <div class="comp-card">
+          <div class="comp-top">
+            <span class="comp-tag ct-green">CTOR <span style="font-size:9px;opacity:.6;text-transform:none;letter-spacing:0">cliques ÷ aberturas</span></span>
+            <span class="comp-weight">peso 24%</span>
+          </div>
+          <div class="comp-formula" id="f_ctor">–</div>
+          <div class="comp-bar-wrap"><div class="comp-bar-fill fill-green" id="b_ctor" style="width:0%"></div></div>
+          <div class="comp-nums"><span class="comp-score cs-green" id="sc_ctor">–</span><span class="comp-result" id="pr_ctor">–</span></div>
         </div>
-        <div class="comp-formula" id="f_cliq">–</div>
+
+        <div class="comp-card">
+          <div class="comp-top">
+            <span class="comp-tag ct-orange">Cliques únicos</span>
+            <span class="comp-weight">peso 36%</span>
+          </div>
+          <div class="comp-formula" id="f_cliq">–</div>
+          <div class="comp-bar-wrap"><div class="comp-bar-fill fill-orange" id="b_cliq" style="width:0%"></div></div>
+          <div class="comp-nums"><span class="comp-score cs-orange" id="sc_cliq">–</span><span class="comp-result" id="pr_cliq">–</span></div>
+        </div>
       </div>
     </div>
   </div>
@@ -177,73 +199,30 @@
 </div>
 
 <script>
-// Funções JavaScript para atualizar os sliders e scores
 function g(id){ return document.getElementById(id); }
 function fmtPct(n){ return n.toFixed(1).replace('.',',')+'%'; }
-
-function status(val, media){
-  if(val>media) return '↑ acima';
-  if(val<media) return '↓ abaixo';
-  return '= média';
-}
-
-function classificar(s){
-  if(s>=0.80) return {texto:'Excelente', cls:'badge-ex', cor:'#81C784'};
-  if(s>=0.60) return {texto:'Bom', cls:'badge-bom', cor:'#64B5F6'};
-  if(s>=0.40) return {texto:'Regular', cls:'badge-reg', cor:'#FF6D01'};
-  return {texto:'Ruim', cls:'badge-rui', cor:'#EF9A9A'};
-}
+function status(val, media){ if(val>media) return '↑ acima'; if(val<media) return '↓ abaixo'; return '= média'; }
+function classificar(s){ if(s>=0.80) return {texto:'Excelente', cls:'badge-ex', cor:'#81C784'}; if(s>=0.60) return {texto:'Bom', cls:'badge-bom', cor:'#64B5F6'}; if(s>=0.40) return {texto:'Regular', cls:'badge-reg', cor:'#FF6D01'}; return {texto:'Ruim', cls:'badge-rui', cor:'#EF9A9A'}; }
 
 function calc(){
-  const ma = +g('m_aber').value;
-  const mva = +g('m_vol_aber').value;
-  const mcliq = +g('m_cliq').value;
-  const ca = +g('c_aber').value;
-  const cva = +g('c_vol_aber').value;
-  const ccliq = +g('c_cliq').value;
+  const ma=+g('m_aber').value, mva=+g('m_vol_aber').value, mcliq=+g('m_cliq').value;
+  const ca=+g('c_aber').value, cva=+g('c_vol_aber').value, ccliq=+g('c_cliq').value;
+  const m_ctor=mva>0?mcliq/mva:0, c_ctor=cva>0?ccliq/cva:0;
 
-  const m_ctor = mva>0?mcliq/mva:0;
-  const c_ctor = cva>0?ccliq/cva:0;
+  g('m_aber_v').textContent=ma+'%';
+  g('m_vol_aber_v').textContent=mva;
+  g('m_cliq_v').textContent=mcliq;
+  g('c_aber_v').textContent=ca+'%';
+  g('c_vol_aber_v').textContent=cva;
+  g('c_cliq_v').textContent=ccliq;
 
-  g('m_aber_v').textContent = ma+'%';
-  g('m_vol_aber_v').textContent = mva;
-  g('m_cliq_v').textContent = mcliq;
-  g('c_aber_v').textContent = ca+'%';
-  g('c_vol_aber_v').textContent = cva;
-  g('c_cliq_v').textContent = ccliq;
+  g('m_ctor_formula').textContent=mcliq+' ÷ '+mva;
+  g('m_ctor_v').textContent=fmtPct(m_ctor*100);
+  g('c_ctor_formula').textContent=ccliq+' ÷ '+cva;
+  g('c_ctor_v').textContent=fmtPct(c_ctor*100);
 
-  g('m_ctor_formula').textContent = mcliq+' ÷ '+mva;
-  g('m_ctor_v').textContent = fmtPct(m_ctor*100);
-  g('c_ctor_formula').textContent = ccliq+' ÷ '+cva;
-  g('c_ctor_v').textContent = fmtPct(c_ctor*100);
-
-  const sc_aber = Math.min(1, ca/Math.max(ca, ma));
-  const sc_vol_aber = cva/(cva+mva);
-  const max_ctor = Math.max(c_ctor, m_ctor);
-  const sc_ctor = max_ctor>0?Math.min(1,c_ctor/max_ctor):0;
-  const sc_cliq = ccliq/(ccliq+mcliq);
-  const total = Math.min(1, sc_aber*0.16 + sc_vol_aber*0.24 + sc_ctor*0.24 + sc_cliq*0.36);
-
-  const cls = classificar(total);
-  g('score_final').textContent = total.toFixed(3);
-  g('score_final').style.color = cls.cor;
-  g('badge_class').textContent = cls.texto;
-
-  g('f_aber').textContent = sc_aber.toFixed(2);
-  g('f_vol_aber').textContent = sc_vol_aber.toFixed(2);
-  g('f_ctor').textContent = sc_ctor.toFixed(2);
-  g('f_cliq').textContent = sc_cliq.toFixed(2);
-
-  g('interpretacao').textContent = 
-    (ca<ma?'taxa de abertura abaixo da média':'taxa de abertura acima da média')+', '+
-    (cva>mva?'volume de aberturas expressivo':'')+', '+
-    (c_ctor>=m_ctor?'CTOR acima da média':'CTOR abaixo da média')+', '+
-    (ccliq>mcliq?'cliques únicos acima da média':'');
-}
-
-document.querySelectorAll('input[type=range]').forEach(el=>el.addEventListener('input', calc));
-calc();
-</script>
-
-</body>
-</html>
+  const sc_aber=Math.min(1, ca/Math.max(ca, ma));
+  const sc_vol_aber=cva/(cva+mva);
+  const max_ctor=Math.max(c_ctor, m_ctor);
+  const sc_ctor=max_ctor>0?Math.min(1,c_ctor/max_ctor):0;
+  const sc_cl
