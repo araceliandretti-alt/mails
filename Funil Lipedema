@@ -1,0 +1,605 @@
+/**
+ * Home — Funil Lipedema Canvas Interativo
+ * Design: Workspace Minimalista (Notion-inspired)
+ * Sidebar esquerda + blocos expansíveis + notas inline salvas em localStorage
+ * Azul (#isca) para fase de Aquisição, Violeta (#trip) para fase de Conversão
+ */
+
+import { useState, useEffect, useRef, useCallback } from "react";
+import { ChevronRight, ChevronDown, FileText, Megaphone, Globe, Mail, ShoppingCart, Gift, Video, BarChart2, CheckSquare, BookOpen, Zap } from "lucide-react";
+
+// ─── Estrutura de dados do funil ────────────────────────────────────────────
+
+type Phase = "isca" | "trip";
+
+interface SubItem {
+  id: string;
+  label: string;
+  description?: string;
+}
+
+interface FunilNode {
+  id: string;
+  label: string;
+  phase: Phase;
+  icon: React.ReactNode;
+  description: string;
+  strategicRole: string;
+  subItems: SubItem[];
+  notePlaceholder: string;
+}
+
+const FUNIL_DATA: FunilNode[] = [
+  {
+    id: "meta-ads",
+    label: "Meta Ads",
+    phase: "isca",
+    icon: <Megaphone size={15} />,
+    description: "Canal de aquisição pago para atrair audiência qualificada interessada em lipedema.",
+    strategicRole: "Gerar volume de tráfego qualificado para a landing page com custo por clique eficiente.",
+    subItems: [
+      { id: "criativos-estaticos", label: "X Criativos estáticos", description: "Quantidade e formato dos criativos em imagem a definir." },
+      { id: "videos", label: "Y Vídeos", description: "Quantidade de vídeos criativos a definir." },
+      { id: "remarketing", label: "Remarketing?", description: "Decisão pendente: incluir ou não campanha de remarketing para visitantes da LP." },
+    ],
+    notePlaceholder: "Anotações sobre estratégia de anúncios, orçamento, públicos-alvo, formatos aprovados…",
+  },
+  {
+    id: "landing-page",
+    label: "Landing Page",
+    phase: "isca",
+    icon: <Globe size={15} />,
+    description: "Página de captura que educa, qualifica e conduz o visitante para a próxima etapa.",
+    strategicRole: "Converter tráfego em leads qualificados através de identificação da dor clínica e apresentação de benefícios práticos.",
+    subItems: [
+      { id: "hero", label: "Hero / primeira dobra", description: "Primeira impressão: proposta de valor clara e chamada para ação." },
+      { id: "dor-clinica", label: "Identificação da dor clínica", description: "Seção que espelha os sintomas e frustrações da audiência." },
+      { id: "risco-conducao", label: "Risco de conduzir errado", description: "Bloco que aborda os erros comuns e riscos de diagnóstico incorreto." },
+      { id: "beneficios", label: "Benefícios práticos", description: "O que a pessoa ganha ao seguir o caminho correto." },
+      { id: "autoridade", label: "Bloco de autoridade", description: "Credenciais, prova social e posicionamento especialista." },
+    ],
+    notePlaceholder: "Anotações sobre copy, estrutura da página, CTA principal, headline aprovada…",
+  },
+  {
+    id: "pagina-obrigada",
+    label: "Página de Obrigada",
+    phase: "trip",
+    icon: <Gift size={15} />,
+    description: "Página de confirmação após o opt-in que entrega a isca e apresenta a oferta trip.",
+    strategicRole: "Fazer a transição natural da isca para a oferta de entrada, aproveitando o momento de maior engajamento.",
+    subItems: [
+      { id: "vsl", label: "VSL", description: "Vídeo de vendas que apresenta a oferta trip de forma persuasiva." },
+      { id: "oferta-trip", label: "Oferta trip", description: "Apresentação clara do produto de entrada com preço e benefícios." },
+    ],
+    notePlaceholder: "Anotações sobre roteiro da VSL, preço da oferta trip, garantia, elementos de urgência…",
+  },
+  {
+    id: "checkout",
+    label: "Checkout",
+    phase: "trip",
+    icon: <ShoppingCart size={15} />,
+    description: "Página de finalização da compra da oferta trip.",
+    strategicRole: "Remover fricção e maximizar a taxa de conversão da oferta de entrada.",
+    subItems: [],
+    notePlaceholder: "Anotações sobre plataforma de pagamento, campos do checkout, order bump, garantias exibidas…",
+  },
+  {
+    id: "emails",
+    label: "E-mail (Sequência)",
+    phase: "trip",
+    icon: <Mail size={15} />,
+    description: "Sequência de e-mails automáticos para nutrir, educar e converter leads que não compraram.",
+    strategicRole: "Aprofundar o relacionamento, corrigir expectativas e criar urgência ética para fechar a venda.",
+    subItems: [
+      { id: "envio-isca", label: "Envio de isca + reforço trip", description: "Primeiro e-mail: entrega a isca e reforça a oferta trip." },
+      { id: "nao-resolve-tudo", label: "Mostrar que identificar não resolve tudo", description: "E-mail que aprofunda o problema e a necessidade de orientação." },
+      { id: "erro-conducao", label: "Aprofundar o erro de condução", description: "E-mail sobre os riscos de seguir caminhos errados sem suporte." },
+      { id: "etica", label: "Trabalhar ética e responsabilidade", description: "E-mail que posiciona a abordagem ética e responsável do produto." },
+      { id: "urgencia", label: "Fechar urgência/oferta", description: "E-mail final com urgência real e chamada clara para a compra." },
+    ],
+    notePlaceholder: "Anotações sobre assuntos dos e-mails, cadência, ferramenta de automação, segmentação…",
+  },
+  {
+    id: "pos-compra",
+    label: "Página Pós-compra",
+    phase: "trip",
+    icon: <CheckSquare size={15} />,
+    description: "Página de boas-vindas e orientação após a compra da oferta trip.",
+    strategicRole: "Confirmar a decisão de compra, orientar próximos passos e preparar o terreno para upsell futuro.",
+    subItems: [],
+    notePlaceholder: "Anotações sobre conteúdo da página, próximos passos apresentados, acesso ao produto…",
+  },
+];
+
+const FLOW_ORDER = FUNIL_DATA.map((n) => n.id);
+
+// ─── Utilitários de localStorage ────────────────────────────────────────────
+
+const STORAGE_KEY = "funil-lipedema-notes";
+
+function loadNotes(): Record<string, string> {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    return raw ? JSON.parse(raw) : {};
+  } catch {
+    return {};
+  }
+}
+
+function saveNotes(notes: Record<string, string>) {
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(notes));
+  } catch {
+    // silently fail
+  }
+}
+
+// ─── Componente de bloco expansível ─────────────────────────────────────────
+
+interface FunilBlockProps {
+  node: FunilNode;
+  isOpen: boolean;
+  onToggle: () => void;
+  note: string;
+  onNoteChange: (val: string) => void;
+  savedIndicator: boolean;
+  isActive: boolean;
+  onActivate: () => void;
+}
+
+function FunilBlock({ node, isOpen, onToggle, note, onNoteChange, savedIndicator, isActive, onActivate }: FunilBlockProps) {
+  const contentRef = useRef<HTMLDivElement>(null);
+  const [height, setHeight] = useState<number | "auto">(0);
+
+  useEffect(() => {
+    if (!contentRef.current) return;
+    if (isOpen) {
+      const h = contentRef.current.scrollHeight;
+      setHeight(h);
+      const timer = setTimeout(() => setHeight("auto"), 210);
+      return () => clearTimeout(timer);
+    } else {
+      setHeight(contentRef.current.scrollHeight);
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => setHeight(0));
+      });
+    }
+  }, [isOpen]);
+
+  const phaseClass = node.phase === "isca" ? "phase-isca" : "phase-trip";
+  const badgeClass = node.phase === "isca" ? "isca" : "trip";
+  const badgeLabel = node.phase === "isca" ? "ISCA" : "TRIP";
+
+  return (
+    <div
+      id={`block-${node.id}`}
+      className={`funil-block ${phaseClass} ${isActive ? "ring-1 ring-offset-0" : ""}`}
+      style={isActive ? { outline: `2px solid ${node.phase === "isca" ? "var(--isca-color)" : "var(--trip-color)"}`, outlineOffset: "0px" } : {}}
+      onClick={onActivate}
+    >
+      {/* Header do bloco */}
+      <button
+        className="w-full flex items-center gap-3 px-4 py-3 text-left hover:bg-[var(--notion-hover)] transition-colors duration-100"
+        onClick={(e) => { e.stopPropagation(); onToggle(); onActivate(); }}
+      >
+        <span className="text-[var(--notion-text-secondary)] flex-shrink-0">
+          {isOpen ? <ChevronDown size={14} /> : <ChevronRight size={14} />}
+        </span>
+        <span
+          className="flex-shrink-0 p-1.5 rounded"
+          style={{
+            background: node.phase === "isca" ? "oklch(0.93 0.06 258)" : "oklch(0.93 0.06 293)",
+            color: node.phase === "isca" ? "oklch(0.42 0.18 258)" : "oklch(0.42 0.18 293)",
+          }}
+        >
+          {node.icon}
+        </span>
+        <span className="flex-1 font-semibold text-[var(--notion-text)] text-sm" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+          {node.label}
+        </span>
+        <span className={`phase-badge ${badgeClass}`}>{badgeLabel}</span>
+        {node.subItems.length > 0 && (
+          <span className="text-[11px] text-[var(--notion-text-secondary)] font-mono ml-1">
+            {node.subItems.length}
+          </span>
+        )}
+      </button>
+
+      {/* Conteúdo expansível */}
+      <div
+        className="accordion-content"
+        style={{ height: height === "auto" ? "auto" : `${height}px` }}
+      >
+        <div ref={contentRef}>
+          <div className="px-4 pb-4 pt-1 space-y-4">
+            {/* Descrição e papel estratégico */}
+            <div className="space-y-1.5">
+              <p className="text-[13px] text-[var(--notion-text)]">{node.description}</p>
+              <p className="text-[12px] text-[var(--notion-text-secondary)] italic">
+                <span className="font-medium not-italic" style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "11px" }}>Papel estratégico:</span>{" "}
+                {node.strategicRole}
+              </p>
+            </div>
+
+            {/* Subtópicos */}
+            {node.subItems.length > 0 && (
+              <div className="space-y-1">
+                <p className="text-[11px] font-semibold text-[var(--notion-text-secondary)] uppercase tracking-wider" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+                  Subtópicos
+                </p>
+                <div className="space-y-1">
+                  {node.subItems.map((item) => (
+                    <SubItemRow key={item.id} item={item} phase={node.phase} />
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Área de notas */}
+            <div className="space-y-1.5">
+              <div className="flex items-center justify-between">
+                <p className="text-[11px] font-semibold text-[var(--notion-text-secondary)] uppercase tracking-wider" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+                  Notas
+                </p>
+                <span className={`save-indicator ${savedIndicator ? "visible" : ""}`}>
+                  ✓ salvo
+                </span>
+              </div>
+              <div
+                className="rounded p-2.5 min-h-[70px]"
+                style={{ background: "oklch(0.975 0.003 60)" }}
+              >
+                <textarea
+                  className="notion-textarea"
+                  value={note}
+                  onChange={(e) => onNoteChange(e.target.value)}
+                  placeholder={node.notePlaceholder}
+                  rows={3}
+                  onClick={(e) => e.stopPropagation()}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// ─── Sub-item expansível ─────────────────────────────────────────────────────
+
+function SubItemRow({ item, phase }: { item: SubItem; phase: Phase }) {
+  const [open, setOpen] = useState(false);
+  const dotColor = phase === "isca" ? "var(--isca-color)" : "var(--trip-color)";
+
+  return (
+    <div>
+      <button
+        className="flex items-start gap-2 w-full text-left py-1 px-2 rounded hover:bg-[var(--notion-hover)] transition-colors duration-100 group"
+        onClick={() => item.description && setOpen(!open)}
+      >
+        <span className="mt-[5px] flex-shrink-0 w-1.5 h-1.5 rounded-full" style={{ background: dotColor }} />
+        <span className="text-[13px] text-[var(--notion-text)] flex-1">{item.label}</span>
+        {item.description && (
+          <span className="text-[var(--notion-text-secondary)] opacity-0 group-hover:opacity-100 transition-opacity flex-shrink-0">
+            {open ? <ChevronDown size={12} /> : <ChevronRight size={12} />}
+          </span>
+        )}
+      </button>
+      {open && item.description && (
+        <div className="ml-5 mb-1 px-2 py-1.5 rounded text-[12px] text-[var(--notion-text-secondary)] italic" style={{ background: "oklch(0.975 0.003 60)" }}>
+          {item.description}
+        </div>
+      )}
+    </div>
+  );
+}
+
+// ─── Sidebar de navegação ────────────────────────────────────────────────────
+
+interface SidebarProps {
+  activeId: string | null;
+  onSelect: (id: string) => void;
+  openIds: Set<string>;
+}
+
+function Sidebar({ activeId, onSelect, openIds }: SidebarProps) {
+  const iscaNodes = FUNIL_DATA.filter((n) => n.phase === "isca");
+  const tripNodes = FUNIL_DATA.filter((n) => n.phase === "trip");
+
+  return (
+    <aside
+      className="hidden lg:flex flex-col w-56 flex-shrink-0 h-screen sticky top-0 overflow-y-auto border-r border-[var(--border)]"
+      style={{ background: "var(--notion-sidebar)" }}
+    >
+      {/* Logo / título */}
+      <div className="px-4 pt-5 pb-3 border-b border-[var(--border)]">
+        <div className="flex items-center gap-2">
+          <div className="w-6 h-6 rounded flex items-center justify-center" style={{ background: "oklch(0.55 0.19 258)" }}>
+            <BarChart2 size={13} className="text-white" />
+          </div>
+          <span className="text-[13px] font-semibold text-[var(--notion-text)]" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+            Funil Lipedema
+          </span>
+        </div>
+        <p className="text-[11px] text-[var(--notion-text-secondary)] mt-1 ml-8">Canvas Interativo</p>
+      </div>
+
+      <nav className="flex-1 px-2 py-3 space-y-3">
+        {/* Visão geral */}
+        <div>
+          <button
+            className={`sidebar-item w-full ${activeId === "overview" ? "active" : ""}`}
+            onClick={() => onSelect("overview")}
+          >
+            <BookOpen size={13} className="text-[var(--notion-text-secondary)] flex-shrink-0" />
+            <span>Visão geral</span>
+          </button>
+        </div>
+
+        {/* Fase Isca */}
+        <div>
+          <p className="px-2 mb-1 text-[10.5px] font-semibold uppercase tracking-widest" style={{ color: "var(--isca-color)", fontFamily: "'JetBrains Mono', monospace" }}>
+            Isca / Aquisição
+          </p>
+          {iscaNodes.map((node) => (
+            <button
+              key={node.id}
+              className={`sidebar-item w-full ${activeId === node.id ? "active" : ""}`}
+              onClick={() => onSelect(node.id)}
+            >
+              <span className="flex-shrink-0 text-[var(--notion-text-secondary)]">{node.icon}</span>
+              <span className="truncate">{node.label}</span>
+              {openIds.has(node.id) && <span className="ml-auto text-[10px] text-[var(--notion-text-secondary)]">▾</span>}
+            </button>
+          ))}
+        </div>
+
+        {/* Fase Trip */}
+        <div>
+          <p className="px-2 mb-1 text-[10.5px] font-semibold uppercase tracking-widest" style={{ color: "var(--trip-color)", fontFamily: "'JetBrains Mono', monospace" }}>
+            Trip / Conversão
+          </p>
+          {tripNodes.map((node) => (
+            <button
+              key={node.id}
+              className={`sidebar-item w-full ${activeId === node.id ? "active" : ""}`}
+              onClick={() => onSelect(node.id)}
+            >
+              <span className="flex-shrink-0 text-[var(--notion-text-secondary)]">{node.icon}</span>
+              <span className="truncate">{node.label}</span>
+              {openIds.has(node.id) && <span className="ml-auto text-[10px] text-[var(--notion-text-secondary)]">▾</span>}
+            </button>
+          ))}
+        </div>
+      </nav>
+
+      {/* Rodapé */}
+      <div className="px-4 py-3 border-t border-[var(--border)]">
+        <p className="text-[11px] text-[var(--notion-text-secondary)]">
+          Notas salvas automaticamente no navegador.
+        </p>
+      </div>
+    </aside>
+  );
+}
+
+// ─── Diagrama de fluxo horizontal ───────────────────────────────────────────
+
+interface FlowDiagramProps {
+  activeId: string | null;
+  onSelect: (id: string) => void;
+}
+
+function FlowDiagram({ activeId, onSelect }: FlowDiagramProps) {
+  return (
+    <div className="overflow-x-auto pb-2">
+      <div className="flex items-center gap-1 min-w-max">
+        {FUNIL_DATA.map((node, idx) => (
+          <div key={node.id} className="flex items-center gap-1">
+            <button
+              className={`flow-node ${node.phase} ${activeId === node.id ? "active-node" : ""}`}
+              onClick={() => onSelect(node.id)}
+            >
+              {node.icon}
+              <span>{node.label}</span>
+            </button>
+            {idx < FUNIL_DATA.length - 1 && (
+              <span className="flow-arrow">→</span>
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+// ─── Página principal ────────────────────────────────────────────────────────
+
+export default function Home() {
+  const [notes, setNotes] = useState<Record<string, string>>(loadNotes);
+  const [openIds, setOpenIds] = useState<Set<string>>(new Set());
+  const [activeId, setActiveId] = useState<string | null>("overview");
+  const [savedIds, setSavedIds] = useState<Set<string>>(new Set());
+  const saveTimers = useRef<Record<string, ReturnType<typeof setTimeout>>>({});
+
+  // Debounced save
+  const handleNoteChange = useCallback((id: string, val: string) => {
+    setNotes((prev) => {
+      const next = { ...prev, [id]: val };
+      clearTimeout(saveTimers.current[id]);
+      saveTimers.current[id] = setTimeout(() => {
+        saveNotes(next);
+        setSavedIds((s) => {
+          const ns = new Set(s);
+          ns.add(id);
+          return ns;
+        });
+        setTimeout(() => {
+          setSavedIds((s) => {
+            const ns = new Set(s);
+            ns.delete(id);
+            return ns;
+          });
+        }, 2000);
+      }, 600);
+      return next;
+    });
+  }, []);
+
+  const toggleBlock = useCallback((id: string) => {
+    setOpenIds((prev) => {
+      const next = new Set(prev);
+      if (next.has(id)) next.delete(id);
+      else next.add(id);
+      return next;
+    });
+  }, []);
+
+  const handleSelect = useCallback((id: string) => {
+    setActiveId(id);
+    if (id === "overview") return;
+    // Abrir bloco e fazer scroll
+    setOpenIds((prev) => {
+      const next = new Set(prev);
+      next.add(id);
+      return next;
+    });
+    setTimeout(() => {
+      const el = document.getElementById(`block-${id}`);
+      if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 50);
+  }, []);
+
+  // Contagem de notas preenchidas
+  const filledNotes = FUNIL_DATA.filter((n) => notes[n.id]?.trim()).length;
+
+  return (
+    <div className="flex min-h-screen bg-[var(--background)]">
+      {/* Sidebar */}
+      <Sidebar activeId={activeId} onSelect={handleSelect} openIds={openIds} />
+
+      {/* Conteúdo principal */}
+      <main className="flex-1 min-w-0 overflow-y-auto">
+        <div className="max-w-3xl mx-auto px-6 py-8 space-y-8">
+
+          {/* Cabeçalho */}
+          <header className="space-y-2">
+            <div className="flex items-center gap-2 text-[12px] text-[var(--notion-text-secondary)]" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+              <span>Funil Lipedema</span>
+              <span>/</span>
+              <span>Canvas Interativo</span>
+            </div>
+            <h1 className="text-2xl font-bold text-[var(--notion-text)]" style={{ fontFamily: "'DM Sans', sans-serif", letterSpacing: "-0.03em" }}>
+              Funil Lipedema
+            </h1>
+            <p className="text-[13.5px] text-[var(--notion-text-secondary)] max-w-xl">
+              Jornada completa de captação e conversão — da aquisição via Meta Ads até o pós-compra. Expanda cada etapa para ver subtópicos e registar anotações.
+            </p>
+            <div className="flex items-center gap-4 pt-1">
+              <div className="flex items-center gap-1.5">
+                <span className="w-2 h-2 rounded-full" style={{ background: "var(--isca-color)" }} />
+                <span className="text-[12px] text-[var(--notion-text-secondary)]">Isca / Aquisição</span>
+              </div>
+              <div className="flex items-center gap-1.5">
+                <span className="w-2 h-2 rounded-full" style={{ background: "var(--trip-color)" }} />
+                <span className="text-[12px] text-[var(--notion-text-secondary)]">Trip / Conversão</span>
+              </div>
+              <div className="ml-auto flex items-center gap-1.5">
+                <FileText size={12} className="text-[var(--notion-text-secondary)]" />
+                <span className="text-[12px] text-[var(--notion-text-secondary)]">
+                  {filledNotes}/{FUNIL_DATA.length} etapas anotadas
+                </span>
+              </div>
+            </div>
+          </header>
+
+          {/* Fluxo visual */}
+          <section className="space-y-2">
+            <p className="text-[11px] font-semibold text-[var(--notion-text-secondary)] uppercase tracking-wider" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+              Jornada do funil
+            </p>
+            <div
+              className="rounded-lg p-4 border border-[var(--border)]"
+              style={{ background: "oklch(0.975 0.003 60)" }}
+            >
+              <FlowDiagram activeId={activeId} onSelect={handleSelect} />
+            </div>
+          </section>
+
+          {/* Separador de fase — Isca */}
+          <div className="flex items-center gap-3">
+            <div className="h-px flex-1" style={{ background: "var(--border)" }} />
+            <span
+              className="text-[11px] font-semibold uppercase tracking-widest px-2"
+              style={{ color: "var(--isca-color)", fontFamily: "'JetBrains Mono', monospace" }}
+            >
+              Fase 1 — Isca / Aquisição
+            </span>
+            <div className="h-px flex-1" style={{ background: "var(--border)" }} />
+          </div>
+
+          {/* Blocos da fase Isca */}
+          <div className="space-y-3">
+            {FUNIL_DATA.filter((n) => n.phase === "isca").map((node) => (
+              <FunilBlock
+                key={node.id}
+                node={node}
+                isOpen={openIds.has(node.id)}
+                onToggle={() => toggleBlock(node.id)}
+                note={notes[node.id] ?? ""}
+                onNoteChange={(val) => handleNoteChange(node.id, val)}
+                savedIndicator={savedIds.has(node.id)}
+                isActive={activeId === node.id}
+                onActivate={() => setActiveId(node.id)}
+              />
+            ))}
+          </div>
+
+          {/* Separador de fase — Trip */}
+          <div className="flex items-center gap-3">
+            <div className="h-px flex-1" style={{ background: "var(--border)" }} />
+            <span
+              className="text-[11px] font-semibold uppercase tracking-widest px-2"
+              style={{ color: "var(--trip-color)", fontFamily: "'JetBrains Mono', monospace" }}
+            >
+              Fase 2 — Trip / Conversão
+            </span>
+            <div className="h-px flex-1" style={{ background: "var(--border)" }} />
+          </div>
+
+          {/* Blocos da fase Trip */}
+          <div className="space-y-3">
+            {FUNIL_DATA.filter((n) => n.phase === "trip").map((node) => (
+              <FunilBlock
+                key={node.id}
+                node={node}
+                isOpen={openIds.has(node.id)}
+                onToggle={() => toggleBlock(node.id)}
+                note={notes[node.id] ?? ""}
+                onNoteChange={(val) => handleNoteChange(node.id, val)}
+                savedIndicator={savedIds.has(node.id)}
+                isActive={activeId === node.id}
+                onActivate={() => setActiveId(node.id)}
+              />
+            ))}
+          </div>
+
+          {/* Rodapé */}
+          <footer className="pt-4 pb-8 border-t border-[var(--border)]">
+            <div className="flex items-center justify-between">
+              <p className="text-[12px] text-[var(--notion-text-secondary)]">
+                Funil Lipedema — Canvas Interativo
+              </p>
+              <div className="flex items-center gap-1.5 text-[12px] text-[var(--notion-text-secondary)]">
+                <Zap size={11} />
+                <span>Notas salvas localmente no navegador</span>
+              </div>
+            </div>
+          </footer>
+
+        </div>
+      </main>
+    </div>
+  );
+}
