@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIGUAÇU DESAFIA 2026</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #eef2f1;
+            font-family: tahoma, verdana, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        .email-wrap {
+            width: 100%;
+            background: #eef2f1;
+            padding: 24px 0;
+        }
+
+        .container {
+            width: 650px;
+            max-width: 94%;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 4px 18px rgba(15, 23, 42, .06);
+        }
+
+        .wrap.esd-text {
+            display: block;
+        }
+
+        .t14.f,
+        p.f {
+            font-size: 14px;
+            line-height: 1.6;
+            margin: 0 0 16px;
+        }
+
+        .h2 {}
+
+        .btn {}
+
+        .ic {}
+
+        @media only screen and (max-width:600px) {
+            .container {
+                width: 100% !important;
+                max-width: 100% !important;
+                border-radius: 0 !important;
+            }
+
+            td.ic {
+                display: block !important;
+                width: 100% !important;
+                border-right: 1px solid #e2e8f0 !important;
+                margin-bottom: 8px;
+            }
+        }
+    </style>
+    <!--[if mso]><xml>
+    <w:WordDocument xmlns:w="urn:schemas-microsoft-com:office:word">
+      <w:DontUseAdvancedTypographyReadingMail/>
+    </w:WordDocument>
+    </xml><![endif]-->
+    <!--[if !mso]><!-- -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet">
+    <!--<![endif]-->
+</head>
+
+<body>
+    <table role="presentation" class="email-wrap" width="100%" cellpadding="0" cellspacing="0">
+        <tbody>
+            <tr>
+                <td align="center">
+                    <table role="presentation" class="container" width="650" cellpadding="0" cellspacing="0">
+                        <tbody>
+                            <tr>
+                                <td class="wrap esd-text" style="padding:26px 28px;font-family:tahoma,verdana,sans-serif;color:#334155">
+                                    <p style="font-size:14px;margin:0 0 8px;color:#536174">Olá %FIRSTNAME%</p>
+                                    <h2 class="h2" style="font-size:22px;line-height:1.25;margin:0 0 10px;color:#0f172a;font-weight:800;font-family:helvetica,'helvetica neue',arial,sans-serif">O que muda na recepção hormonal feminina após os 40 anos?</h2>
+                                    <div style="height:2px;background:#16a34a;border-radius:999px;margin:0 0 16px"><br></div>
+                                    <p class="t14 f"><b style="color:#334155">O perfil das pacientes que buscam esteroides anabólicos mudou drasticamente. Antes, essa era uma pauta restrita a atletas. Hoje, a busca real parte de mulheres acima dos 40 anos. Elas querem contrapor o envelhecimento, manter a massa magra e sustentar o rendimento.</b><br><br></p>
+                                    <p class="t14 f">Para muitos profissionais, esse cenário traz uma insegurança silenciosa. É comum se sentir pisando em ovos ao atender esse público.&nbsp;<br><br></p>
+                                    <p class="t14 f">Existe o medo real de acelerar colaterais difíceis de reverter, como queda de cabelo e alterações na voz. Além disso, muitas vezes o profissional trava diante das dúvidas refinadas que elas trazem das redes sociais.<br><br></p>
+                                    <p class="f" style="font-size: 14px; line-height: 1.6; margin: 0px 0px 16px; padding: 14px 16px; border-radius: 14px; background: #fce7f3; color: #9d174d;">Na maturidade, o organismo feminino reage de forma única: a mesma dose que traz um resultado excelente para uma paciente causa colaterais desconfortáveis em outra. Receitas prontas de internet não batem com a prática do consultório.</p>
+                                    <p class="t14 f">A tomada de decisão não é sobre seguir um protocolo padrão. O mercado exige profissionais que saibam ler o momento de vida dessa mulher. É preciso segurança técnica para decidir quando intervir, quando recuar e como proteger a saúde da paciente.<br><br></p>
+                                    <p class="t14 f">É exatamente esse discernimento prático que você vai desenvolver no UNIGUAÇU DESAFIA 2026.<br><br></p>
+                                    <p style="text-align:center;margin:0 0 20px"><a class="btn" href="https://pos.faculdadeuniguacu.com.br/desafia-uniguacu-2026-org?utm_source=mail&utm_medium=organic&utm_content=hormonizacao&utm_campaign=desafia-2026&utm_term=estoroides-40+" target="_blank" style="display:inline-block;background:#16a34a;color:#fff;font-size:14px;font-weight:800;text-decoration:none;padding:15px 30px;border-radius:999px;text-transform:uppercase;font-family:helvetica,'helvetica neue',arial,sans-serif">VER MANEJO HORMONAL 40+</a></p>
+                                    <div style="height:1px;background:#e2e8f0;margin:0 0 16px"><br></div>
+                                    <p style="font-size:11px;line-height:1.4;margin:0 0 6px;color:#16a34a;font-weight:800;text-transform:uppercase;letter-spacing:.06em">UNIGUAÇU DESAFIA 2026</p>
+                                    <p class="t14 f">O UNIGUAÇU DESAFIA 2026 foi desenhado para abrir espaço a temas complexos como esse. O evento traz a profundidade que a sua prática clínica exige.<br><br></p>
+                                    <p class="t14 f">Lá, você vai aprender a cruzar sintomas, exames e histórico hormonal para tomar decisões seguras. O foco é decifrar a fase de vida e a tolerância a riscos da paciente 40+, indo muito além de qualquer leitura simplificada.</p>
+                                    <div style="height:1px;background:#e2e8f0;margin:0 0 16px"><br></div>
+                                    <p style="font-size:11px;line-height:1.4;margin:0 0 12px;color:#536174;font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-family:helvetica,'helvetica neue',arial,sans-serif">QUEM CONDUZ ESSA ANÁLISE</p>
+                                    <table role="presentation" cellpadding="0" cellspacing="0" style="width:100%" class=" cke_show_border">
+                                        <tbody>
+                                            <tr>
+                                                <td style="text-align:center;padding-bottom:4px"><a><img src="https://uniguacu24074.activehosted.com/content/xdRQOD/2026/06/19/cd7c5b88-7eea-4c35-9ce7-68c616f4f98f.png?id=1486571" width="60" height="60" alt="Dra. Tatiany Faria" style="display:block;width:60px;height:60px;border-radius:999px;object-fit:cover;margin:0 auto 8px" data-cf-ir-is-resized="true" data-cf-ir-should-resize-image="true" srcset="https://uniguacu24074.activehosted.com/cdn-cgi/image/fit=scale-down,width=60,dpr=1,format=auto,onerror=redirect/content/xdRQOD/2026/06/19/cd7c5b88-7eea-4c35-9ce7-68c616f4f98f.png 1x,https://uniguacu24074.activehosted.com/cdn-cgi/image/fit=scale-down,width=60,dpr=2,format=auto,onerror=redirect/content/xdRQOD/2026/06/19/cd7c5b88-7eea-4c35-9ce7-68c616f4f98f.png 2x,https://uniguacu24074.activehosted.com/cdn-cgi/image/fit=scale-down,width=60,dpr=3,format=auto,onerror=redirect/content/xdRQOD/2026/06/19/cd7c5b88-7eea-4c35-9ce7-68c616f4f98f.png 3x,https://uniguacu24074.activehosted.com/cdn-cgi/image/fit=scale-down,width=60,dpr=4,format=auto,onerror=redirect/content/xdRQOD/2026/06/19/cd7c5b88-7eea-4c35-9ce7-68c616f4f98f.png 4x" data-cf-ir-no-srcset="true"></a>
+                                                    <p style="font-size:14px;font-weight:800;color:#0f172a;margin:0 0 2px;font-family:helvetica,'helvetica neue',arial,sans-serif">Dra. Tatiany Faria, PhD.</p>
+                                                    <p class="f" style="font-size:12px;color:#536174;font-weight:600;margin:0 0 4px">Coordenadora da Pós Premium em Hormonização, Nutrição e Treinamento Feminino</p>
+                                                    <p class="f" style="font-size:12px;color:#536174;font-weight:400;margin:0">Professora expert da Faculdade UNIGUAÇU, graduada em Farmácia pela UFSC, mestre em Ciências Farmacêuticas pela UFSC, doutora em Farmacologia pela UFSC e pós-doutora em Farmacologia pela UFSC. Diretora científica da Muscle Definition e palestrante.</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div style="height:1px;background:#e2e8f0;margin:16px 0"><br></div>
+                                    <p style="font-size:11px;line-height:1.4;margin:0 0 12px;color:#536174;font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-family:helvetica,'helvetica neue',arial,sans-serif">INFORMAÇÕES ESSENCIAIS</p>
+                                    <table role="presentation" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:collapse" class=" cke_show_border">
+                                        <tbody>
+                                            <tr>
+                                                <td class="ic" style="width:33.33%;padding:10px 12px;background:#f8fafc;border:1px solid #e2e8f0;border-right:none">
+                                                    <p style="font-size:15px;font-weight:800;color:#0f172a;margin:0 0 1px;font-family:helvetica,'helvetica neue',arial,sans-serif">16 de agosto</p>
+                                                    <p style="font-size:10px;color:#536174;margin:0;text-transform:uppercase;letter-spacing:.05em;font-family:helvetica,'helvetica neue',arial,sans-serif">Online e ao vivo</p>
+                                                </td>
+                                                <td class="ic" style="width:33.33%;padding:10px 12px;background:#f8fafc;border:1px solid #e2e8f0;border-right:none">
+                                                    <p style="font-size:13px;font-weight:800;color:#16a34a;margin:0 0 1px;font-family:helvetica,'helvetica neue',arial,sans-serif">100% gratuito</p>
+                                                    <p style="font-size:10px;color:#536174;margin:0;text-transform:uppercase;letter-spacing:.05em;font-family:helvetica,'helvetica neue',arial,sans-serif">Certificado de participação</p>
+                                                </td>
+                                                <td class="ic" style="width:33.33%;padding:10px 12px;background:#f8fafc;border:1px solid #e2e8f0">
+                                                    <p style="font-size:13px;font-weight:800;color:#0f172a;margin:0 0 1px;font-family:helvetica,'helvetica neue',arial,sans-serif">+8h de conteúdos</p>
+                                                    <p style="font-size:10px;color:#536174;margin:0;text-transform:uppercase;letter-spacing:.05em;font-family:helvetica,'helvetica neue',arial,sans-serif">Com grandes nomes da área</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table><br>
+                                    <p class="t14 f">Acesse a página do UNIGUAÇU Desafia e acompanhe a aula para entender como a decisão hormonal sobre esteroides em mulheres 40+ exige mais do que protocolo.</p>
+                                    <p style="text-align:center;margin:0"><a class="btn" href="https://pos.faculdadeuniguacu.com.br/desafia-uniguacu-2026-org?utm_source=mail&utm_medium=organic&utm_content=hormonizacao&utm_campaign=desafia-2026&utm_term=estoroides-40+" target="_blank" style="display:inline-block;background:#fff;color:#16a34a;font-size:14px;font-weight:800;text-decoration:none;padding:14px 30px;border-radius:999px;text-transform:uppercase;border:2px solid #16a34a">PARTICIPAR DO DESAFIA</a></p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
