@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>UNIGUAÇU Desafia 2026 – Nutrição + Hormônios</title>
+    <style>
+        p {
+            margin: 0 0 12px
+        }
+
+        .f {
+            font-family: tahoma, verdana, sans-serif
+        }
+
+        .t14 {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #536174
+        }
+
+        @media(max-width:600px) {
+            .wrap {
+                padding: 20px 16px !important
+            }
+
+            .btn {
+                padding: 14px 24px !important;
+                font-size: 14px !important
+            }
+
+            .h2 {
+                font-size: 20px !important
+            }
+
+            .ic {
+                display: block !important;
+                width: 100% !important;
+                border-right: 1px solid #e2e8f0 !important;
+                border-bottom: none !important
+            }
+
+            .ic:last-child {
+                border-bottom: 1px solid #e2e8f0 !important
+            }
+        }
+    </style>
+    <!--[if mso]><xml><w:WordDocument xmlns:w="urn:schemas-microsoft-com:office:word"><w:DontUseAdvancedTypographyReadingMail/></w:WordDocument></xml><![endif]-->
+    <!--[if !mso]><!-- -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet">
+    <!--<![endif]-->
+</head>
+
+<body style="margin:0;padding:0;background:#f4f7fb">
+    <table role="presentation" width="600" align="center" cellpadding="0" cellspacing="0" style="width:100%;max-width:600px;background:#fff;border-radius:20px;overflow:hidden">
+        <tbody>
+            <tr>
+                <td class="wrap esd-text" style="padding:26px 28px;font-family:tahoma,verdana,sans-serif;color:#334155">
+                    <!-- SAUDAÇÃO -->
+                    <p style="font-size:14px;margin:0 0 8px;color:#536174">Olá %FIRSTNAME%</p><!-- TÍTULO PRINCIPAL -->
+                    <h2 class="h2" style="font-size:22px;line-height:1.25;margin:0 0 10px;color:#0f172a;font-weight:800;font-family:helvetica,'helvetica neue',arial,sans-serif">A resposta do fígado à insulina pode mudar completamente a leitura metabólica</h2><!-- LINHA DECORATIVA -->
+                    <div style="height:2px;background:#16a34a;border-radius:999px;margin:0 0 16px"><br></div><!-- SUBTÍTULO -->
+                    <p class="t14 f">Quando a glicemia aumenta, o pâncreas libera insulina. No fígado, um dos papéis desse hormônio é sinalizar que a produção de glicose deve diminuir, porque já existe energia circulando no sangue.</p>
+                    <p class="t14 f"><br></p><!-- PARÁGRAFO 2 -->
+                    <p class="t14 f">Mas, na resistência à insulina, esse sinal perde força. Mesmo diante de uma glicemia elevada, o fígado pode continuar produzindo glicose como se o organismo ainda precisasse dela.</p>
+                    <p class="t14 f"><br></p><!-- PARÁGRAFO 3 -->
+                    <p class="t14 f">Para sustentar essa produção, ele utiliza diferentes substratos, incluindo aminoácidos. Por isso, compreender a resistência à insulina exige olhar além de um exame isolado ou da ideia simplificada de que o problema se resume a "ter insulina alta".</p>
+                    <p class="t14 f"><br></p><!-- BOX DE DESTAQUE -->
+                    <p class="f" style="font-size:14px;line-height:1.6;margin:0 0 16px;padding:14px 16px;border-radius:14px;background:#eef6ff;color:#174ea6;font-weight:700">Resistência à insulina não é apenas produzir mais insulina. É também perder parte da resposta ao sinal que deveria controlar a produção de glicose pelo fígado.</p><!-- LINK PARA O VÍDEO -->
+                    <p style="text-align:center;margin:0 0 20px"><a href="https://www.instagram.com/p/DZvYu4PAkbR/INSU" style="font-size:14px;color:#16a34a;font-weight:700;font-family:helvetica,'helvetica neue',arial,sans-serif;text-decoration:underline" target="_blank">Assista ao vídeo e entenda por que o fígado muda toda a leitura do metabolismo</a></p><!-- DIVISOR -->
+                    <div style="height:1px;background:#e2e8f0;margin:0 0 16px"><br></div><!-- PONTE PARA O EVENTO -->
+                    <p style="font-size:11px;line-height:1.4;margin:0 0 6px;color:#16a34a;font-weight:800;text-transform:uppercase;letter-spacing:.06em">UNIGUAÇU DESAFIA 2026</p>
+                    <p class="t14 f"><b style="color:#334155">Quantas decisões nutricionais ainda partem de uma visão incompleta?</b></p>
+                    <p class="t14 f">O UNIGUAÇU Desafia 2026 foi criado para ampliar esse olhar, provocar novas perguntas e aproximar o conhecimento científico das decisões tomadas na prática profissional.</p>
+                    <p class="t14 f"><br></p>
+                    <p class="t14 f">Na trilha de Nutrição + Hormônios, você terá acesso a microaulas objetivas sobre metabolismo, comportamento alimentar, saúde da mulher, estratégias nutricionais e temas que já interferem na rotina de nutricionistas e profissionais da saúde.</p>
+                    <p class="t14 f"><br></p><!-- DIVISOR -->
+                    <div style="height:1px;background:#e2e8f0;margin:0 0 16px"><br></div><!-- TRILHAS -->
+                    <p style="font-size:11px;line-height:1.4;margin:0 0 12px;color:#536174;font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-family:helvetica,'helvetica neue',arial,sans-serif">INFORMAÇÕES ESSENCIAIS</p>
+                    <table role="presentation" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:collapse" class=" cke_show_border">
+                        <tbody>
+                            <tr>
+                                <td class="ic" style="width:33.33%;padding:10px 12px;background:#f8fafc;border:1px solid #e2e8f0;border-right:none">
+                                    <p style="font-size:15px;font-weight:800;color:#0f172a;margin:0 0 1px;font-family:helvetica,'helvetica neue',arial,sans-serif">16 de agosto</p>
+                                    <p style="font-size:10px;color:#536174;margin:0;text-transform:uppercase;letter-spacing:.05em;font-family:helvetica,'helvetica neue',arial,sans-serif">Online e ao vivo</p>
+                                </td>
+                                <td class="ic" style="width:33.33%;padding:10px 12px;background:#f8fafc;border:1px solid #e2e8f0;border-right:none">
+                                    <p style="font-size:13px;font-weight:800;color:#16a34a;margin:0 0 1px;font-family:helvetica,'helvetica neue',arial,sans-serif">100% gratuito</p>
+                                    <p style="font-size:10px;color:#536174;margin:0;text-transform:uppercase;letter-spacing:.05em;font-family:helvetica,'helvetica neue',arial,sans-serif">Vagas limitadas</p>
+                                </td>
+                                <td class="ic" style="width:33.33%;padding:10px 12px;background:#f8fafc;border:1px solid #e2e8f0">
+                                    <p style="font-size:13px;font-weight:800;color:#0f172a;margin:0 0 1px;font-family:helvetica,'helvetica neue',arial,sans-serif">+8h de conteúdo</p>
+                                    <p style="font-size:10px;color:#536174;margin:0;text-transform:uppercase;letter-spacing:.05em;font-family:helvetica,'helvetica neue',arial,sans-serif">Duas trilhas disponíveis</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table><br><!-- CTA PRINCIPAL -->
+                    <p style="text-align:center;margin:0 0 16px"><a class="btn" href="https://pos.faculdadeuniguacu.com.br/desafia-uniguacu-2026-org?utm_source=mail&utm_medium=organic&utm_content=nutricao&utm_campaign=desafia-2026&utm_term=insulina" target="_blank" style="display:inline-block;background:#16a34a;color:#fff;font-size:14px;font-weight:800;text-decoration:none;padding:15px 30px;border-radius:999px;text-transform:uppercase;font-family:helvetica,'helvetica neue',arial,sans-serif">QUERO ME INSCREVER</a></p><!-- TEXTO DE APOIO AO CTA -->
+                    <p class="t14 f" style="text-align:center;font-size:13px">Sua inscrição é o primeiro passo para transformar conhecimento em decisões mais seguras, prática mais consistente e evolução profissional.</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
