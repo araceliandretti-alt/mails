@@ -1,0 +1,213 @@
+<div style="padding: 1.5rem 0;">
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; margin-bottom: 2rem;">
+    <div style="background: var(--surface-1); border-radius: var(--radius); padding: 1rem; text-align: center;">
+      <p style="font-size: 12px; color: var(--text-secondary); margin: 0 0 8px 0; text-transform: uppercase; letter-spacing: 0.5px;">Entregues</p>
+      <p style="font-size: 20px; font-weight: 500; margin: 0;">17.634</p>
+    </div>
+    <div style="background: var(--surface-1); border-radius: var(--radius); padding: 1rem; text-align: center;">
+      <p style="font-size: 12px; color: var(--text-secondary); margin: 0 0 8px 0; text-transform: uppercase; letter-spacing: 0.5px;">Taxa Abertura</p>
+      <p style="font-size: 20px; font-weight: 500; margin: 0;">6,50%</p>
+    </div>
+    <div style="background: var(--surface-1); border-radius: var(--radius); padding: 1rem; text-align: center;">
+      <p style="font-size: 12px; color: var(--text-secondary); margin: 0 0 8px 0; text-transform: uppercase; letter-spacing: 0.5px;">CTOR</p>
+      <p style="font-size: 20px; font-weight: 500; margin: 0;">7,59%</p>
+    </div>
+    <div style="background: var(--surface-1); border-radius: var(--radius); padding: 1rem; text-align: center;">
+      <p style="font-size: 12px; color: var(--text-secondary); margin: 0 0 8px 0; text-transform: uppercase; letter-spacing: 0.5px;">Cliques</p>
+      <p style="font-size: 20px; font-weight: 500; margin: 0;">87</p>
+    </div>
+  </div>
+
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 2rem;">
+    <div style="background: var(--surface-1); border-radius: 12px; padding: 1.25rem;">
+      <p style="font-size: 14px; font-weight: 500; margin: 0 0 16px 0; color: var(--text-primary);">Volume: Entregues vs Abertos</p>
+      <div style="position: relative; width: 100%; height: 200px;">
+        <canvas id="volumeChart" role="img" aria-label="Gráfico de barras comparando emails entregues e abertos por período">Semana 1: 25087 entregues, 1515 abertos. Semana 2: 18947 entregues, 1866 abertos. Semana 3: 17634 entregues, 1147 abertos.</canvas>
+      </div>
+    </div>
+
+    <div style="background: var(--surface-1); border-radius: 12px; padding: 1.25rem;">
+      <p style="font-size: 14px; font-weight: 500; margin: 0 0 16px 0; color: var(--text-primary);">Taxa de Abertura (%)</p>
+      <div style="position: relative; width: 100%; height: 200px;">
+        <canvas id="aperturaChart" role="img" aria-label="Linha com a evolução da taxa de abertura ao longo das três semanas">Semana 1: 6,04%. Semana 2: 9,85%. Semana 3: 6,50%.</canvas>
+      </div>
+    </div>
+  </div>
+
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 2rem;">
+    <div style="background: var(--surface-1); border-radius: 12px; padding: 1.25rem;">
+      <p style="font-size: 14px; font-weight: 500; margin: 0 0 16px 0; color: var(--text-primary);">Click Through Rate (%)</p>
+      <div style="position: relative; width: 100%; height: 200px;">
+        <canvas id="ctorChart" role="img" aria-label="Linha com a evolução do CTOR (click-through rate) ao longo das três semanas">Semana 1: 5,15%. Semana 2: 8,57%. Semana 3: 7,59%.</canvas>
+      </div>
+    </div>
+
+    <div style="background: var(--surface-1); border-radius: 12px; padding: 1.25rem;">
+      <p style="font-size: 14px; font-weight: 500; margin: 0 0 16px 0; color: var(--text-primary);">Crescimento % (Semana vs Semana)</p>
+      <table style="width: 100%; font-size: 13px;">
+        <tr style="border-bottom: 0.5px solid var(--border);">
+          <td style="padding: 8px 0; color: var(--text-secondary);">Semana 2 vs 1</td>
+          <td style="text-align: right; padding: 8px 0;">
+            <span style="color: #0ca30c;">+3,81%</span> (abertura)
+          </td>
+        </tr>
+        <tr style="border-bottom: 0.5px solid var(--border);">
+          <td style="padding: 8px 0; color: var(--text-secondary);">Semana 2 vs 1</td>
+          <td style="text-align: right; padding: 8px 0;">
+            <span style="color: #0ca30c;">+3,43%</span> (CTOR)
+          </td>
+        </tr>
+        <tr style="border-bottom: 0.5px solid var(--border);">
+          <td style="padding: 8px 0; color: var(--text-secondary);">Semana 3 vs 2</td>
+          <td style="text-align: right; padding: 8px 0;">
+            <span style="color: #d03b3b;">-3,34%</span> (abertura)
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 8px 0; color: var(--text-secondary);">Semana 3 vs 2</td>
+          <td style="text-align: right; padding: 8px 0;">
+            <span style="color: #d03b3b;">-0,99%</span> (CTOR)
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+  const isDark = matchMedia('(prefers-color-scheme: dark)').matches;
+  const primaryColor = isDark ? '#3987e5' : '#2a78d6';
+  const secondaryColor = isDark ? '#199e70' : '#1baf7a';
+  const textColor = isDark ? '#ffffff' : '#0b0b0b';
+  const gridColor = isDark ? 'rgba(255,255,255,0.1)' : 'rgba(11,11,11,0.1)';
+
+  // Gráfico de Volume
+  new Chart(document.getElementById('volumeChart'), {
+    type: 'bar',
+    data: {
+      labels: ['22-28 Jun', '29 Jun-05 Jul', '06-12 Jul'],
+      datasets: [
+        {
+          label: 'Entregues',
+          data: [25087, 18947, 17634],
+          backgroundColor: primaryColor,
+          borderRadius: 4,
+          borderSkipped: false
+        },
+        {
+          label: 'Abertos',
+          data: [1515, 1866, 1147],
+          backgroundColor: secondaryColor,
+          borderRadius: 4,
+          borderSkipped: false
+        }
+      ]
+    },
+    options: {
+      indexAxis: 'x',
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: {
+          display: true,
+          labels: { color: textColor, font: { size: 12 }, boxWidth: 8 }
+        }
+      },
+      scales: {
+        y: {
+          beginAtZero: true,
+          ticks: { color: textColor, font: { size: 11 } },
+          grid: { color: gridColor },
+          title: { display: false }
+        },
+        x: {
+          ticks: { color: textColor, font: { size: 11 } },
+          grid: { display: false }
+        }
+      }
+    }
+  });
+
+  // Gráfico de Taxa de Abertura
+  new Chart(document.getElementById('aperturaChart'), {
+    type: 'line',
+    data: {
+      labels: ['22-28 Jun', '29 Jun-05 Jul', '06-12 Jul'],
+      datasets: [{
+        label: 'Taxa de Abertura (%)',
+        data: [6.04, 9.85, 6.50],
+        borderColor: primaryColor,
+        backgroundColor: `${primaryColor}15`,
+        borderWidth: 2,
+        fill: true,
+        pointRadius: 5,
+        pointBackgroundColor: primaryColor,
+        pointBorderColor: isDark ? '#1a1a19' : '#fcfcfb',
+        pointBorderWidth: 2,
+        tension: 0.3
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false }
+      },
+      scales: {
+        y: {
+          beginAtZero: true,
+          max: 11,
+          ticks: { color: textColor, font: { size: 11 }, callback: (v) => v + '%' },
+          grid: { color: gridColor },
+          title: { display: false }
+        },
+        x: {
+          ticks: { color: textColor, font: { size: 11 } },
+          grid: { display: false }
+        }
+      }
+    }
+  });
+
+  // Gráfico de CTOR
+  new Chart(document.getElementById('ctorChart'), {
+    type: 'line',
+    data: {
+      labels: ['22-28 Jun', '29 Jun-05 Jul', '06-12 Jul'],
+      datasets: [{
+        label: 'CTOR (%)',
+        data: [5.15, 8.57, 7.59],
+        borderColor: secondaryColor,
+        backgroundColor: `${secondaryColor}15`,
+        borderWidth: 2,
+        fill: true,
+        pointRadius: 5,
+        pointBackgroundColor: secondaryColor,
+        pointBorderColor: isDark ? '#1a1a19' : '#fcfcfb',
+        pointBorderWidth: 2,
+        tension: 0.3
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false }
+      },
+      scales: {
+        y: {
+          beginAtZero: true,
+          max: 9,
+          ticks: { color: textColor, font: { size: 11 }, callback: (v) => v + '%' },
+          grid: { color: gridColor },
+          title: { display: false }
+        },
+        x: {
+          ticks: { color: textColor, font: { size: 11 } },
+          grid: { display: false }
+        }
+      }
+    }
+  });
+</script>
