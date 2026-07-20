@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>UNIGUAÇU Desafia 2026 – Dieta Carnívora</title>
+    <style>
+        p {
+            margin: 0 0 12px
+        }
+
+        .f {
+            font-family: tahoma, verdana, sans-serif
+        }
+
+        .t14 {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #536174
+        }
+
+        @media(max-width:600px) {
+            .wrap {
+                padding: 20px 16px !important
+            }
+
+            .btn {
+                padding: 14px 24px !important;
+                font-size: 14px !important
+            }
+
+            .h2 {
+                font-size: 20px !important
+            }
+
+            .ic {
+                display: block !important;
+                width: 100% !important;
+                border-right: 1px solid #e2e8f0 !important;
+                border-bottom: none !important
+            }
+
+            .ic:last-child {
+                border-bottom: 1px solid #e2e8f0 !important
+            }
+        }
+    </style>
+    <!--[if mso]><xml><w:WordDocument xmlns:w="urn:schemas-microsoft-com:office:word"><w:DontUseAdvancedTypographyReadingMail/></w:WordDocument></xml><![endif]-->
+    <!--[if !mso]><!-- -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet">
+    <!--<![endif]-->
+</head>
+
+<body style="margin:0;padding:0;background:#f4f7fb">
+    <table role="presentation" width="600" align="center" cellpadding="0" cellspacing="0" style="width:100%;max-width:600px;background:#fff;border-radius:20px;overflow:hidden">
+        <tbody>
+            <tr>
+                <td class="wrap esd-text" style="padding:26px 28px;font-family:tahoma,verdana,sans-serif;color:#334155">
+                    <!-- SAUDAÇÃO -->
+                    <p style="font-size: 22px; margin: 0px 0px 8px; color: #0f172a; font-family: helvetica, 'helvetica neue', arial, sans-serif; font-weight: 800;">Nutri, o que desaparece do prato na dieta carnívora pode mudar toda a análise</p><!-- LINHA DECORATIVA -->
+                    <div style="height:2px;background:#16a34a;border-radius:999px;margin:0 0 16px"><br></div><!-- SUBTÍTULO -->
+                    <p class="t14 f">Quando a dieta carnívora entra na conversa do consultório, a atenção costuma ir direto para o excesso de carne, proteína animal e gordura saturada. Mas essa é apenas a parte mais evidente do problema.</p><!-- BOX DE DESTAQUE -->
+                    <table role="presentation" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:collapse;margin:0 0 16px" class=" cke_show_border">
+                        <tbody>
+                            <tr>
+                                <td style="padding:14px 16px;border-radius:14px;background:#eef6ff">
+                                    <p class="f" style="font-size:15px;line-height:1.4;margin:0 0 6px;color:#174ea6;font-weight:700">O que precisa desaparecer do prato para esse padrão alimentar existir?</p>
+                                    <p class="f" style="font-size:14px;line-height:1.6;margin:0;color:#174ea6;font-weight:400">Frutas, verduras, leguminosas e grãos integrais são excluídos e com eles, fibras, fitoquímicos e outros componentes ligados à saúde intestinal, ao controle do LDL e à proteção cardiometabólica.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table><!-- PARÁGRAFO 2 -->
+                    <p class="t14 f">Na nutrição esportiva, uma dieta rica em proteína pode parecer adequada à primeira vista, enquanto esconde baixa variedade alimentar e possíveis prejuízos à recuperação e à saúde no longo prazo.<br><br></p>
+                    <p class="t14 f">Na nutrição comportamental, a exclusão de grupos inteiros ainda pode reforçar rigidez, medo de comer e uma relação cada vez mais baseada em proibições.<br><br></p>
+                    <p class="t14 f">Por isso, a análise profissional não deveria parar em <b style="color:#334155">"essa dieta gera resultado?"</b>. Ela precisa avançar para uma pergunta mais difícil: <b style="color:#334155">"qual é o custo nutricional, clínico e comportamental desse resultado?"</b></p>
+                    <p class="t14 f"><br></p><!-- DIVISOR -->
+                    <div style="height:1px;background:#e2e8f0;margin:0 0 16px"><br></div><!-- PONTE PARA O EVENTO -->
+                    <p style="font-size:11px;line-height:1.4;margin:0 0 6px;color:#16a34a;font-weight:800;text-transform:uppercase;letter-spacing:.06em">UNIGUAÇU DESAFIA 2026</p>
+                    <p class="t14 f"><b style="color:#334155">Protocolos polêmicos chegam ao consultório antes que muitos profissionais estejam preparados para discuti-los</b></p>
+                    <p class="t14 f">No UNIGUAÇU Desafia 2026, você aprofunda a leitura clínica, nutricional e comportamental por trás de dietas polêmicas como a carnívora, e constrói uma conduta coerente com o contexto de cada paciente.</p>
+                    <p class="t14 f"><br></p><!-- DIVISOR -->
+                    <div style="height:1px;background:#e2e8f0;margin:0 0 16px"><br></div><!-- TRILHAS -->
+                    <p style="font-size:11px;line-height:1.4;margin:0 0 12px;color:#536174;font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-family:helvetica,'helvetica neue',arial,sans-serif">INFORMAÇÕES ESSENCIAIS</p>
+                    <table role="presentation" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:collapse" class=" cke_show_border">
+                        <tbody>
+                            <tr>
+                                <td class="ic" style="width:33.33%;padding:10px 12px;background:#f8fafc;border:1px solid #e2e8f0;border-right:none">
+                                    <p style="font-size:15px;font-weight:800;color:#0f172a;margin:0 0 1px;font-family:helvetica,'helvetica neue',arial,sans-serif">16 de agosto</p>
+                                    <p style="font-size:10px;color:#536174;margin:0;text-transform:uppercase;letter-spacing:.05em;font-family:helvetica,'helvetica neue',arial,sans-serif">Online e ao vivo</p>
+                                </td>
+                                <td class="ic" style="width:33.33%;padding:10px 12px;background:#f8fafc;border:1px solid #e2e8f0;border-right:none">
+                                    <p style="font-size:13px;font-weight:800;color:#16a34a;margin:0 0 1px;font-family:helvetica,'helvetica neue',arial,sans-serif">100% gratuito</p>
+                                    <p style="font-size:10px;color:#536174;margin:0;text-transform:uppercase;letter-spacing:.05em;font-family:helvetica,'helvetica neue',arial,sans-serif">Vagas limitadas</p>
+                                </td>
+                                <td class="ic" style="width:33.33%;padding:10px 12px;background:#f8fafc;border:1px solid #e2e8f0">
+                                    <p style="font-size:13px;font-weight:800;color:#0f172a;margin:0 0 1px;font-family:helvetica,'helvetica neue',arial,sans-serif">+8h de conteúdo</p>
+                                    <p style="font-size:10px;color:#536174;margin:0;text-transform:uppercase;letter-spacing:.05em;font-family:helvetica,'helvetica neue',arial,sans-serif">COM OS MAIORES NOMES</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table><br><!-- CTA PRINCIPAL -->
+                    <p style="text-align:center;margin:0 0 16px"><a class="btn" href="https://pos.faculdadeuniguacu.com.br/desafia-uniguacu-2026-org?utm_source=mail&utm_medium=organic&utm_content=nutricao&utm_campaign=desafia-2026&utm_term=dieta-carnivora" target="_blank" style="display:inline-block;background:#16a34a;color:#fff;font-size:14px;font-weight:800;text-decoration:none;padding:15px 30px;border-radius:999px;text-transform:uppercase;font-family:helvetica,'helvetica neue',arial,sans-serif">APROFUNDAR MEU CONHECIMENTO</a></p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
