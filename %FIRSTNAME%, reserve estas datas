@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="color-scheme" content="dark light">
+    <meta name="supported-color-schemes" content="dark light">
+    <title>Agenda de Eventos | UPlay Hub</title>
+    <!--[if mso]><xml>
+<w:WordDocument xmlns:w="urn:schemas-microsoft-com:office:word">
+<w:DontUseAdvancedTypographyReadingMail/>
+</w:WordDocument>
+</xml><![endif]-->
+    <style>
+        :root {
+            color-scheme: dark light;
+            supported-color-schemes: dark light;
+        }
+
+        body,
+        table,
+        td {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .wrap {
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .card {
+            background-color: #10132e;
+            border: 1px solid #202849;
+            border-radius: 16px;
+            overflow: hidden;
+        }
+
+        .panel {
+            background-color: #0c0e26;
+            border: 1px solid #1b2140;
+            border-radius: 18px;
+            overflow: hidden;
+        }
+
+        .bar {
+            width: 4px;
+            font-size: 0;
+            line-height: 0;
+            border-radius: 16px 0 0 16px;
+        }
+
+        .pad {
+            padding: 26px 28px;
+        }
+
+        .tag {
+            display: inline-block;
+            border-radius: 99px;
+            padding: 7px 10px;
+            margin: 0 4px 6px 0;
+            font-size: 10px;
+            line-height: 10px;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .date {
+            padding: 0 0 12px;
+            font-size: 12px;
+            line-height: 18px;
+            color: #ffffff;
+        }
+
+        .title {
+            padding: 0 0 8px;
+            font-size: 19px;
+            line-height: 26px;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .desc {
+            padding: 0 0 14px;
+            font-size: 13px;
+            line-height: 20px;
+            color: #c3cbe6;
+        }
+
+        .practice {
+            padding: 0 0 18px;
+            font-size: 12px;
+            line-height: 19px;
+            color: #d8def5;
+        }
+
+        .speaker {
+            padding: 0 0 22px;
+            font-size: 12px;
+            line-height: 17px;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .btn a {
+            display: block;
+            padding: 13px 24px;
+            font-size: 12px;
+            line-height: 14px;
+            color: #ffffff;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: .8px;
+            text-decoration: none !important;
+            border: 0;
+        }
+
+        .btn-green {
+            background-color: #2e9e5b;
+            border-radius: 10px;
+        }
+
+        .gap {
+            height: 14px;
+            font-size: 0;
+            line-height: 0;
+        }
+
+        @media only screen and (max-width:620px) {
+            .wrap {
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+
+            .hero-pad {
+                padding: 26px 22px !important;
+            }
+
+            .pad {
+                padding: 22px 20px !important;
+            }
+
+            .hero-title {
+                font-size: 26px !important;
+                line-height: 32px !important;
+            }
+        }
+    </style>
+    <!--[if !mso]><!-- -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet">
+    <!--<![endif]-->
+</head>
+
+<body style="margin:0;padding:0;background-color:#06071a;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;">
+    <div style="display:none;font-size:1px;line-height:1px;max-height:0;max-width:0;opacity:0;overflow:hidden;color:#06071a;mso-hide:all;" class="esd-text">Workshops e masterclasses online para aplicar ciência na prática profissional.</div>
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#06071a" style="width:100%;background-color:#06071a;border-collapse:collapse;">
+        <tbody>
+            <tr>
+                <td align="center" style="padding:28px 14px;">
+                    <!--[if mso]><table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" align="center"><tr><td><![endif]-->
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" class="wrap" style="width:100%;max-width:600px;border-collapse:collapse;">
+                        <!-- HERO -->
+                        <tbody>
+                            <tr>
+                                <td class="panel">
+                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;border-collapse:collapse;">
+                                        <tbody>
+                                            <tr>
+                                                <td height="4" bgcolor="#d4b55e" style="height:4px;font-size:0;line-height:0;background-color:#d4b55e;" class="esd-text">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td align="left" class="hero-pad" style="padding:32px;">
+                                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;border-collapse:collapse;">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td style="padding:0 0 10px;font-size:11px;line-height:16px;letter-spacing:2.4px;text-transform:uppercase;color:#d4b55e;font-weight:bold;" class="esd-text">Agenda de Eventos · Treino, nutrição e conduta clínica</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="hero-title esd-text" style="padding:0 0 16px;font-size:32px;line-height:38px;color:#ffffff;font-weight:bold;">Sua área evolui. Evolua com ela</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="padding:0 0 14px;font-size:15px;line-height:24px;color:#d8def5;" class="esd-text">Eventos ao vivo sobre o que há de mais atual em treino e nutrição, para transformar atualização em decisão clínica.</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="padding:0 0 22px;font-size:15px;line-height:24px;color:#d8def5;" class="esd-text">Confira as próximas agendas para quem quer <strong>atender com mais autoridade e critério técnico.</strong></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="left">
+                                                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td align="center" class="btn-green btn"><a href="https://uplaygo.site.engaged.com.br/p/?utm_source=mail&utm_medium=organic&utm_content=&utm_campaign=&utm_term=agenda" target="_blank">Ver agenda completa →</a></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="gap esd-text">&nbsp;</td>
+                            </tr><!-- EVENTO EM DESTAQUE - COMPORTAMENTO ALIMENTAR NA ERA DOS ANÁLOGOS DE GLP-1 (TEMA ROXO/LILÁS) -->
+                            <tr>
+                                <td class="card">
+                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;border-collapse:collapse;">
+                                        <tbody>
+                                            <tr>
+                                                <td bgcolor="#a56ee0" class="bar esd-text" style="background-color:#a56ee0;">&nbsp;</td>
+                                                <td align="left" class="pad" style="padding:26px 28px;">
+                                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;border-collapse:collapse;">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td align="left" style="padding:0 0 6px;font-size:0;line-height:0;" class="esd-text"><span class="tag" style="display:inline-block;background-color:#1c1338;color:#a56ee0;border-radius:99px;padding:7px 10px;margin:0 4px 6px 0;font-size:10px;line-height:10px;letter-spacing:1.2px;text-transform:uppercase;font-weight:bold;">Online e ao vivo</span><span class="tag" style="display:inline-block;background-color:#1c1338;color:#a56ee0;border-radius:99px;padding:7px 10px;margin:0 4px 6px 0;font-size:10px;line-height:10px;letter-spacing:1.2px;text-transform:uppercase;font-weight:bold;">Certificação · 6h</span><span class="tag" style="display:inline-block;background-color:#1c1338;color:#a56ee0;border-radius:99px;padding:7px 10px;margin:0 4px 6px 0;font-size:10px;line-height:10px;letter-spacing:1.2px;text-transform:uppercase;font-weight:bold;">A partir de R$ 47</span></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="date esd-text"><strong>13/09</strong> · 09h às 17h</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="title esd-text">Comportamento Alimentar na Era dos Análogos de GLP-1</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="desc esd-text">O que o nutricionista precisa dominar para conduzir pacientes em uso de Mounjaro e Ozempic na prática clínica. O medicamento pode reduzir o apetite, mas não reorganiza sozinho a relação do paciente com a comida.</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="practice esd-text"><span style="color:#a56ee0;font-weight:bold;">Na prática:</span> manejo do comportamento alimentar — alimentação emocional, compulsão, perda de controle, restrição e grazing — na condução clínica de pacientes em uso de análogos de GLP-1, sem abordagem estigmatizante.</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="speaker esd-text">Com Esp. Michael Alexandre, Esp. Felipe Almeida e Esp. Regiane Repczuk</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="left">
+                                                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td align="center" class="btn-green btn"><a href="https://uplaygo.site.engaged.com.br/p/checkout/sfzqo3d497/credit-card?utm_source=mail&utm_medium=organic&utm_content=&utm_campaign=&utm_term=agenda" target="_blank">Garantir minha vaga →</a></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="gap esd-text">&nbsp;</td>
+                            </tr><!-- EVENTO 2 - NANDROLONA EM MULHERES (ROSA) -->
+                            <tr>
+                                <td class="card">
+                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;border-collapse:collapse;">
+                                        <tbody>
+                                            <tr>
+                                                <td bgcolor="#e0529c" class="bar esd-text" style="background-color:#e0529c;">&nbsp;</td>
+                                                <td align="left" class="pad" style="padding:26px 28px;">
+                                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;border-collapse:collapse;">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td align="left" style="padding:0 0 6px;font-size:0;line-height:0;" class="esd-text"><span class="tag" style="display:inline-block;background-color:#2b0f20;color:#e0529c;border-radius:99px;padding:7px 10px;margin:0 4px 6px 0;font-size:10px;line-height:10px;letter-spacing:1.2px;text-transform:uppercase;font-weight:bold;">Online e ao vivo</span></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="date esd-text"><strong>23/07</strong> · 19h30 às 22h</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="title esd-text">Nandrolona em Mulheres: Anabolismo Estético e Clínico</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="desc esd-text">Aprenda a avaliar riscos, critérios de indicação, contraindicações e acompanhamento no uso de nandrolona em mulheres, respeitando os limites de atuação profissional.</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="practice esd-text"><span style="color:#e0529c;font-weight:bold;">Na prática:</span> farmacologia, monitoramento clínico e laboratorial, riscos androgênicos, sinais de alerta e tomada de decisão com mais segurança.</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="speaker esd-text">Com Dra. Tatiany Faria</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="left">
+                                                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td align="center" class="btn-green btn"><a href="https://uplaygo.site.engaged.com.br/p/checkout/tpz9qerztz/credit-card?utm_source=mail&utm_medium=organic&utm_content=&utm_campaign=&utm_term=agenda" target="_blank">Garantir vaga →</a></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="gap esd-text">&nbsp;</td>
+                            </tr><!-- EVENTO 3 - WORKSHOP DE HIPERTROFIA E EMAGRECIMENTO (TEMA VERMELHO) -->
+                            <tr>
+                                <td class="card">
+                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;border-collapse:collapse;">
+                                        <tbody>
+                                            <tr>
+                                                <td bgcolor="#d6362e" class="bar esd-text" style="background-color:#d6362e;">&nbsp;</td>
+                                                <td align="left" class="pad" style="padding:26px 28px;">
+                                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;border-collapse:collapse;">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td align="left" style="padding:0 0 6px;font-size:0;line-height:0;" class="esd-text"><span class="tag" style="display:inline-block;background-color:#2a0f0d;color:#d6362e;border-radius:99px;padding:7px 10px;margin:0 4px 6px 0;font-size:10px;line-height:10px;letter-spacing:1.2px;text-transform:uppercase;font-weight:bold;">Online e ao vivo</span><span class="tag" style="display:inline-block;background-color:#2a0f0d;color:#d6362e;border-radius:99px;padding:7px 10px;margin:0 4px 6px 0;font-size:10px;line-height:10px;letter-spacing:1.2px;text-transform:uppercase;font-weight:bold;">Certificação · 6h</span></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="date esd-text"><strong>26/07</strong> · 09h às 16h30</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="title esd-text">Workshop de Hipertrofia e Emagrecimento</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="desc esd-text">Construa o raciocínio de prescrição que personal trainer não aprende na faculdade.</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="practice esd-text"><span style="color:#d6362e;font-weight:bold;">Na prática:</span> ordem do treino combinado, métodos para hipertrofia, ajuste de volume e intensidade no emagrecimento e variação de estímulos para evitar estagnação.</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="speaker esd-text">Com Dr. Douglas Popp, Dr. Ragami Alves e Dr. Raphael Carvalho</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="left">
+                                                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td align="center" class="btn-green btn"><a href="https://uplaygo.site.engaged.com.br/p/checkout/plwelxbh4c/credit-card?utm_source=mail&utm_medium=organic&utm_content=&utm_campaign=&utm_term=agenda" target="_blank">Garantir minha vaga →</a></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="gap esd-text">&nbsp;</td>
+                            </tr><!-- EVENTO 4 - ANÁLISE BIOMECÂNICA DOS DEADLIFTS -->
+                            <tr>
+                                <td class="card">
+                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;border-collapse:collapse;">
+                                        <tbody>
+                                            <tr>
+                                                <td bgcolor="#d4733a" class="bar esd-text" style="background-color:#d4733a;">&nbsp;</td>
+                                                <td align="left" class="pad" style="padding:26px 28px;">
+                                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;border-collapse:collapse;">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td align="left" style="padding:0 0 6px;font-size:0;line-height:0;" class="esd-text"><span class="tag" style="display:inline-block;background-color:#251206;color:#d4733a;border-radius:99px;padding:7px 10px;margin:0 4px 6px 0;font-size:10px;line-height:10px;letter-spacing:1.2px;text-transform:uppercase;font-weight:bold;">Evento gratuito</span><span class="tag" style="display:inline-block;background-color:#251206;color:#d4733a;border-radius:99px;padding:7px 10px;margin:0 4px 6px 0;font-size:10px;line-height:10px;letter-spacing:1.2px;text-transform:uppercase;font-weight:bold;">Online e ao vivo</span></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="date esd-text"><strong>26/07</strong> · 10h às 12h</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="title esd-text">Análise Biomecânica dos Deadlifts</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="desc esd-text">Domine as diferenças biomecânicas entre as variações do deadlift e eleve o nível da sua prescrição com base em evidência científica.</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="practice esd-text"><span style="color:#d4733a;font-weight:bold;">Na prática:</span> deadlift tradicional, sumô, RDL, stiff, participação muscular, ajustes técnicos e redução de riscos de sobrecarga.</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="speaker esd-text">Com Dr. Rafael Soncin</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="left">
+                                                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td align="center" class="btn-green btn"><a href="https://uplaygo.site.engaged.com.br/p/checkout/h2frbon1lb?utm_source=mail&utm_medium=organic&utm_content=&utm_campaign=&utm_term=agenda" target="_blank">Garantir vaga gratuita →</a></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="gap esd-text">&nbsp;</td>
+                            </tr><!-- FECHAMENTO -->
+                            <tr>
+                                <td class="panel">
+                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;border-collapse:collapse;">
+                                        <tbody>
+                                            <tr>
+                                                <td align="center" class="pad" style="padding:26px 28px;">
+                                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;border-collapse:collapse;">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td align="center" style="padding:0 0 18px;font-size:14px;line-height:22px;color:#d8def5;" class="esd-text">Escolha o evento que mais se conecta com a sua prática e avance com mais critério nas decisões que impactam seus alunos.</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="center">
+                                                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td align="center" class="btn-green btn"><a href="https://uplaygo.site.engaged.com.br/p/?utm_source=mail&utm_medium=organic&utm_content=&utm_campaign=&utm_term=agenda" target="_blank">Ver todos os eventos →</a></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="gap esd-text">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td align="center" style="padding:10px 0;"><img src="https://uniguacu24074.activehosted.com/content/xdRQOD/2026/06/09/69376a65-f538-4957-b488-1091d70dc939.png?id=1272774" alt="Logo" width="120" style="display:block;width:120px;max-width:120px;height:auto;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;"></td>
+                            </tr>
+                            <tr>
+                                <td height="28" style="height:28px;font-size:0;line-height:0;" class="esd-text">&nbsp;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!--[if mso]></td></tr></table><![endif]-->
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
