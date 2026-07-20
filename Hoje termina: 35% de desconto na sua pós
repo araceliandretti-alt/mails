@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Copa UNIGUAÇU</title>
+    <style>
+        @media (max-width:600px) {
+            .wrap {
+                width: 100% !important;
+            }
+
+            .content {
+                padding: 24px 20px !important;
+            }
+
+            .outer {
+                padding: 0 !important;
+            }
+
+            .dealcol {
+                display: block !important;
+                width: 100% !important;
+                padding: 0 0 12px !important;
+            }
+
+            .dealbox {
+                height: auto !important;
+            }
+
+            .btn {
+                display: block !important;
+            }
+        }
+    </style>
+    <!--[if mso]><xml>
+    <w:WordDocument xmlns:w="urn:schemas-microsoft-com:office:word">
+      <w:DontUseAdvancedTypographyReadingMail/>
+    </w:WordDocument>
+    </xml><![endif]-->
+    <!--[if !mso]><!-- -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet">
+    <!--<![endif]-->
+</head>
+
+<body style="margin:0;padding:0;background:#f0f4f8;font-family:Tahoma,Verdana,Arial,sans-serif;color:#2d3748;">
+    <div style="display:none;max-height:0;overflow:hidden;mso-hide:all;" class="esd-text">Hoje é o último dia: 35% OFF, entrada facilitada e parcelamento especial encerram às [HORÁRIO].</div>
+    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background:#f0f4f8;border-collapse:collapse;">
+        <tbody>
+            <tr>
+                <td class="outer" align="center" style="padding:32px 16px;">
+                    <table role="presentation" class="wrap" width="600" cellspacing="0" cellpadding="0" border="0" style="width:600px;max-width:600px;background:#ffffff;border-radius:12px;overflow:hidden;border-collapse:separate;box-shadow:0 4px 24px rgba(0,0,0,.08);">
+                        <!-- CORPO -->
+                        <tbody>
+                            <tr>
+                                <td class="content esd-text" style="padding:28px 32px;" align="left">
+                                    <p style="font-size:15px;line-height:22px;margin:0 0 12px;">&nbsp;❗❗ %FIRSTNAME%</p>
+                                    <p style="font-size:15px;line-height:22px;margin:0 0 12px;">Até hoje, você pode iniciar uma pós-graduação da Faculdade UNIGUAÇU com:</p><!-- Box 1: oferta -->
+                                    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background:#0057b8;border-radius:12px;margin:0 0 16px;border-collapse:separate;" class=" cke_show_border">
+                                        <tbody>
+                                            <tr>
+                                                <td style="padding:12px;">
+                                                    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse;" class=" cke_show_border">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="dealcol" width="33.33%" valign="top" style="padding:0 6px 0 0;">
+                                                                    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background:#ffd700;border-radius:8px;border-collapse:separate;" class=" cke_show_border">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td class="dealbox" align="center" style="height:78px;padding:10px 8px;">
+                                                                                    <div style="font-size:9px;font-weight:700;color:#0057b8;text-transform:uppercase;letter-spacing:1px;line-height:13px;margin-bottom:6px;" class="esd-text">DESCONTO ESPECIAL</div>
+                                                                                    <div style="font-size:27px;font-weight:700;color:#006d29;line-height:1;" class="esd-text">35%OFF</div>
+                                                                                    <div style="font-size:9px;color:#333;text-transform:uppercase;letter-spacing:.5px;margin-top:4px;" class="esd-text">no curso todo</div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                                <td class="dealcol" width="33.33%" valign="top" style="padding:0 3px;">
+                                                                    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background:#ffd700;border-radius:8px;border-collapse:separate;" class=" cke_show_border">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td class="dealbox" align="center" style="height:78px;padding:10px 8px;">
+                                                                                    <div style="font-size:9px;font-weight:700;color:#0057b8;text-transform:uppercase;letter-spacing:1px;line-height:13px;margin-bottom:6px;" class="esd-text">ENTRADA FACILITADA</div>
+                                                                                    <div style="font-size:9px;color:#333;text-transform:uppercase;letter-spacing:.5px;margin-bottom:2px;" class="esd-text">condições de acesso</div>
+                                                                                    <div style="font-size:20px;font-weight:700;color:#0057b8;line-height:1;" class="esd-text">FACILITADAS</div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                                <td class="dealcol" width="33.33%" valign="top" style="padding:0 0 0 6px;">
+                                                                    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background:#ffd700;border-radius:8px;border-collapse:separate;" class=" cke_show_border">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td class="dealbox" align="center" style="height:78px;padding:10px 8px;">
+                                                                                    <div style="font-size:9px;font-weight:700;color:#0057b8;text-transform:uppercase;letter-spacing:1px;line-height:13px;margin-bottom:6px;" class="esd-text">BENEFÍCIO EXCLUSIVO</div>
+                                                                                    <div style="font-size:9px;color:#333;text-transform:uppercase;letter-spacing:.5px;margin-bottom:2px;" class="esd-text">condições especiais de</div>
+                                                                                    <div style="font-size:18px;font-weight:700;color:#0057b8;line-height:1;" class="esd-text">PARCELAMENTO</div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p style="font-size:15px;line-height:22px;margin:0 0 12px;">A campanha reúne formações para quem atua com nutrição, treinamento, performance, reabilitação, medicina esportiva e fisiologia.</p>
+                                    <p style="font-size:15px;line-height:22px;margin:0 0 12px;">É uma oportunidade para aprofundar conhecimentos, acompanhar as mudanças da sua área e ter mais critérios para lidar com demandas profissionais cada vez mais complexas.</p><!-- Box 2: urgência -->
+                                    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background:#0057b8;border-radius:10px;margin:0 0 16px;border-collapse:separate;" class=" cke_show_border">
+                                        <tbody>
+                                            <tr>
+                                                <td style="padding: 14px 18px; font-size: 17px; font-weight: 700; color: #ffd700; line-height:1.4;" class="esd-text">A condição termina hoje, às 17h.</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p style="font-size:15px;line-height:22px;margin:0 0 12px;">Depois desse prazo, os 35% de desconto e as condições atuais deixam de estar disponíveis.</p><!-- CTA -->
+                                    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse;margin:0 0 16px;" class=" cke_show_border">
+                                        <tbody>
+                                            <tr>
+                                                <td align="center"><a class="btn" href="https://pos.faculdadeuniguacu.com.br/copa-uniguacu-b-org?utm_source=mail&utm_medium=organic&utm_content=treinamento&utm_campaign=copa-uniguacu&utm_term=hoje-termina" target="_blank" style="display:inline-block;background:#008c35;color:#ffffff;text-decoration:none;font-size:15px;font-weight:700;padding:12px 36px;border-radius:50px;">Quero falar com um consultor</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p style="font-size:15px;line-height:22px;margin:0 0 16px;">Acesse a página, confira as formações participantes e conclua sua matrícula antes do encerramento.</p>
+                                    <p style="font-size:15px;line-height:22px;margin:0 0 16px;">Para mais informações: <a target="_blank" href="https://wa.me/554531976949?text=Oii%2C%20vim%20pelo%20e-mail%20e%20gostaria%20de%20saber%20mais" style="font-size:15px;line-height:22px;margin:0 0 16px;">(45) 3197-6949</a></p>
+                                    <p style="font-size:13px;line-height:20px;margin:0;color:#4a5568;font-style:italic;">P.S.: Hoje não tem prorrogação. A Campanha Copa termina às 17h.</p>
+                                    <p style="font-size:13px;line-height:20px;margin:0;color:#4a5568;font-style:italic;"><br></p>
+                                    <p style="font-size:13px;line-height:20px;margin:0;color:#4a5568;font-style:italic;"><br></p>
+                                </td>
+                            </tr><!-- RODAPÉ -->
+                            <tr>
+                                <td align="center" style="background:#f7fafc;border-top:1px solid #e2e8f0;padding:18px 32px;"><img src="https://uniguacu24074.activehosted.com/content/xdRQOD/2026/05/26/938acad4-cc57-4e12-8d5b-28220f549dfb.png?id=1051879" alt="Faculdade UNIGUAÇU" width="130" style="width:130px;height:auto;margin:0 auto 12px;border:0;display:block;"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
