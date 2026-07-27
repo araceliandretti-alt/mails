@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="color-scheme" content="dark light">
+    <meta name="supported-color-schemes" content="dark light">
+    <title>Últimas vagas - Cursos AMANHÃ | UPlay Hub</title>
+    <!--[if mso]><xml>
+<w:WordDocument xmlns:w="urn:schemas-microsoft-com:office:word">
+<w:DontUseAdvancedTypographyReadingMail/>
+</w:WordDocument>
+</xml><![endif]-->
+    <style>
+        :root {
+            color-scheme: dark light;
+            supported-color-schemes: dark light;
+        }
+
+        body,
+        table,
+        td {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .wrap {
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .card {
+            background-color: #10132e;
+            border: 1px solid #202849;
+            border-radius: 16px;
+            overflow: hidden;
+        }
+
+        .panel {
+            background-color: #0c0e26;
+            border: 1px solid #1b2140;
+            border-radius: 18px;
+            overflow: hidden;
+        }
+
+        .bar {
+            width: 4px;
+            font-size: 0;
+            line-height: 0;
+            border-radius: 16px 0 0 16px;
+        }
+
+        .pad {
+            padding: 26px 28px;
+        }
+
+        .tag {
+            display: inline-block;
+            border-radius: 99px;
+            padding: 7px 10px;
+            margin: 0 4px 6px 0;
+            font-size: 10px;
+            line-height: 10px;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .date {
+            padding: 0 0 14px;
+            font-size: 12px;
+            line-height: 22px;
+            color: #ffffff;
+        }
+
+        .title {
+            padding: 0 0 14px;
+            font-size: 19px;
+            line-height: 30px;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .desc {
+            padding: 0 0 18px;
+            font-size: 13px;
+            line-height: 24px;
+            color: #c3cbe6;
+        }
+
+        .practice {
+            padding: 0 0 20px;
+            font-size: 12px;
+            line-height: 22px;
+            color: #d8def5;
+        }
+
+        .speaker {
+            padding: 0 0 22px;
+            font-size: 12px;
+            line-height: 22px;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .spots {
+            padding: 0 0 22px;
+            font-size: 12px;
+            line-height: 22px;
+            color: #e8c547;
+            font-weight: bold;
+        }
+
+        .btn a {
+            display: block;
+            padding: 13px 24px;
+            font-size: 12px;
+            line-height: 14px;
+            color: #ffffff;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: .8px;
+            text-decoration: none !important;
+            border: 0;
+        }
+
+        .btn-green {
+            background-color: #2e9e5b;
+            border-radius: 10px;
+        }
+
+        .gap {
+            height: 14px;
+            font-size: 0;
+            line-height: 0;
+        }
+
+        @media only screen and (max-width:620px) {
+            .wrap {
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+
+            .hero-pad {
+                padding: 26px 22px !important;
+            }
+
+            .pad {
+                padding: 26px 22px !important;
+            }
+
+            .hero-title {
+                font-size: 26px !important;
+                line-height: 32px !important;
+            }
+        }
+    </style>
+    <!--[if !mso]><!-- -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet">
+    <!--<![endif]-->
+</head>
+
+<body style="margin:0;padding:0;background-color:#06071a;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;">
+    <div style="display:none;font-size:1px;line-height:1px;max-height:0;max-width:0;opacity:0;overflow:hidden;color:#06071a;mso-hide:all;" class="esd-text">⚠️ Últimas vagas para os cursos de DOMINGO. Não percas!</div>
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#06071a" style="width:100%;background-color:#06071a;border-collapse:collapse;">
+        <tbody>
+            <tr>
+                <td align="center" style="padding:28px 14px;">
+                    <!--[if mso]><table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" align="center"><tr><td><![endif]-->
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" class="wrap" style="width:100%;max-width:600px;border-collapse:collapse;">
+                        <tbody>
+                            <!-- URGENCY BANNER -->
+                            <tr>
+                                <td>
+                                    <div style="background:linear-gradient(135deg,#e8c547 0%,#d4a830 100%);border-radius:16px;padding:16px 20px;text-align:center;margin-bottom:14px;">
+                                        <div style="font-size:14px;font-weight:bold;color:#ffffff;letter-spacing:1px;text-transform:uppercase;" class="esd-text">⚠️ CURSOS AMANHÃ — ÚLTIMAS VAGAS DISPONÍVEIS</div>
+                                    </div>
+                                </td>
+                            </tr><!-- HERO -->
+                            <tr>
+                                <td class="panel">
+                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;border-collapse:collapse;">
+                                        <tbody>
+                                            <tr>
+                                                <td height="4" bgcolor="#e8c547" style="height:4px;font-size:0;line-height:0;background-color:#e8c547;" class="esd-text">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td align="left" class="hero-pad" style="padding:32px;">
+                                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;border-collapse:collapse;">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td style="padding:0 0 6px;font-size:11px;line-height:16px;letter-spacing:2.4px;text-transform:uppercase;color:#e8c547;font-weight:bold;" class="esd-text">⏰ Acontece AMANHÃ</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="hero-title esd-text" style="padding:0 0 16px;font-size:32px;line-height:38px;color:#ffffff;font-weight:bold;">Dois cursos premium em um único domingo</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="padding:0 0 0px;font-size:15px;line-height:24px;color:#d8def5;" class="esd-text">Garanta sua vaga agora. As vagas estão terminando rápido e as aulas começam neste domingo.</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="gap esd-text">&nbsp;</td>
+                            </tr><!-- EVENTO 1 - WORKSHOP HIPERTROFIA (VERMELHO) -->
+                            <tr>
+                                <td class="card">
+                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;border-collapse:collapse;">
+                                        <tbody>
+                                            <tr>
+                                                <td bgcolor="#d6362e" class="bar esd-text" style="background-color:#d6362e;">&nbsp;</td>
+                                                <td align="left" class="pad" style="padding:26px 28px;">
+                                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;border-collapse:collapse;">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td align="left" style="padding:0 0 6px;font-size:0;line-height:0;" class="esd-text"><span class="tag" style="display:inline-block;background-color:#2a0f0d;color:#d6362e;border-radius:99px;padding:7px 10px;margin:0 4px 6px 0;font-size:10px;line-height:10px;letter-spacing:1.2px;text-transform:uppercase;font-weight:bold;">Online ao vivo</span><span class="tag" style="display:inline-block;background-color:#2a0f0d;color:#d6362e;border-radius:99px;padding:7px 10px;margin:0 4px 6px 0;font-size:10px;line-height:10px;letter-spacing:1.2px;text-transform:uppercase;font-weight:bold;">Certificação · 6h</span><span class="tag" style="display:inline-block;background-color:#e8c547;color:#06071a;border-radius:99px;padding:7px 10px;margin:0 4px 6px 0;font-size:10px;line-height:10px;letter-spacing:1.2px;text-transform:uppercase;font-weight:bold;">Últimas vagas</span></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="date esd-text"><strong>DOMINGO</strong> · 9h às 16h30</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="title esd-text">Workshop de Hipertrofia e Emagrecimento</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="desc esd-text">Decisões práticas que geram resultado. Aprenda o modelo de análise de caso, critérios de prescrição e como explicar ao cliente cada decisão de treino.</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="practice esd-text"><span style="color:#d6362e;font-weight:bold;">Na prática:</span> Frameworks, templates, estudos de caso e gravação por 30 dias</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="speaker esd-text">Com Dr. Douglas Popp, Dr. Ragami Alves e Dr. Raphael Carvalho</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="spots esd-text">⚠️ Vagas limitadas</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="left">
+                                                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td align="center" class="btn-green btn"><a href="https://uplaygo.site.engaged.com.br/p/checkout/plwelxbh4c/credit-card?utm_source=mail&utm_medium=organic&utm_content=urgente&utm_campaign=domingo&utm_term=workshop" target="_blank">Garantir vaga AGORA →</a></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="gap esd-text">&nbsp;</td>
+                            </tr><!-- EVENTO 2 - DEADLIFTS (DOURADO) -->
+                            <tr>
+                                <td class="card">
+                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;border-collapse:collapse;">
+                                        <tbody>
+                                            <tr>
+                                                <td bgcolor="#d4733a" class="bar esd-text" style="background-color:#d4733a;">&nbsp;</td>
+                                                <td align="left" class="pad" style="padding:26px 28px;">
+                                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;border-collapse:collapse;">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td align="left" style="padding:0 0 6px;font-size:0;line-height:0;" class="esd-text"><span class="tag" style="display:inline-block;background-color:#251206;color:#d4733a;border-radius:99px;padding:7px 10px;margin:0 4px 6px 0;font-size:10px;line-height:10px;letter-spacing:1.2px;text-transform:uppercase;font-weight:bold;">Online ao vivo</span><span class="tag" style="display:inline-block;background-color:#251206;color:#d4733a;border-radius:99px;padding:7px 10px;margin:0 4px 6px 0;font-size:10px;line-height:10px;letter-spacing:1.2px;text-transform:uppercase;font-weight:bold;">Certificação · 2h</span><span class="tag" style="display:inline-block;background-color:#e8c547;color:#06071a;border-radius:99px;padding:7px 10px;margin:0 4px 6px 0;font-size:10px;line-height:10px;letter-spacing:1.2px;text-transform:uppercase;font-weight:bold;">Últimas vagas</span></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="date esd-text"><strong>DOMINGO</strong> · 10h às 12h</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="title esd-text">Análise Biomecânica dos Deadlifts</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="desc esd-text">Domine cada variação do deadlift com base em evidência científica e prescreva com mais segurança e precisão.</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="practice esd-text"><span style="color:#d4733a;font-weight:bold;">Na prática:</span> Especialista em biomecânica aplicada ao treino</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="speaker esd-text">Com Dr. Rafael Soncin</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="spots esd-text">⚠️ Vagas limitadas</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="left">
+                                                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td align="center" class="btn-green btn"><a href="https://uplaygo.site.engaged.com.br/p/checkout/h2frbon1lb?utm_source=mail&utm_medium=organic&utm_content=urgente&utm_campaign=domingo&utm_term=deadlift" target="_blank">Garantir vaga AGORA →</a></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="gap esd-text">&nbsp;</td>
+                            </tr><!-- FECHAMENTO URGENTE -->
+                            <tr>
+                                <td class="panel">
+                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;border-collapse:collapse;">
+                                        <tbody>
+                                            <tr>
+                                                <td height="4" bgcolor="#e8c547" style="height:4px;font-size:0;line-height:0;background-color:#e8c547;" class="esd-text">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center" class="pad" style="padding:26px 28px;">
+                                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;border-collapse:collapse;">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td align="center" style="padding:0 0 14px;font-size:14px;line-height:22px;color:#ffffff;font-weight:bold;" class="esd-text">Não fica pra depois!</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="center" style="padding:0 0 16px;font-size:12px;line-height:18px;color:#d8def5;" class="esd-text">Ambos os cursos são transmitidos ao vivo. Você pode assistir do seu celular, tablet ou computador, em qualquer lugar.</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="gap esd-text">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td align="center" style="padding:10px 0;"><img src="https://uniguacu24074.activehosted.com/content/xdRQOD/2026/06/09/69376a65-f538-4957-b488-1091d70dc939.png?id=1272774" alt="Logo" width="120" style="display:block;width:120px;max-width:120px;height:auto;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;"></td>
+                            </tr>
+                            <tr>
+                                <td height="28" style="height:28px;font-size:0;line-height:0;" class="esd-text">&nbsp;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!--[if mso]></td></tr></table><![endif]-->
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
