@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta name="x-apple-disable-message-reformatting">
+    <meta content="telephone=no,address=no,email=no,date=no,url=no" name="format-detection">
+    <title>Programação completa | Trilha de Treinamento</title>
+    <!--[if mso]>
+  <noscript>
+    <xml>
+      <o:OfficeDocumentSettings>
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+      </o:OfficeDocumentSettings>
+    </xml>
+  </noscript>
+  <![endif]-->
+    <style>
+        html,
+        body {
+            margin: 0 !important;
+            padding: 0 !important;
+            width: 100% !important;
+            min-width: 100% !important;
+            background-color: #050000 !important;
+        }
+
+        table,
+        td {
+            border-collapse: collapse !important;
+            mso-table-lspace: 0pt !important;
+            mso-table-rspace: 0pt !important;
+        }
+
+        img {
+            border: 0;
+            outline: none;
+            text-decoration: none;
+            -ms-interpolation-mode: bicubic;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        p,
+        h1,
+        h2,
+        h3 {
+            margin: 0;
+            padding: 0;
+        }
+
+        .preheader {
+            display: none !important;
+            visibility: hidden;
+            opacity: 0;
+            color: transparent;
+            height: 0;
+            width: 0;
+            overflow: hidden;
+            mso-hide: all;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 640px;
+        }
+
+        .desktop-grid {
+            width: 100% !important;
+            table-layout: fixed !important;
+        }
+
+        .stack-column {
+            width: 294px;
+            max-width: 294px;
+            vertical-align: top;
+        }
+
+        .column-gap {
+            width: 12px;
+            min-width: 12px;
+            font-size: 0;
+            line-height: 0;
+        }
+
+        .button-link:hover {
+            opacity: .92;
+        }
+
+        @media screen and (max-width:640px) {
+            .container {
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+
+            .mobile-padding {
+                padding-left: 18px !important;
+                padding-right: 18px !important;
+            }
+
+            .header-cell {
+                padding: 28px 22px !important;
+            }
+
+            .hero-title {
+                font-size: 38px !important;
+                line-height: 40px !important;
+            }
+
+            .section-title {
+                font-size: 25px !important;
+                line-height: 30px !important;
+            }
+
+            .desktop-grid,
+            .desktop-grid tbody,
+            .desktop-grid tr {
+                display: block !important;
+                width: 100% !important;
+            }
+
+            .stack-column {
+                display: block !important;
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+
+            .column-gap {
+                display: block !important;
+                width: 100% !important;
+                min-width: 100% !important;
+                height: 12px !important;
+                line-height: 12px !important;
+            }
+
+            .button-table,
+            .button-table td,
+            .button-link {
+                width: 100% !important;
+            }
+
+            .button-link {
+                box-sizing: border-box !important;
+                display: block !important;
+                text-align: center !important;
+            }
+        }
+
+        @media screen and (max-width:420px) {
+            .hero-title {
+                font-size: 33px !important;
+                line-height: 36px !important;
+            }
+        }
+    </style>
+    <!--[if mso]><xml>
+<w:WordDocument xmlns:w="urn:schemas-microsoft-com:office:word">
+  <w:DontUseAdvancedTypographyReadingMail/>
+</w:WordDocument>
+</xml><![endif]-->
+    <!--[if !mso]><!-- -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet">
+    <!--<![endif]-->
+</head>
+
+<body style="margin:0; padding:0; background-color:#050000;">
+    <div class="preheader esd-text">Confira os temas, horários e professores confirmados para a trilha de Treinamento e Hormônios.</div>
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#050000" style="width:100%; background-color:#050000;">
+        <tbody>
+            <tr>
+                <td align="center" style="padding:18px 10px 34px;">
+                    <!--[if mso]>
+        <table role="presentation" width="640" cellpadding="0" cellspacing="0" border="0"><tr><td>
+        <![endif]-->
+                    <table role="presentation" class="container" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#050000" style="width:100%; max-width:640px; background-color:#050000;">
+                        <tbody>
+                            <tr>
+                                <td class="mobile-padding" style="padding:0 20px 18px;">
+                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#200000" style="width:100%; background-color:#200000; border:1px solid #6f0000; border-radius:18px; overflow:hidden;">
+                                        <tbody>
+                                            <tr>
+                                                <td class="header-cell esd-text" style="padding:34px 32px;" align="left">
+                                                    <p style="font-family:Arial,Helvetica,sans-serif; font-size:13px; line-height:18px; font-weight:800; letter-spacing:1.2px; text-transform:uppercase; color:#ff2a2a; padding-bottom:10px;">UNIGUAÇU DESAFIA 2026</p>
+                                                    <h1 class="hero-title" style="font-family:Arial,Helvetica,sans-serif; font-size:48px; line-height:50px; font-weight:900; letter-spacing:-1.8px; color:#ffffff;">Programação<br>completa</h1>
+                                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:20px;" class=" cke_show_border">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td width="4" bgcolor="#ff0000" style="width:4px; background-color:#ff0000; border-radius:4px;" class="esd-text"><br></td>
+                                                                <td style="padding-left:14px; font-family:Arial,Helvetica,sans-serif; font-size:15px; line-height:22px; color:#ffe2e2;" class="esd-text">Mais de <strong style="color:#ff3b3b;">11 horas ao vivo</strong> sobre treinamento, hipertrofia, biomecânica, lesões, atendimento, hormônios e estratégias avançadas para a prática profissional.</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-top:18px;" class=" cke_show_border">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td style="padding:0 8px 8px 0;"><span style="display:inline-block; border:1px solid #7a0000; border-radius:999px; padding:6px 10px; font-family:Arial,Helvetica,sans-serif; font-size:12px; line-height:14px; font-weight:800; color:#ffd0d0; background-color:#320000;">Online</span></td>
+                                                                <td style="padding:0 8px 8px 0;"><span style="display:inline-block; border:1px solid #7a0000; border-radius:999px; padding:6px 10px; font-family:Arial,Helvetica,sans-serif; font-size:12px; line-height:14px; font-weight:800; color:#ffd0d0; background-color:#320000;">Ao vivo</span></td>
+                                                                <td style="padding:0 0 8px 0;"><span style="display:inline-block; border:1px solid #7a0000; border-radius:999px; padding:6px 10px; font-family:Arial,Helvetica,sans-serif; font-size:12px; line-height:14px; font-weight:800; color:#ffd0d0; background-color:#320000;">Certificado</span></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <table role="presentation" class="button-table cke_show_border" cellpadding="0" cellspacing="0" border="0" style="margin-top:14px;">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td align="center" bgcolor="#00dd77" style="background-color:#00dd77; border-radius:8px;"><a class="button-link" href="https://pos.faculdadeuniguacu.com.br/desafia-uniguacu-2026-org?utm_source=mail&utm_medium=organic&utm_content=treinamento&utm_campaign=desafia-2026&utm_term=cronograma" target="_blank" style="display:inline-block; padding:15px 24px; font-family:Arial,Helvetica,sans-serif; font-size:13px; line-height:16px; font-weight:900; letter-spacing:.4px; text-transform:uppercase; color:#062815; border-radius:8px; text-decoration:none;">GARANTIR MINHA VAGA GRATUITA </a></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" class="mobile-padding esd-text" style="padding:22px 28px 18px;">
+                                    <p style="font-family:Arial,Helvetica,sans-serif; font-size:12px; line-height:16px; font-weight:900; letter-spacing:1.3px; text-transform:uppercase; color:#ff2a2a; padding-bottom:8px;"> Atualização para os desafios da atuação </p>
+                                    <h2 class="section-title" style="font-family:Arial,Helvetica,sans-serif; font-size:30px; line-height:35px; font-weight:900; letter-spacing:-.7px; color:#ffffff;"> Confira os temas e professores confirmados para a trilha de Treinamento e Hormônios </h2>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="mobile-padding" style="padding:0 20px;">
+                                    <table role="presentation" class="desktop-grid" width="600" cellpadding="0" cellspacing="0" border="0" align="center" style="width:100%; max-width:600px; table-layout:fixed; margin:0 auto;">
+                                        <tbody>
+                                            <tr>
+                                                <td class="stack-column" width="294" valign="top" style="width:294px; max-width:294px; vertical-align:top;">
+                                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#210000" style="width:100%; height:184px; table-layout:fixed; background-color:#210000; border:1px solid #7a0000; border-radius:14px; overflow:hidden;">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td width="108" height="184" valign="top" style="width:108px; height:184px; overflow:hidden;"><a><img src="https://uniguacu24074.activehosted.com/content/xdRQOD/2026/07/31/a8292d54-4e13-482e-b6c9-9f7c94eeca3e.png?id=2282571" width="108" height="184" alt style="display:block; width:108px; max-width:108px; height:184px; object-fit:cover; object-position:center top; border:0;" data-cf-ir-is-resized="true" data-cf-ir-should-resize-image="true" srcset="https://uniguacu24074.activehosted.com/cdn-cgi/image/fit=scale-down,width=108,dpr=1,format=auto,redirect/content/xdRQOD/2026/07/31/a8292d54-4e13-482e-b6c9-9f7c94eeca3e.png 1x,https://uniguacu24074.activehosted.com/cdn-cgi/image/fit=scale-down,width=108,dpr=2,format=auto,redirect/content/xdRQOD/2026/07/31/a8292d54-4e13-482e-b6c9-9f7c94eeca3e.png 2x,https://uniguacu24074.activehosted.com/cdn-cgi/image/fit=scale-down,width=108,dpr=3,format=auto,redirect/content/xdRQOD/2026/07/31/a8292d54-4e13-482e-b6c9-9f7c94eeca3e.png 3x,https://uniguacu24074.activehosted.com/cdn-cgi/image/fit=scale-down,width=108,dpr=4,format=auto,redirect/content/xdRQOD/2026/07/31/a8292d54-4e13-482e-b6c9-9f7c94eeca3e.png 4x" data-cf-ir-no-srcset="true"></a></td>
+                                                                <td height="184" valign="top" style="height:184px; padding:14px 13px; vertical-align:top;">
+                                                                    <table role="presentation" width="100%" height="156" cellpadding="0" cellspacing="0" border="0" style="width:100%; height:156px; table-layout:fixed;">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td height="20" valign="top" style="height:20px; font-family:Arial,Helvetica,sans-serif; font-size:11px; line-height:14px; font-weight:900; letter-spacing:.5px; text-transform:uppercase; color:#ff3b3b;" class="esd-text"> 09h às 10h </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td height="40" valign="top" style="height:40px; font-family:Arial,Helvetica,sans-serif; font-size:14px; line-height:18px; font-weight:800; color:#ffffff;" class="esd-text">Dr. Jonato Prestes, PhD.</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign="top" style="font-family:Arial,Helvetica,sans-serif; font-size:12px; line-height:17px; color:#ffb5b5;" class="esd-text"> Hipertrofia não uniforme: como utilizar na prática </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                                <td class="column-gap esd-text" width="12" style="width:12px; min-width:12px; font-size:0; line-height:0;">&nbsp;</td>
+                                                <td class="stack-column" width="294" valign="top" style="width:294px; max-width:294px; vertical-align:top;">
+                                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#210000" style="width:100%; height:184px; table-layout:fixed; background-color:#210000; border:1px solid #7a0000; border-radius:14px; overflow:hidden;">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td width="108" height="184" valign="top" style="width:108px; height:184px; overflow:hidden;"><a><img src="https://uniguacu24074.activehosted.com/content/xdRQOD/2026/07/31/ba1539bf-2812-4a97-b8a6-4b509a2b835e.png?id=2282578" width="108" height="184" alt style="display:block; width:108px; max-width:108px; height:184px; object-fit:cover; object-position:center top; border:0;" data-cf-ir-is-resized="true" data-cf-ir-should-resize-image="true" srcset="https://uniguacu24074.activehosted.com/cdn-cgi/image/fit=scale-down,width=108,dpr=1,format=auto,redirect/content/xdRQOD/2026/07/31/ba1539bf-2812-4a97-b8a6-4b509a2b835e.png 1x,https://uniguacu24074.activehosted.com/cdn-cgi/image/fit=scale-down,width=108,dpr=2,format=auto,redirect/content/xdRQOD/2026/07/31/ba1539bf-2812-4a97-b8a6-4b509a2b835e.png 2x,https://uniguacu24074.activehosted.com/cdn-cgi/image/fit=scale-down,width=108,dpr=3,format=auto,redirect/content/xdRQOD/2026/07/31/ba1539bf-2812-4a97-b8a6-4b509a2b835e.png 3x,https://uniguacu24074.activehosted.com/cdn-cgi/image/fit=scale-down,width=108,dpr=4,format=auto,redirect/content/xdRQOD/2026/07/31/ba1539bf-2812-4a97-b8a6-4b509a2b835e.png 4x" data-cf-ir-no-srcset="true"></a></td>
+                                                                <td height="184" valign="top" style="height:184px; padding:14px 13px; vertical-align:top;">
+                                                                    <table role="presentation" width="100%" height="156" cellpadding="0" cellspacing="0" border="0" style="width:100%; height:156px; table-layout:fixed;">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td height="20" valign="top" style="height:20px; font-family:Arial,Helvetica,sans-serif; font-size:11px; line-height:14px; font-weight:900; letter-spacing:.5px; text-transform:uppercase; color:#ff3b3b;" class="esd-text"> 10h às 11h </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td height="40" valign="top" style="height:40px; font-family:Arial,Helvetica,sans-serif; font-size:14px; line-height:18px; font-weight:800; color:#ffffff;" class="esd-text">Dr. Rodrigo Fenner, PhD.</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign="top" style="font-family:Arial,Helvetica,sans-serif; font-size:12px; line-height:17px; color:#ffb5b5;" class="esd-text"> Como avaliar e prescrever além do laudo </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="12" style="height:12px; line-height:12px; font-size:1px;" class="esd-text">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="mobile-padding" style="padding:0 20px;">
+                                    <table role="presentation" class="desktop-grid" width="600" cellpadding="0" cellspacing="0" border="0" align="center" style="width:100%; max-width:600px; table-layout:fixed; margin:0 auto;">
+                                        <tbody>
+                                            <tr>
+                                                <td class="stack-column" width="294" valign="top" style="width:294px; max-width:294px; vertical-align:top;">
+                                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#210000" style="width:100%; height:184px; table-layout:fixed; background-color:#210000; border:1px solid #7a0000; border-radius:14px; overflow:hidden;">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td width="108" height="184" valign="top" style="width:108px; height:184px; overflow:hidden;"><a><img src="https://uniguacu24074.activehosted.com/content/xdRQOD/2026/07/31/39be1011-1c83-4d28-9093-b7bfa78a6a92.png?id=2282572" width="108" height="184" alt style="display:block; width:108px; max-width:108px; height:184px; object-fit:cover; object-position:center top; border:0;" data-cf-ir-is-resized="true" data-cf-ir-should-resize-image="true" srcset="https://uniguacu24074.activehosted.com/cdn-cgi/image/fit=scale-down,width=108,dpr=1,format=auto,redirect/content/xdRQOD/2026/07/31/39be1011-1c83-4d28-9093-b7bfa78a6a92.png 1x,https://uniguacu24074.activehosted.com/cdn-cgi/image/fit=scale-down,width=108,dpr=2,format=auto,redirect/content/xdRQOD/2026/07/31/39be1011-1c83-4d28-9093-b7bfa78a6a92.png 2x,https://uniguacu24074.activehosted.com/cdn-cgi/image/fit=scale-down,width=108,dpr=3,format=auto,redirect/content/xdRQOD/2026/07/31/39be1011-1c83-4d28-9093-b7bfa78a6a92.png 3x,https://uniguacu24074.activehosted.com/cdn-cgi/image/fit=scale-down,width=108,dpr=4,format=auto,redirect/content/xdRQOD/2026/07/31/39be1011-1c83-4d28-9093-b7bfa78a6a92.png 4x" data-cf-ir-no-srcset="true"></a></td>
+                                                                <td height="184" valign="top" style="height:184px; padding:14px 13px; vertical-align:top;">
+                                                                    <table role="presentation" width="100%" height="156" cellpadding="0" cellspacing="0" border="0" style="width:100%; height:156px; table-layout:fixed;">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td height="20" valign="top" style="height:20px; font-family:Arial,Helvetica,sans-serif; font-size:11px; line-height:14px; font-weight:900; letter-spacing:.5px; text-transform:uppercase; color:#ff3b3b;" class="esd-text"> 11h às 12h </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td height="40" valign="top" style="height:40px; font-family:Arial,Helvetica,sans-serif; font-size:14px; line-height:18px; font-weight:800; color:#ffffff;" class="esd-text">Dr. Rafael Soncin</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign="top" style="font-family:Arial,Helvetica,sans-serif; font-size:12px; line-height:17px; color:#ffb5b5;" class="esd-text"> Ajustes importantes na técnica do agachamento: do iniciante ao avançado </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                                <td class="column-gap esd-text" width="12" style="width:12px; min-width:12px; font-size:0; line-height:0;">&nbsp;</td>
+                                                <td class="stack-column" width="294" valign="top" style="width:294px; max-width:294px; vertical-align:top;">
+                                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#210000" style="width:100%; height:184px; table-layout:fixed; background-color:#210000; border:1px solid #7a0000; border-radius:14px; overflow:hidden;">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td width="108" height="184" valign="top" style="width:108px; height:184px; overflow:hidden;"><a><img src="https://uniguacu24074.activehosted.com/content/xdRQOD/2026/07/31/fefb5b79-78d5-408e-b698-862a6ff3e3dd.png?id=2282579" width="108" height="184" alt style="display:block; width:108px; max-width:108px; height:184px; object-fit:cover; object-position:center top; border:0;" data-cf-ir-is-resized="true" data-cf-ir-should-resize-image="true" srcset="https://uniguacu24074.activehosted.com/cdn-cgi/image/fit=scale-down,width=108,dpr=1,format=auto,redirect/content/xdRQOD/2026/07/31/fefb5b79-78d5-408e-b698-862a6ff3e3dd.png 1x,https://uniguacu24074.activehosted.com/cdn-cgi/image/fit=scale-down,width=108,dpr=2,format=auto,redirect/content/xdRQOD/2026/07/31/fefb5b79-78d5-408e-b698-862a6ff3e3dd.png 2x,https://uniguacu24074.activehosted.com/cdn-cgi/image/fit=scale-down,width=108,dpr=3,format=auto,redirect/content/xdRQOD/2026/07/31/fefb5b79-78d5-408e-b698-862a6ff3e3dd.png 3x,https://uniguacu24074.activehosted.com/cdn-cgi/image/fit=scale-down,width=108,dpr=4,format=auto,redirect/content/xdRQOD/2026/07/31/fefb5b79-78d5-408e-b698-862a6ff3e3dd.png 4x" data-cf-ir-no-srcset="true"></a></td>
+                                                                <td height="184" valign="top" style="height:184px; padding:14px 13px; vertical-align:top;">
+                                                                    <table role="presentation" width="100%" height="156" cellpadding="0" cellspacing="0" border="0" style="width:100%; height:156px; table-layout:fixed;">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td height="20" valign="top" style="height:20px; font-family:Arial,Helvetica,sans-serif; font-size:11px; line-height:14px; font-weight:900; letter-spacing:.5px; text-transform:uppercase; color:#ff3b3b;" class="esd-text"> 12h às 13h </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td height="40" valign="top" style="height:40px; font-family:Arial,Helvetica,sans-serif; font-size:14px; line-height:18px; font-weight:800; color:#ffffff;" class="esd-text">Dr. Gabriel Paz</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign="top" style="font-family:Arial,Helvetica,sans-serif; font-size:12px; line-height:17px; color:#ffb5b5;" class="esd-text"> Lombociatalgia: o passo a passo no retreinamento de lesões </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="12" style="height:12px; line-height:12px; font-size:1px;" class="esd-text">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="mobile-padding" style="padding:0 20px;">
+                                    <table role="presentation" class="desktop-grid" width="600" cellpadding="0" cellspacing="0" border="0" align="center" style="width:100%; max-width:600px; table-layout:fixed; margin:0 auto;">
+                                        <tbody>
+                                            <tr>
+                                                <td class="stack-column" width="294" valign="top" style="width:294px; max-width:294px; vertical-align:top;">
+                                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#210000" style="width:100%; height:184px; table-layout:fixed; background-color:#210000; border:1px solid #7a0000; border-radius:14px; overflow:hidden;">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td width="108" height="184" valign="top" style="width:108px; height:184px; overflow:hidden;"><a><img src="https://uniguacu24074.activehosted.com/content/xdRQOD/2026/07/31/7133b6e3-9686-46dd-9f2a-c8b66a17e4fb.png?id=2282574" width="108" height="184" alt style="display:block; width:108px; max-width:108px; height:184px; object-fit:cover; object-position:center top; border:0;" data-cf-ir-is-resized="true" data-cf-ir-should-resize-image="true" srcset="https://uniguacu24074.activehosted.com/cdn-cgi/image/fit=scale-down,width=108,dpr=1,format=auto,redirect/content/xdRQOD/2026/07/31/7133b6e3-9686-46dd-9f2a-c8b66a17e4fb.png 1x,https://uniguacu24074.activehosted.com/cdn-cgi/image/fit=scale-down,width=108,dpr=2,format=auto,redirect/content/xdRQOD/2026/07/31/7133b6e3-9686-46dd-9f2a-c8b66a17e4fb.png 2x,https://uniguacu24074.activehosted.com/cdn-cgi/image/fit=scale-down,width=108,dpr=3,format=auto,redirect/content/xdRQOD/2026/07/31/7133b6e3-9686-46dd-9f2a-c8b66a17e4fb.png 3x,https://uniguacu24074.activehosted.com/cdn-cgi/image/fit=scale-down,width=108,dpr=4,format=auto,redirect/content/xdRQOD/2026/07/31/7133b6e3-9686-46dd-9f2a-c8b66a17e4fb.png 4x" data-cf-ir-no-srcset="true"></a></td>
+                                                                <td height="184" valign="top" style="height:184px; padding:14px 13px; vertical-align:top;">
+                                                                    <table role="presentation" width="100%" height="156" cellpadding="0" cellspacing="0" border="0" style="width:100%; height:156px; table-layout:fixed;">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td height="20" valign="top" style="height:20px; font-family:Arial,Helvetica,sans-serif; font-size:11px; line-height:14px; font-weight:900; letter-spacing:.5px; text-transform:uppercase; color:#ff3b3b;" class="esd-text"> 13h às 14h </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td height="40" valign="top" style="height:40px; font-family:Arial,Helvetica,sans-serif; font-size:14px; line-height:18px; font-weight:800; color:#ffffff;" class="esd-text">Dr. Ragami Alves, PhD.</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign="top" style="font-family:Arial,Helvetica,sans-serif; font-size:12px; line-height:17px; color:#ffb5b5;" class="esd-text"> Métodos e combinações práticas para ganhos de massa muscular </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                                <td class="column-gap esd-text" width="12" style="width:12px; min-width:12px; font-size:0; line-height:0;">&nbsp;</td>
+                                                <td class="stack-column" width="294" valign="top" style="width:294px; max-width:294px; vertical-align:top;">
+                                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#210000" style="width:100%; height:184px; table-layout:fixed; background-color:#210000; border:1px solid #7a0000; border-radius:14px; overflow:hidden;">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td width="108" height="184" valign="top" style="width:108px; height:184px; overflow:hidden;"><a><img src="https://uniguacu24074.activehosted.com/content/xdRQOD/2026/07/31/4961190e-0963-4438-8cf4-77d0297a84a0.png?id=2282573" width="108" height="184" alt style="display:block; width:108px; max-width:108px; height:184px; object-fit:cover; object-position:center top; border:0;" data-cf-ir-is-resized="true" data-cf-ir-should-resize-image="true" srcset="https://uniguacu24074.activehosted.com/cdn-cgi/image/fit=scale-down,width=108,dpr=1,format=auto,redirect/content/xdRQOD/2026/07/31/4961190e-0963-4438-8cf4-77d0297a84a0.png 1x,https://uniguacu24074.activehosted.com/cdn-cgi/image/fit=scale-down,width=108,dpr=2,format=auto,redirect/content/xdRQOD/2026/07/31/4961190e-0963-4438-8cf4-77d0297a84a0.png 2x,https://uniguacu24074.activehosted.com/cdn-cgi/image/fit=scale-down,width=108,dpr=3,format=auto,redirect/content/xdRQOD/2026/07/31/4961190e-0963-4438-8cf4-77d0297a84a0.png 3x,https://uniguacu24074.activehosted.com/cdn-cgi/image/fit=scale-down,width=108,dpr=4,format=auto,redirect/content/xdRQOD/2026/07/31/4961190e-0963-4438-8cf4-77d0297a84a0.png 4x" data-cf-ir-no-srcset="true"></a></td>
+                                                                <td height="184" valign="top" style="height:184px; padding:14px 13px; vertical-align:top;">
+                                                                    <table role="presentation" width="100%" height="156" cellpadding="0" cellspacing="0" border="0" style="width:100%; height:156px; table-layout:fixed;">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td height="20" valign="top" style="height:20px; font-family:Arial,Helvetica,sans-serif; font-size:11px; line-height:14px; font-weight:900; letter-spacing:.5px; text-transform:uppercase; color:#ff3b3b;" class="esd-text"> 14h às 15h </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td height="40" valign="top" style="height:40px; font-family:Arial,Helvetica,sans-serif; font-size:14px; line-height:18px; font-weight:800; color:#ffffff;" class="esd-text">Dr. Douglas Popp</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign="top" style="font-family:Arial,Helvetica,sans-serif; font-size:12px; line-height:17px; color:#ffb5b5;" class="esd-text"> A ciência prática para ser o personal trainer referência na academia </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="12" style="height:12px; line-height:12px; font-size:1px;" class="esd-text">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="mobile-padding" style="padding:6px 20px 20px;">
+                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#ff0000" style="width:100%; background-color:#ff0000; border-radius:14px;">
+                                        <tbody>
+                                            <tr>
+                                                <td align="center" style="padding:23px 24px;" class="esd-text">
+                                                    <p style="margin:0; font-family:Arial,Helvetica,sans-serif; font-size:18px; line-height:25px; font-weight:900; color:#ffffff; padding-bottom:15px;">Encontrou uma aula que pode transformar sua forma de treinar, avaliar ou atender?</p>
+                                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" class=" cke_show_border">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td align="center" bgcolor="#00dd77" style="background-color:#00dd77; border-radius:8px;"><a href="https://pos.faculdadeuniguacu.com.br/desafia-uniguacu-2026-org?utm_source=mail&utm_medium=organic&utm_content=treinamento&utm_campaign=desafia-2026&utm_term=cronograma" target="_blank" style="display:inline-block; padding:14px 24px; font-family:Arial,Helvetica,sans-serif; font-size:13px; line-height:16px; font-weight:900; text-transform:uppercase; letter-spacing:.4px; color:#062815; border-radius:8px; text-decoration:none;">GARANTIR MINHA VAGA GRATUITA </a></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="12" style="height:12px; line-height:12px; font-size:1px;" class="esd-text">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="mobile-padding" style="padding:0 20px;">
+                                    <table role="presentation" class="desktop-grid" width="600" cellpadding="0" cellspacing="0" border="0" align="center" style="width:100%; max-width:600px; table-layout:fixed; margin:0 auto;">
+                                        <tbody>
+                                            <tr>
+                                                <td class="stack-column" width="294" valign="top" style="width:294px; max-width:294px; vertical-align:top;">
+                                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#210000" style="width:100%; height:184px; table-layout:fixed; background-color:#210000; border:1px solid #7a0000; border-radius:14px; overflow:hidden;">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td width="108" height="184" valign="top" style="width:108px; height:184px; overflow:hidden;"><a><img src="https://uniguacu24074.activehosted.com/content/xdRQOD/2026/07/31/4910cf4f-05db-4347-838a-7cfb3f05c03e.png?id=2282575" width="108" height="184" alt style="display:block; width:108px; max-width:108px; height:184px; object-fit:cover; object-position:center top; border:0;" data-cf-ir-is-resized="true" data-cf-ir-should-resize-image="true" srcset="https://uniguacu24074.activehosted.com/cdn-cgi/image/fit=scale-down,width=108,dpr=1,format=auto,redirect/content/xdRQOD/2026/07/31/4910cf4f-05db-4347-838a-7cfb3f05c03e.png 1x,https://uniguacu24074.activehosted.com/cdn-cgi/image/fit=scale-down,width=108,dpr=2,format=auto,redirect/content/xdRQOD/2026/07/31/4910cf4f-05db-4347-838a-7cfb3f05c03e.png 2x,https://uniguacu24074.activehosted.com/cdn-cgi/image/fit=scale-down,width=108,dpr=3,format=auto,redirect/content/xdRQOD/2026/07/31/4910cf4f-05db-4347-838a-7cfb3f05c03e.png 3x,https://uniguacu24074.activehosted.com/cdn-cgi/image/fit=scale-down,width=108,dpr=4,format=auto,redirect/content/xdRQOD/2026/07/31/4910cf4f-05db-4347-838a-7cfb3f05c03e.png 4x" data-cf-ir-no-srcset="true"></a></td>
+                                                                <td height="184" valign="top" style="height:184px; padding:14px 13px; vertical-align:top;">
+                                                                    <table role="presentation" width="100%" height="156" cellpadding="0" cellspacing="0" border="0" style="width:100%; height:156px; table-layout:fixed;">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td height="20" valign="top" style="height:20px; font-family:Arial,Helvetica,sans-serif; font-size:11px; line-height:14px; font-weight:900; letter-spacing:.5px; text-transform:uppercase; color:#ff3b3b;" class="esd-text"> 15h às 16h </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td height="40" valign="top" style="height:40px; font-family:Arial,Helvetica,sans-serif; font-size:14px; line-height:18px; font-weight:800; color:#ffffff;" class="esd-text">Dr. Roberto Régis, PhD.</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign="top" style="font-family:Arial,Helvetica,sans-serif; font-size:12px; line-height:17px; color:#ffb5b5;" class="esd-text"> Construção estética de coxas e glúteos </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                                <td class="column-gap esd-text" width="12" style="width:12px; min-width:12px; font-size:0; line-height:0;">&nbsp;</td>
+                                                <td class="stack-column" width="294" valign="top" style="width:294px; max-width:294px; vertical-align:top;">
+                                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#210000" style="width:100%; height:184px; table-layout:fixed; background-color:#210000; border:1px solid #7a0000; border-radius:14px; overflow:hidden;">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td width="108" height="184" valign="top" style="width:108px; height:184px; overflow:hidden;"><a><img src="https://uniguacu24074.activehosted.com/content/xdRQOD/2026/07/31/34278383-874b-4900-8f51-86fe031a46bc.png?id=2282576" width="108" height="184" alt style="display:block; width:108px; max-width:108px; height:184px; object-fit:cover; object-position:center top; border:0;" data-cf-ir-is-resized="true" data-cf-ir-should-resize-image="true" srcset="https://uniguacu24074.activehosted.com/cdn-cgi/image/fit=scale-down,width=108,dpr=1,format=auto,redirect/content/xdRQOD/2026/07/31/34278383-874b-4900-8f51-86fe031a46bc.png 1x,https://uniguacu24074.activehosted.com/cdn-cgi/image/fit=scale-down,width=108,dpr=2,format=auto,redirect/content/xdRQOD/2026/07/31/34278383-874b-4900-8f51-86fe031a46bc.png 2x,https://uniguacu24074.activehosted.com/cdn-cgi/image/fit=scale-down,width=108,dpr=3,format=auto,redirect/content/xdRQOD/2026/07/31/34278383-874b-4900-8f51-86fe031a46bc.png 3x,https://uniguacu24074.activehosted.com/cdn-cgi/image/fit=scale-down,width=108,dpr=4,format=auto,redirect/content/xdRQOD/2026/07/31/34278383-874b-4900-8f51-86fe031a46bc.png 4x" data-cf-ir-no-srcset="true"></a></td>
+                                                                <td height="184" valign="top" style="height:184px; padding:14px 13px; vertical-align:top;">
+                                                                    <table role="presentation" width="100%" height="156" cellpadding="0" cellspacing="0" border="0" style="width:100%; height:156px; table-layout:fixed;">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td height="20" valign="top" style="height:20px; font-family:Arial,Helvetica,sans-serif; font-size:11px; line-height:14px; font-weight:900; letter-spacing:.5px; text-transform:uppercase; color:#ff3b3b;" class="esd-text"> 16h às 16h30 </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td height="40" valign="top" style="height:40px; font-family:Arial,Helvetica,sans-serif; font-size:14px; line-height:18px; font-weight:800; color:#ffffff;" class="esd-text">Esp. Johann Schatz</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign="top" style="font-family:Arial,Helvetica,sans-serif; font-size:12px; line-height:17px; color:#ffb5b5;" class="esd-text"> Técnicas avançadas para desenvolver os glúteos </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="12" style="height:12px; line-height:12px; font-size:1px;" class="esd-text">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="mobile-padding" style="padding:0 20px;">
+                                    <table role="presentation" class="desktop-grid" width="600" cellpadding="0" cellspacing="0" border="0" align="center" style="width:100%; max-width:600px; table-layout:fixed; margin:0 auto;">
+                                        <tbody>
+                                            <tr>
+                                                <td class="stack-column" width="294" valign="top" style="width:294px; max-width:294px; vertical-align:top;">
+                                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#210000" style="width:100%; height:184px; table-layout:fixed; background-color:#210000; border:1px solid #7a0000; border-radius:14px; overflow:hidden;">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td width="108" height="184" valign="top" style="width:108px; height:184px; overflow:hidden;"><a><img src="https://uniguacu24074.activehosted.com/content/xdRQOD/2026/07/31/83cf5704-4b91-4d4f-9c0e-0600bb78fa88.png?id=2282577" width="108" height="184" alt style="display:block; width:108px; max-width:108px; height:184px; object-fit:cover; object-position:center top; border:0;" data-cf-ir-is-resized="true" data-cf-ir-should-resize-image="true" srcset="https://uniguacu24074.activehosted.com/cdn-cgi/image/fit=scale-down,width=108,dpr=1,format=auto,redirect/content/xdRQOD/2026/07/31/83cf5704-4b91-4d4f-9c0e-0600bb78fa88.png 1x,https://uniguacu24074.activehosted.com/cdn-cgi/image/fit=scale-down,width=108,dpr=2,format=auto,redirect/content/xdRQOD/2026/07/31/83cf5704-4b91-4d4f-9c0e-0600bb78fa88.png 2x,https://uniguacu24074.activehosted.com/cdn-cgi/image/fit=scale-down,width=108,dpr=3,format=auto,redirect/content/xdRQOD/2026/07/31/83cf5704-4b91-4d4f-9c0e-0600bb78fa88.png 3x,https://uniguacu24074.activehosted.com/cdn-cgi/image/fit=scale-down,width=108,dpr=4,format=auto,redirect/content/xdRQOD/2026/07/31/83cf5704-4b91-4d4f-9c0e-0600bb78fa88.png 4x" data-cf-ir-no-srcset="true"></a></td>
+                                                                <td height="184" valign="top" style="height:184px; padding:14px 13px; vertical-align:top;">
+                                                                    <table role="presentation" width="100%" height="156" cellpadding="0" cellspacing="0" border="0" style="width:100%; height:156px; table-layout:fixed;">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td height="20" valign="top" style="height:20px; font-family:Arial,Helvetica,sans-serif; font-size:11px; line-height:14px; font-weight:900; letter-spacing:.5px; text-transform:uppercase; color:#ff3b3b;" class="esd-text"> 16h30 às 17h </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td height="40" valign="top" style="height:40px; font-family:Arial,Helvetica,sans-serif; font-size:14px; line-height:18px; font-weight:800; color:#ffffff;" class="esd-text">Esp. Angela Borges</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign="top" style="font-family:Arial,Helvetica,sans-serif; font-size:12px; line-height:17px; color:#ffb5b5;" class="esd-text"> Treinamento para linha de cintura </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                                <td class="column-gap esd-text" width="12" style="width:12px; min-width:12px; font-size:0; line-height:0;">&nbsp;</td>
+                                                <td class="stack-column" width="294" valign="top" style="width:294px; max-width:294px; vertical-align:top;">
+                                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#210000" style="width:100%; height:184px; table-layout:fixed; background-color:#210000; border:1px solid #7a0000; border-radius:14px; overflow:hidden;">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td width="108" height="184" valign="top" style="width:108px; height:184px; overflow:hidden;"><a><img src="https://uniguacu24074.activehosted.com/content/xdRQOD/2026/07/31/564b2698-7e8b-4aa1-9796-fe2b0344f508.png?id=2282580" width="108" height="184" alt style="display:block; width:108px; max-width:108px; height:184px; object-fit:cover; object-position:center top; border:0;" data-cf-ir-is-resized="true" data-cf-ir-should-resize-image="true" srcset="https://uniguacu24074.activehosted.com/cdn-cgi/image/fit=scale-down,width=108,dpr=1,format=auto,redirect/content/xdRQOD/2026/07/31/564b2698-7e8b-4aa1-9796-fe2b0344f508.png 1x,https://uniguacu24074.activehosted.com/cdn-cgi/image/fit=scale-down,width=108,dpr=2,format=auto,redirect/content/xdRQOD/2026/07/31/564b2698-7e8b-4aa1-9796-fe2b0344f508.png 2x,https://uniguacu24074.activehosted.com/cdn-cgi/image/fit=scale-down,width=108,dpr=3,format=auto,redirect/content/xdRQOD/2026/07/31/564b2698-7e8b-4aa1-9796-fe2b0344f508.png 3x,https://uniguacu24074.activehosted.com/cdn-cgi/image/fit=scale-down,width=108,dpr=4,format=auto,redirect/content/xdRQOD/2026/07/31/564b2698-7e8b-4aa1-9796-fe2b0344f508.png 4x" data-cf-ir-no-srcset="true"></a></td>
+                                                                <td height="184" valign="top" style="height:184px; padding:14px 13px; vertical-align:top;">
+                                                                    <table role="presentation" width="100%" height="156" cellpadding="0" cellspacing="0" border="0" style="width:100%; height:156px; table-layout:fixed;">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td height="20" valign="top" style="height:20px; font-family:Arial,Helvetica,sans-serif; font-size:11px; line-height:14px; font-weight:900; letter-spacing:.5px; text-transform:uppercase; color:#ff3b3b;" class="esd-text"> 17h às 18h </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td height="40" valign="top" style="height:40px; font-family:Arial,Helvetica,sans-serif; font-size:14px; line-height:18px; font-weight:800; color:#ffffff;" class="esd-text">Gabriel Kaminski, PhD.</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign="top" style="font-family:Arial,Helvetica,sans-serif; font-size:12px; line-height:17px; color:#ffb5b5;" class="esd-text"> O universo peptídico: do mecanismo à maestria, um guia estruturado da farmacologia moderna </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="12" style="height:12px; line-height:12px; font-size:1px;" class="esd-text">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="mobile-padding" style="padding:0 20px;">
+                                    <table role="presentation" class="desktop-grid" width="600" cellpadding="0" cellspacing="0" border="0" align="center" style="width:100%; max-width:600px; table-layout:fixed; margin:0 auto;">
+                                        <tbody>
+                                            <tr>
+                                                <td class="stack-column" width="294" valign="top" style="width:294px; max-width:294px; vertical-align:top;">
+                                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#210000" style="width:100%; height:184px; table-layout:fixed; background-color:#210000; border:1px solid #7a0000; border-radius:14px; overflow:hidden;">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td width="108" height="184" valign="top" style="width:108px; height:184px; overflow:hidden;"><a><img src="https://uniguacu24074.activehosted.com/content/xdRQOD/2026/07/31/efdaaa9b-508e-4bce-9f50-a2139a0898c6.png?id=2282581" width="108" height="184" alt style="display:block; width:108px; max-width:108px; height:184px; object-fit:cover; object-position:center top; border:0;" data-cf-ir-is-resized="true" data-cf-ir-should-resize-image="true" srcset="https://uniguacu24074.activehosted.com/cdn-cgi/image/fit=scale-down,width=108,dpr=1,format=auto,redirect/content/xdRQOD/2026/07/31/efdaaa9b-508e-4bce-9f50-a2139a0898c6.png 1x,https://uniguacu24074.activehosted.com/cdn-cgi/image/fit=scale-down,width=108,dpr=2,format=auto,redirect/content/xdRQOD/2026/07/31/efdaaa9b-508e-4bce-9f50-a2139a0898c6.png 2x,https://uniguacu24074.activehosted.com/cdn-cgi/image/fit=scale-down,width=108,dpr=3,format=auto,redirect/content/xdRQOD/2026/07/31/efdaaa9b-508e-4bce-9f50-a2139a0898c6.png 3x,https://uniguacu24074.activehosted.com/cdn-cgi/image/fit=scale-down,width=108,dpr=4,format=auto,redirect/content/xdRQOD/2026/07/31/efdaaa9b-508e-4bce-9f50-a2139a0898c6.png 4x" data-cf-ir-no-srcset="true"></a></td>
+                                                                <td height="184" valign="top" style="height:184px; padding:14px 13px; vertical-align:top;">
+                                                                    <table role="presentation" width="100%" height="156" cellpadding="0" cellspacing="0" border="0" style="width:100%; height:156px; table-layout:fixed;">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td height="20" valign="top" style="height:20px; font-family:Arial,Helvetica,sans-serif; font-size:11px; line-height:14px; font-weight:900; letter-spacing:.5px; text-transform:uppercase; color:#ff3b3b;" class="esd-text"> 18h às 19h </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td height="40" valign="top" style="height:40px; font-family:Arial,Helvetica,sans-serif; font-size:14px; line-height:18px; font-weight:800; color:#ffffff;" class="esd-text">Dr. Tatiany Faria, PhD.</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign="top" style="font-family:Arial,Helvetica,sans-serif; font-size:12px; line-height:17px; color:#ffb5b5;" class="esd-text"> Esteroides anabólicos em mulheres 40+ </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                                <td class="column-gap esd-text" width="12" style="width:12px; min-width:12px; font-size:0; line-height:0;">&nbsp;</td>
+                                                <td class="stack-column" width="294" valign="top" style="width:294px; max-width:294px; vertical-align:top;">
+                                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#210000" style="width:100%; height:184px; table-layout:fixed; background-color:#210000; border:1px solid #7a0000; border-radius:14px; overflow:hidden;">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td width="108" height="184" valign="top" style="width:108px; height:184px; overflow:hidden;"><a><img src="https://uniguacu24074.activehosted.com/content/xdRQOD/2026/07/31/dcaf423a-52d7-4201-aea4-ff93eeeb0467.png?id=2282570" width="108" height="184" alt style="display:block; width:108px; max-width:108px; height:184px; object-fit:cover; object-position:center top; border:0;" data-cf-ir-is-resized="true" data-cf-ir-should-resize-image="true" srcset="https://uniguacu24074.activehosted.com/cdn-cgi/image/fit=scale-down,width=108,dpr=1,format=auto,redirect/content/xdRQOD/2026/07/31/dcaf423a-52d7-4201-aea4-ff93eeeb0467.png 1x,https://uniguacu24074.activehosted.com/cdn-cgi/image/fit=scale-down,width=108,dpr=2,format=auto,redirect/content/xdRQOD/2026/07/31/dcaf423a-52d7-4201-aea4-ff93eeeb0467.png 2x,https://uniguacu24074.activehosted.com/cdn-cgi/image/fit=scale-down,width=108,dpr=3,format=auto,redirect/content/xdRQOD/2026/07/31/dcaf423a-52d7-4201-aea4-ff93eeeb0467.png 3x,https://uniguacu24074.activehosted.com/cdn-cgi/image/fit=scale-down,width=108,dpr=4,format=auto,redirect/content/xdRQOD/2026/07/31/dcaf423a-52d7-4201-aea4-ff93eeeb0467.png 4x" data-cf-ir-no-srcset="true"></a></td>
+                                                                <td height="184" valign="top" style="height:184px; padding:14px 13px; vertical-align:top;">
+                                                                    <table role="presentation" width="100%" height="156" cellpadding="0" cellspacing="0" border="0" style="width:100%; height:156px; table-layout:fixed;">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td height="20" valign="top" style="height:20px; font-family:Arial,Helvetica,sans-serif; font-size:11px; line-height:14px; font-weight:900; letter-spacing:.5px; text-transform:uppercase; color:#ff3b3b;" class="esd-text"> 19h às 20h </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td height="40" valign="top" style="height:40px; font-family:Arial,Helvetica,sans-serif; font-size:14px; line-height:18px; font-weight:800; color:#ffffff;" class="esd-text">Dr. Rodrigo Gibin</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign="top" style="font-family:Arial,Helvetica,sans-serif; font-size:12px; line-height:17px; color:#ffb5b5;" class="esd-text"> Análogos de GLP-1 em longo prazo: resultados do paciente, metabolismo e estilo de vida </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="12" style="height:12px; line-height:12px; font-size:1px;" class="esd-text">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td align="center" class="mobile-padding esd-text" style="padding:24px 20px 12px;">
+                                    <p style="font-family:Arial,Helvetica,sans-serif; font-size:18px; line-height:26px; font-weight:900; color:#ffffff; padding:0 20px 16px;">Um dia inteiro para ampliar seu repertório e tomar decisões mais seguras no treino, na avaliação e no atendimento.</p>
+                                    <table role="presentation" class="button-table cke_show_border" cellpadding="0" cellspacing="0" border="0">
+                                        <tbody>
+                                            <tr>
+                                                <td align="center" bgcolor="#00dd77" style="background-color:#00dd77; border-radius:8px;"><a class="button-link" href="https://pos.faculdadeuniguacu.com.br/desafia-uniguacu-2026-org?utm_source=mail&utm_medium=organic&utm_content=treinamento&utm_campaign=desafia-2026&utm_term=cronograma" target="_blank" style="display:inline-block; padding:15px 28px; font-family:Arial,Helvetica,sans-serif; font-size:13px; line-height:16px; font-weight:900; text-transform:uppercase; letter-spacing:.4px; color:#062815; border-radius:8px; text-decoration:none;">GARANTIR MINHA VAGA GRATUITA </a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!--[if mso]>
+        </td></tr></table>
+        <![endif]-->
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
