@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta name="x-apple-disable-message-reformatting">
+    <meta content="telephone=no,address=no,email=no,date=no,url=no" name="format-detection">
+    <title>Programação completa</title>
+    <!--[if mso]>
+  <noscript>
+    <xml>
+      <o:OfficeDocumentSettings>
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+      </o:OfficeDocumentSettings>
+    </xml>
+  </noscript>
+  <![endif]-->
+    <!--[if mso]>
+  <style>
+    .column { margin-left: 0 !important; }
+  </style>
+  <![endif]-->
+    <style>
+        html,
+        body {
+            margin: 0 !important;
+            padding: 0 !important;
+            width: 100% !important;
+            min-width: 100% !important;
+            background-color: #05070f !important;
+        }
+
+        table,
+        td {
+            border-collapse: collapse !important;
+            mso-table-lspace: 0pt !important;
+            mso-table-rspace: 0pt !important;
+        }
+
+        img {
+            border: 0;
+            outline: none;
+            text-decoration: none;
+            -ms-interpolation-mode: bicubic;
+            display: block;
+            height: auto;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        p,
+        h1,
+        h2,
+        h3 {
+            margin: 0;
+            padding: 0;
+        }
+
+        .preheader {
+            display: none !important;
+            visibility: hidden;
+            opacity: 0;
+            color: transparent;
+            height: 0;
+            width: 0;
+            overflow: hidden;
+            mso-hide: all;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 640px;
+        }
+
+        .mobile-padding {
+            padding-left: 24px !important;
+            padding-right: 24px !important;
+        }
+
+        .two-column {
+            font-size: 0;
+            text-align: center;
+        }
+
+        .column {
+            display: inline-block;
+            width: 100%;
+            max-width: 300px;
+            vertical-align: top;
+            text-align: left;
+        }
+
+        .button-link:hover {
+            opacity: 0.9;
+        }
+
+        @media screen and (max-width: 640px) {
+            .container {
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+
+            .mobile-padding {
+                padding-left: 18px !important;
+                padding-right: 18px !important;
+            }
+
+            .header-cell {
+                padding: 28px 22px !important;
+            }
+
+            .header-copy,
+            .header-brand {
+                display: block !important;
+                width: 100% !important;
+                max-width: 100% !important;
+                text-align: left !important;
+            }
+
+            .header-brand {
+                padding-top: 22px !important;
+            }
+
+            .header-brand img {
+                width: 145px !important;
+                max-width: 145px !important;
+            }
+
+            .hero-title {
+                font-size: 38px !important;
+                line-height: 40px !important;
+            }
+
+            .section-title {
+                font-size: 25px !important;
+                line-height: 30px !important;
+            }
+
+            .column {
+                display: block !important;
+                width: 100% !important;
+                max-width: 100% !important;
+                margin-left: 0 !important;
+            }
+
+            .column-spacer {
+                height: 12px !important;
+                line-height: 12px !important;
+            }
+
+            .session-card {
+                width: 100% !important;
+            }
+
+            .session-image {
+                width: 102px !important;
+                max-width: 102px !important;
+            }
+
+            .button-table,
+            .button-table td,
+            .button-link {
+                width: 100% !important;
+            }
+
+            .button-link {
+                box-sizing: border-box !important;
+                display: block !important;
+                text-align: center !important;
+            }
+        }
+
+        @media screen and (max-width: 420px) {
+            .hero-title {
+                font-size: 33px !important;
+                line-height: 36px !important;
+            }
+
+            .session-image {
+                width: 88px !important;
+                max-width: 88px !important;
+            }
+
+            .session-content {
+                padding: 14px 12px !important;
+            }
+
+            .session-speaker {
+                font-size: 14px !important;
+                line-height: 18px !important;
+            }
+
+            .session-description {
+                font-size: 12px !important;
+                line-height: 17px !important;
+            }
+        }
+
+        /* Grade da programação: duas colunas reais no desktop */
+        .desktop-grid {
+            width: 100% !important;
+            table-layout: fixed !important;
+        }
+
+        .stack-column {
+            width: 294px;
+            max-width: 294px;
+            vertical-align: top;
+        }
+
+        .column-gap {
+            width: 12px;
+            min-width: 12px;
+            font-size: 0;
+            line-height: 0;
+        }
+
+        .session-card-fixed {
+            width: 100% !important;
+            height: 172px !important;
+            table-layout: fixed !important;
+        }
+
+        .session-photo-cell {
+            width: 108px !important;
+            height: 172px !important;
+            overflow: hidden !important;
+        }
+
+        .session-photo-fixed {
+            width: 108px !important;
+            max-width: 108px !important;
+            height: 172px !important;
+            object-fit: cover !important;
+            object-position: center top !important;
+        }
+
+        .session-copy-fixed {
+            height: 172px !important;
+            padding: 14px 13px !important;
+            vertical-align: top !important;
+        }
+
+        .session-time-row {
+            height: 20px !important;
+            vertical-align: top !important;
+        }
+
+        .session-speaker-row {
+            height: 44px !important;
+            vertical-align: top !important;
+        }
+
+        .session-description-row {
+            vertical-align: top !important;
+        }
+
+        @media screen and (max-width: 640px) {
+
+            .desktop-grid,
+            .desktop-grid tbody,
+            .desktop-grid tr {
+                display: block !important;
+                width: 100% !important;
+            }
+
+            .stack-column {
+                display: block !important;
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+
+            .column-gap {
+                display: block !important;
+                width: 100% !important;
+                min-width: 100% !important;
+                height: 12px !important;
+                line-height: 12px !important;
+            }
+
+            .session-card-fixed {
+                width: 100% !important;
+                height: 172px !important;
+            }
+
+            .session-photo-cell,
+            .session-photo-fixed {
+                width: 108px !important;
+                max-width: 108px !important;
+                height: 172px !important;
+            }
+        }
+
+        @media screen and (max-width: 420px) {
+
+            .session-photo-cell,
+            .session-photo-fixed {
+                width: 96px !important;
+                max-width: 96px !important;
+                height: 172px !important;
+            }
+
+            .session-copy-fixed {
+                padding: 13px 11px !important;
+            }
+        }
+    </style>
+    <!--[if mso]><xml>
+    <w:WordDocument xmlns:w="urn:schemas-microsoft-com:office:word">
+      <w:DontUseAdvancedTypographyReadingMail/>
+    </w:WordDocument>
+    </xml><![endif]-->
+    <!--[if !mso]><!-- -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet">
+    <!--<![endif]-->
+</head>
+
+<body style="margin:0; padding:0; background-color:#05070f;">
+    <div class="preheader esd-text"> Confira os temas, horários e especialistas confirmados na programação completa. </div>
+    <table bgcolor="#05070f" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%; background-color:#05070f;" width="100%">
+        <tbody>
+            <tr>
+                <td align="center" style="padding:18px 10px 34px;">
+                    <!--[if mso]>
+        <table role="presentation" width="640" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td>
+        <![endif]-->
+                    <table bgcolor="#05070f" border="0" cellpadding="0" cellspacing="0" class="container" role="presentation" style="width:100%; max-width:640px; background-color:#05070f;" width="100%">
+                        <!-- HERO -->
+                        <tbody>
+                            <tr>
+                                <td class="mobile-padding" style="padding:0 20px 18px;">
+                                    <table bgcolor="#0a0f2c" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%; background-color:#0a0f2c; border-radius:18px; overflow:hidden;" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td class="header-cell" style="padding:34px 32px;">
+                                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="header-copy esd-text" style="width:100%;" valign="top" width="100%" align="left" esd-links-underline="none">
+                                                                    <p style="font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height:18px; font-weight:700; letter-spacing:1.2px; text-transform:uppercase; color:#00d4ff; padding-bottom:10px;">UNIGUAÇU DESAFIA 2026</p>
+                                                                    <h1 class="hero-title" style="font-family:Arial, Helvetica, sans-serif; font-size:48px; line-height:50px; font-weight:900; letter-spacing:-1.8px; color:#ffffff;">Programação<br>completa</h1>
+                                                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="margin-top:20px;" width="100%" class=" cke_show_border">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td bgcolor="#00d4ff" style="width:4px; background-color:#00d4ff; border-radius:4px;" width="4" class="esd-text"><br></td>
+                                                                                <td style="padding-left:14px; font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:22px; color:#e8f0ff;" class="esd-text">Mais de <b>8 horas ao vivo</b> sobre temas que já exigem novas respostas na prática profissional: GLP-1, comportamento alimentar, saúde da mulher, estratégias nutricionais e muito mais.</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="margin-top:18px;" class=" cke_show_border">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td style="padding:0 8px 8px 0;"><span style="display:inline-block; border:1px solid #174d71; border-radius:999px; padding:6px 10px; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:14px; font-weight:700; color:#bff7ff; background-color:#10203d;">Online</span></td>
+                                                                                <td style="padding:0 8px 8px 0;"><span style="display:inline-block; border:1px solid #174d71; border-radius:999px; padding:6px 10px; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:14px; font-weight:700; color:#bff7ff; background-color:#10203d;">Ao vivo</span></td>
+                                                                                <td style="padding:0 0 8px 0;"><span style="display:inline-block; border:1px solid #174d71; border-radius:999px; padding:6px 10px; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:14px; font-weight:700; color:#bff7ff; background-color:#10203d;">Certificado</span></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                    <table border="0" cellpadding="0" cellspacing="0" class="button-table cke_show_border" role="presentation" style="margin-top:14px;">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td align="center" bgcolor="#00dd77" style="background-color:#00dd77; border-radius:8px;"><a class="button-link" href="{{LINK_INSCRICAO}}" style="display: inline-block; padding: 15px 24px; font-family: Arial, Helvetica, sans-serif; font-size: 13px; line-height: 16px; font-weight: 800; letter-spacing: 0.4px; text-transform: uppercase; color: #062815; border-radius: 8px; text-decoration: none;" target="_blank">GARANTIR MINHA VAGA GRATUITA</a></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr><!-- INTRO AGENDA -->
+                            <tr>
+                                <td align="center" class="mobile-padding esd-text" style="padding:22px 28px 18px;">
+                                    <p style="font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:16px; font-weight:800; letter-spacing:1.3px; text-transform:uppercase; color:#00d4ff; padding-bottom:8px;">Atualização para os novos desafios da Nutrição</p>
+                                    <h2 class="section-title" style="font-family:Arial, Helvetica, sans-serif; font-size:30px; line-height:35px; font-weight:900; letter-spacing:-.7px; color:#ffffff;">Confira os temas e professores confirmados para a trilha de nutrição</h2>
+                                </td>
+                            </tr><!-- GRADE DA PROGRAMAÇÃO -->
+                            <tr>
+                                <td class="mobile-padding" style="padding:0 20px;">
+                                    <table role="presentation" class="desktop-grid" width="600" cellpadding="0" cellspacing="0" border="0" align="center" style="width:100%; max-width:600px; table-layout:fixed; margin:0 auto;">
+                                        <tbody>
+                                            <tr>
+                                                <td class="stack-column" width="294" valign="top" style="width:294px; max-width:294px; vertical-align:top;">
+                                                    <table role="presentation" class="session-card-fixed" width="100%" height="172" cellpadding="0" cellspacing="0" border="0" bgcolor="#0a0f2c" style="width:100%; height:172px; table-layout:fixed; background-color:#0a0f2c; border-radius:14px; overflow:hidden;">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="session-photo-cell" width="108" height="172" valign="top" style="width:108px; height:172px; overflow:hidden;"><a><img class="session-photo-fixed" src="https://uniguacu24074.activehosted.com/content/xdRQOD/2026/07/23/2d959751-0d89-47db-a788-27941d824f04.png?id=2192061" width="108" height="172" alt="Me. Leandro Medeiros" style="display:block; width:108px; max-width:108px; height:172px; object-fit:cover; object-position:center top;"></a></td>
+                                                                <td class="session-copy-fixed" height="172" valign="top" style="height:172px; padding:14px 13px; vertical-align:top;">
+                                                                    <table role="presentation" width="100%" height="144" cellpadding="0" cellspacing="0" border="0" style="width:100%; height:144px; table-layout:fixed;">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td class="session-time-row esd-text" height="20" valign="top" style="height:20px; vertical-align:top; font-family:Arial, Helvetica, sans-serif; font-size:11px; line-height:14px; font-weight:800; letter-spacing:.5px; text-transform:uppercase; color:#00ffff;"> 09h às 10h </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="session-speaker-row esd-text" height="44" valign="top" style="height:44px; vertical-align:top; font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:18px; font-weight:800; color:#ffffff;"> Me. Leandro Medeiros </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="session-description-row esd-text" valign="top" style="vertical-align:top; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:17px; color:#b9dcea;"> Cannabis sativa: que novidades temos para Medicina, Farmácia e Nutrição em 2026? </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                                <td class="column-gap esd-text" width="12" style="width:12px; min-width:12px; font-size:0; line-height:0;">&nbsp;</td>
+                                                <td class="stack-column" width="294" valign="top" style="width:294px; max-width:294px; vertical-align:top;">
+                                                    <table role="presentation" class="session-card-fixed" width="100%" height="172" cellpadding="0" cellspacing="0" border="0" bgcolor="#0a0f2c" style="width:100%; height:172px; table-layout:fixed; background-color:#0a0f2c; border-radius:14px; overflow:hidden;">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="session-photo-cell" width="108" height="172" valign="top" style="width:108px; height:172px; overflow:hidden;"><img class="session-photo-fixed" src="https://uniguacu24074.activehosted.com/content/xdRQOD/2026/07/23/e0b51ec7-f0a7-44e3-8251-3a5670a31aa6.png?id=2192059" width="108" height="172" alt="Me. Dudu Haluch e Esp. Deborah Moss" style="display:block; width:108px; max-width:108px; height:172px; object-fit:cover; object-position:center top;"></td>
+                                                                <td class="session-copy-fixed" height="172" valign="top" style="height:172px; padding:14px 13px; vertical-align:top;">
+                                                                    <table role="presentation" width="100%" height="144" cellpadding="0" cellspacing="0" border="0" style="width:100%; height:144px; table-layout:fixed;">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td class="session-time-row esd-text" height="20" valign="top" style="height:20px; vertical-align:top; font-family:Arial, Helvetica, sans-serif; font-size:11px; line-height:14px; font-weight:800; letter-spacing:.5px; text-transform:uppercase; color:#00ffff;"> 10h às 11h </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="session-speaker-row esd-text" height="44" valign="top" style="height:44px; vertical-align:top; font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:18px; font-weight:800; color:#ffffff;">Me. Dudu Haluch e Esp. Deborah Moss</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="session-description-row esd-text" valign="top" style="vertical-align:top; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:17px; color:#b9dcea;"> Nutrição além das calorias </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="12" style="height:12px; line-height:12px; font-size:1px;" class="esd-text">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="mobile-padding" style="padding:0 20px;">
+                                    <table role="presentation" class="desktop-grid" width="600" cellpadding="0" cellspacing="0" border="0" align="center" style="width:100%; max-width:600px; table-layout:fixed; margin:0 auto;">
+                                        <tbody>
+                                            <tr>
+                                                <td class="stack-column" width="294" valign="top" style="width:294px; max-width:294px; vertical-align:top;">
+                                                    <table role="presentation" class="session-card-fixed" width="100%" height="172" cellpadding="0" cellspacing="0" border="0" bgcolor="#0a0f2c" style="width:100%; height:172px; table-layout:fixed; background-color:#0a0f2c; border-radius:14px; overflow:hidden;">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="session-photo-cell" width="108" height="172" valign="top" style="width:108px; height:172px; overflow:hidden;"><img class="session-photo-fixed" src="https://uniguacu24074.activehosted.com/content/xdRQOD/2026/07/23/3b2d3247-1105-4d0d-800d-678089795462.png?id=2192058" width="108" height="172" alt="Esp. Jefferson Bittencourt" style="display:block; width:108px; max-width:108px; height:172px; object-fit:cover; object-position:center top;"></td>
+                                                                <td class="session-copy-fixed" height="172" valign="top" style="height:172px; padding:14px 13px; vertical-align:top;">
+                                                                    <table role="presentation" width="100%" height="144" cellpadding="0" cellspacing="0" border="0" style="width:100%; height:144px; table-layout:fixed;">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td class="session-time-row esd-text" height="20" valign="top" style="height:20px; vertical-align:top; font-family:Arial, Helvetica, sans-serif; font-size:11px; line-height:14px; font-weight:800; letter-spacing:.5px; text-transform:uppercase; color:#00ffff;"> 11h às 12h </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="session-speaker-row esd-text" height="44" valign="top" style="height:44px; vertical-align:top; font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:18px; font-weight:800; color:#ffffff;"> Esp. Jefferson Bittencourt </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="session-description-row esd-text" valign="top" style="vertical-align:top; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:17px; color:#b9dcea;"> Social Selling: como usar as redes sociais para vendas assertivas </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                                <td class="column-gap esd-text" width="12" style="width:12px; min-width:12px; font-size:0; line-height:0;">&nbsp;</td>
+                                                <td class="stack-column" width="294" valign="top" style="width:294px; max-width:294px; vertical-align:top;">
+                                                    <table role="presentation" class="session-card-fixed" width="100%" height="172" cellpadding="0" cellspacing="0" border="0" bgcolor="#0a0f2c" style="width:100%; height:172px; table-layout:fixed; background-color:#0a0f2c; border-radius:14px; overflow:hidden;">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="session-photo-cell" width="108" height="172" valign="top" style="width:108px; height:172px; overflow:hidden;"><img class="session-photo-fixed" src="https://uniguacu24074.activehosted.com/content/xdRQOD/2026/07/23/b2a55e7a-79c6-4dec-b0bc-90bf46ccbaa1.png?id=2192056" width="108" height="172" alt="Esp. Felipe Almeida" style="display:block; width:108px; max-width:108px; height:172px; object-fit:cover; object-position:center top;"></td>
+                                                                <td class="session-copy-fixed" height="172" valign="top" style="height:172px; padding:14px 13px; vertical-align:top;">
+                                                                    <table role="presentation" width="100%" height="144" cellpadding="0" cellspacing="0" border="0" style="width:100%; height:144px; table-layout:fixed;">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td class="session-time-row esd-text" height="20" valign="top" style="height:20px; vertical-align:top; font-family:Arial, Helvetica, sans-serif; font-size:11px; line-height:14px; font-weight:800; letter-spacing:.5px; text-transform:uppercase; color:#00ffff;"> 12h às 13h </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="session-speaker-row esd-text" height="44" valign="top" style="height:44px; vertical-align:top; font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:18px; font-weight:800; color:#ffffff;"> Esp. Felipe Almeida </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="session-description-row esd-text" valign="top" style="vertical-align:top; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:17px; color:#b9dcea;"> Dieta e comportamento no uso de análogos de GLP-1 </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="12" style="height:12px; line-height:12px; font-size:1px;" class="esd-text">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="mobile-padding" style="padding:8px 20px 20px;">
+                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#0066ff" style="width:100%; background-color:#0066ff; border-radius:14px;">
+                                        <tbody>
+                                            <tr>
+                                                <td align="center" style="padding:23px 24px;" class="esd-text" esd-links-underline="none">
+                                                    <p style="font-family:Arial, Helvetica, sans-serif; font-size:18px; line-height:25px; font-weight:800; color:#ffffff; padding-bottom:15px;">Já encontrou uma aula que conversa com a sua atuação?</p>
+                                                    <table role="presentation" class="button-table cke_show_border" cellpadding="0" cellspacing="0" border="0">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td align="center" bgcolor="#00dd77" style="background-color:#00dd77; border-radius:8px;"><a class="button-link" href="{{LINK_INSCRICAO}}" target="_blank" style="display: inline-block; padding: 14px 24px; font-family: Arial, Helvetica, sans-serif; font-size: 13px; line-height: 16px; font-weight: 900; text-transform: uppercase; letter-spacing: 0.4px; color: #062815; border-radius: 8px; text-decoration: none;">Quero participar</a></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="12" style="height:12px; line-height:12px; font-size:1px;" class="esd-text">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="mobile-padding" style="padding:0 20px;">
+                                    <table role="presentation" class="desktop-grid" width="600" cellpadding="0" cellspacing="0" border="0" align="center" style="width:100%; max-width:600px; table-layout:fixed; margin:0 auto;">
+                                        <tbody>
+                                            <tr>
+                                                <td class="stack-column" width="294" valign="top" style="width:294px; max-width:294px; vertical-align:top;">
+                                                    <table role="presentation" class="session-card-fixed" width="100%" height="172" cellpadding="0" cellspacing="0" border="0" bgcolor="#0a0f2c" style="width:100%; height:172px; table-layout:fixed; background-color:#0a0f2c; border-radius:14px; overflow:hidden;">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="session-photo-cell" width="108" height="172" valign="top" style="width:108px; height:172px; overflow:hidden;"><img class="session-photo-fixed" src="https://uniguacu24074.activehosted.com/content/xdRQOD/2026/07/23/f770201a-3ab3-4272-ae22-687442489e43.png?id=2192057" width="108" height="172" alt="Me. Dudu Haluch" style="display:block; width:108px; max-width:108px; height:172px; object-fit:cover; object-position:center top;"></td>
+                                                                <td class="session-copy-fixed" height="172" valign="top" style="height:172px; padding:14px 13px; vertical-align:top;">
+                                                                    <table role="presentation" width="100%" height="144" cellpadding="0" cellspacing="0" border="0" style="width:100%; height:144px; table-layout:fixed;">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td class="session-time-row esd-text" height="20" valign="top" style="height:20px; vertical-align:top; font-family:Arial, Helvetica, sans-serif; font-size:11px; line-height:14px; font-weight:800; letter-spacing:.5px; text-transform:uppercase; color:#00ffff;"> 13h às 14h </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="session-speaker-row esd-text" height="44" valign="top" style="height:44px; vertical-align:top; font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:18px; font-weight:800; color:#ffffff;"> Me. Dudu Haluch </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="session-description-row esd-text" valign="top" style="vertical-align:top; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:17px; color:#b9dcea;"> Estratégias de manipulação das proteínas </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                                <td class="column-gap esd-text" width="12" style="width:12px; min-width:12px; font-size:0; line-height:0;">&nbsp;</td>
+                                                <td class="stack-column" width="294" valign="top" style="width:294px; max-width:294px; vertical-align:top;">
+                                                    <table role="presentation" class="session-card-fixed" width="100%" height="172" cellpadding="0" cellspacing="0" border="0" bgcolor="#0a0f2c" style="width:100%; height:172px; table-layout:fixed; background-color:#0a0f2c; border-radius:14px; overflow:hidden;">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="session-photo-cell" width="108" height="172" valign="top" style="width:108px; height:172px; overflow:hidden;"><img class="session-photo-fixed" src="https://uniguacu24074.activehosted.com/content/xdRQOD/2026/07/23/0183448d-1903-457e-a13d-59a58fae5620.png?id=2192060" width="108" height="172" alt="Me. Tanise Michelotti" style="display:block; width:108px; max-width:108px; height:172px; object-fit:cover; object-position:center top;"></td>
+                                                                <td class="session-copy-fixed" height="172" valign="top" style="height:172px; padding:14px 13px; vertical-align:top;">
+                                                                    <table role="presentation" width="100%" height="144" cellpadding="0" cellspacing="0" border="0" style="width:100%; height:144px; table-layout:fixed;">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td class="session-time-row esd-text" height="20" valign="top" style="height:20px; vertical-align:top; font-family:Arial, Helvetica, sans-serif; font-size:11px; line-height:14px; font-weight:800; letter-spacing:.5px; text-transform:uppercase; color:#00ffff;"> 14h às 15h </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="session-speaker-row esd-text" height="44" valign="top" style="height:44px; vertical-align:top; font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:18px; font-weight:800; color:#ffffff;"> Me. Tanise Michelotti </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="session-description-row esd-text" valign="top" style="vertical-align:top; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:17px; color:#b9dcea;"> Caso clínico saúde da mulher: SOP e endometriose </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="12" style="height:12px; line-height:12px; font-size:1px;" class="esd-text">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="mobile-padding" style="padding:0 20px;">
+                                    <table role="presentation" class="desktop-grid" width="600" cellpadding="0" cellspacing="0" border="0" align="center" style="width:100%; max-width:600px; table-layout:fixed; margin:0 auto;">
+                                        <tbody>
+                                            <tr>
+                                                <td class="stack-column" width="294" valign="top" style="width:294px; max-width:294px; vertical-align:top;">
+                                                    <table role="presentation" class="session-card-fixed" width="100%" height="172" cellpadding="0" cellspacing="0" border="0" bgcolor="#0a0f2c" style="width:100%; height:172px; table-layout:fixed; background-color:#0a0f2c; border-radius:14px; overflow:hidden;">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="session-photo-cell" width="108" height="172" valign="top" style="width:108px; height:172px; overflow:hidden;"><img class="session-photo-fixed" src="https://uniguacu24074.activehosted.com/content/xdRQOD/2026/07/23/a559524e-295b-4a83-89d0-fa194d286d99.png?id=2192054" width="108" height="172" alt="Esp. Michael Alexandre" style="display:block; width:108px; max-width:108px; height:172px; object-fit:cover; object-position:center top;"></td>
+                                                                <td class="session-copy-fixed" height="172" valign="top" style="height:172px; padding:14px 13px; vertical-align:top;">
+                                                                    <table role="presentation" width="100%" height="144" cellpadding="0" cellspacing="0" border="0" style="width:100%; height:144px; table-layout:fixed;">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td class="session-time-row esd-text" height="20" valign="top" style="height:20px; vertical-align:top; font-family:Arial, Helvetica, sans-serif; font-size:11px; line-height:14px; font-weight:800; letter-spacing:.5px; text-transform:uppercase; color:#00ffff;"> 15h às 16h </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="session-speaker-row esd-text" height="44" valign="top" style="height:44px; vertical-align:top; font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:18px; font-weight:800; color:#ffffff;"> Esp. Michael Alexandre </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="session-description-row esd-text" valign="top" style="vertical-align:top; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:17px; color:#b9dcea;"> Food noise: conceito e compreensão do fenômeno no comportamento alimentar </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                                <td class="column-gap esd-text" width="12" style="width:12px; min-width:12px; font-size:0; line-height:0;">&nbsp;</td>
+                                                <td class="stack-column" width="294" valign="top" style="width:294px; max-width:294px; vertical-align:top;">
+                                                    <table role="presentation" class="session-card-fixed" width="100%" height="172" cellpadding="0" cellspacing="0" border="0" bgcolor="#0a0f2c" style="width:100%; height:172px; table-layout:fixed; background-color:#0a0f2c; border-radius:14px; overflow:hidden;">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="session-photo-cell" width="108" height="172" valign="top" style="width:108px; height:172px; overflow:hidden;"><img class="session-photo-fixed" src="https://uniguacu24074.activehosted.com/content/xdRQOD/2026/07/23/d0871fbe-70d7-4be7-a926-ddbf0305baab.png?id=2192053" width="108" height="172" alt="Esp. Matheus Silvestre" style="display:block; width:108px; max-width:108px; height:172px; object-fit:cover; object-position:center top;"></td>
+                                                                <td class="session-copy-fixed" height="172" valign="top" style="height:172px; padding:14px 13px; vertical-align:top;">
+                                                                    <table role="presentation" width="100%" height="144" cellpadding="0" cellspacing="0" border="0" style="width:100%; height:144px; table-layout:fixed;">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td class="session-time-row esd-text" height="20" valign="top" style="height:20px; vertical-align:top; font-family:Arial, Helvetica, sans-serif; font-size:11px; line-height:14px; font-weight:800; letter-spacing:.5px; text-transform:uppercase; color:#00ffff;"> 16h às 17h </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="session-speaker-row esd-text" height="44" valign="top" style="height:44px; vertical-align:top; font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:18px; font-weight:800; color:#ffffff;"> Esp. Matheus Silvestre </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="session-description-row esd-text" valign="top" style="vertical-align:top; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:17px; color:#b9dcea;"> Dieta no pré-contest </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="12" style="height:12px; line-height:12px; font-size:1px;" class="esd-text">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="mobile-padding" style="padding:0 20px;">
+                                    <table role="presentation" class="desktop-grid" width="600" cellpadding="0" cellspacing="0" border="0" align="center" style="width:100%; max-width:600px; table-layout:fixed; margin:0 auto;">
+                                        <tbody>
+                                            <tr>
+                                                <td class="stack-column" width="294" valign="top" style="width:294px; max-width:294px; vertical-align:top;">
+                                                    <table role="presentation" class="session-card-fixed" width="100%" height="172" cellpadding="0" cellspacing="0" border="0" bgcolor="#0a0f2c" style="width:100%; height:172px; table-layout:fixed; background-color:#0a0f2c; border-radius:14px; overflow:hidden;">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="session-photo-cell" width="108" height="172" valign="top" style="width:108px; height:172px; overflow:hidden;"><img class="session-photo-fixed" src="https://uniguacu24074.activehosted.com/content/xdRQOD/2026/07/23/41d4038c-5955-4d7c-a718-71e689f96cc6.png?id=2192062" width="108" height="172" alt="Esp. Pedro Zachhuber" style="display:block; width:108px; max-width:108px; height:172px; object-fit:cover; object-position:center top;"></td>
+                                                                <td class="session-copy-fixed" height="172" valign="top" style="height:172px; padding:14px 13px; vertical-align:top;">
+                                                                    <table role="presentation" width="100%" height="144" cellpadding="0" cellspacing="0" border="0" style="width:100%; height:144px; table-layout:fixed;">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td class="session-time-row esd-text" height="20" valign="top" style="height:20px; vertical-align:top; font-family:Arial, Helvetica, sans-serif; font-size:11px; line-height:14px; font-weight:800; letter-spacing:.5px; text-transform:uppercase; color:#00ffff;"> 17h às 18h </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="session-speaker-row esd-text" height="44" valign="top" style="height:44px; vertical-align:top; font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:18px; font-weight:800; color:#ffffff;">Esp. Pedro Zachhuber e Esp. Thales Faccin</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="session-description-row esd-text" valign="top" style="vertical-align:top; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:17px; color:#b9dcea;"> Emagrecimento na menopausa </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                                <td class="column-gap esd-text" width="12" style="width:12px; min-width:12px; font-size:0; line-height:0;">&nbsp;</td>
+                                                <td class="stack-column" width="294" valign="top" style="width:294px; max-width:294px; vertical-align:top;">
+                                                    <table role="presentation" class="session-card-fixed" width="100%" height="172" cellpadding="0" cellspacing="0" border="0" bgcolor="#0a0f2c" style="width:100%; height:172px; table-layout:fixed; background-color:#0a0f2c; border-radius:14px; overflow:hidden;">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="session-photo-cell" width="108" height="172" valign="top" style="width:108px; height:172px; overflow:hidden;"><img class="session-photo-fixed" src="https://uniguacu24074.activehosted.com/content/xdRQOD/2026/07/23/5ee414d7-3067-4949-b113-5f7e5592b52c.png?id=2192055" width="108" height="172" alt="Esp. Thales Faccin" style="display:block; width:108px; max-width:108px; height:172px; object-fit:cover; object-position:center top;"></td>
+                                                                <td class="session-copy-fixed" height="172" valign="top" style="height:172px; padding:14px 13px; vertical-align:top;">
+                                                                    <table role="presentation" width="100%" height="144" cellpadding="0" cellspacing="0" border="0" style="width:100%; height:144px; table-layout:fixed;">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td class="session-time-row esd-text" height="20" valign="top" style="height:20px; vertical-align:top; font-family:Arial, Helvetica, sans-serif; font-size:11px; line-height:14px; font-weight:800; letter-spacing:.5px; text-transform:uppercase; color:#00ffff;"> 18h30 </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="session-speaker-row esd-text" height="44" valign="top" style="height:44px; vertical-align:top; font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:18px; font-weight:800; color:#ffffff;">Esp. Thales Faccin</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="session-description-row esd-text" valign="top" style="vertical-align:top; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:17px; color:#b9dcea;"> Dieta carnívora em debate: riscos, limitações e impactos metabólicos </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="12" style="height:12px; line-height:12px; font-size:1px;" class="esd-text">&nbsp;</td>
+                            </tr><!-- FOOTER CTA -->
+                            <tr>
+                                <td align="center" class="mobile-padding esd-text" style="padding:30px 20px 12px;" esd-links-underline="none">
+                                    <p style="font-family:Arial, Helvetica, sans-serif; font-size:18px; line-height:26px; font-weight:800; color:#ffffff; padding:0 20px 16px;">Uma programação para quem quer sair do óbvio e atualizar a prática com critério.</p>
+                                    <table border="0" cellpadding="0" cellspacing="0" class="button-table cke_show_border" role="presentation">
+                                        <tbody>
+                                            <tr>
+                                                <td align="center" bgcolor="#00dd77" style="background-color:#00dd77; border-radius:8px;"><a class="button-link" href="{{LINK_INSCRICAO}}" style="display: inline-block; padding: 15px 28px; font-family: Arial, Helvetica, sans-serif; font-size: 13px; line-height: 16px; font-weight: 900; text-transform: uppercase; letter-spacing: 0.4px; color: #062815; border-radius: 8px; text-decoration: none;" target="_blank">Inscreva-se gratuitamente › </a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!--[if mso]>
+            </td>
+          </tr>
+        </table>
+        <![endif]-->
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
