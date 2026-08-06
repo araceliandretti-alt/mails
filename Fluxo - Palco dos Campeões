@@ -1,0 +1,196 @@
+from pathlib import Path
+import textwrap
+import matplotlib.pyplot as plt
+from matplotlib.patches import FancyBboxPatch, FancyArrowPatch
+from matplotlib.lines import Line2D
+
+OUT_PNG = Path('/home/ubuntu/Palco_dos_Campeoes_Dashboard_Estrategia_Email.png')
+OUT_SVG = Path('/home/ubuntu/Palco_dos_Campeoes_Dashboard_Estrategia_Email.svg')
+
+# Palette
+NAVY = '#102A43'
+BLUE = '#1F6FEB'
+TEAL = '#0E7490'
+CYAN = '#DFF6FF'
+PALE_BLUE = '#EAF2FF'
+PALE_TEAL = '#E6FFFB'
+CORAL = '#E76F51'
+PALE_CORAL = '#FFF0EC'
+GOLD = '#D9A441'
+PALE_GOLD = '#FFF8E7'
+INK = '#243B53'
+MUTED = '#627D98'
+LINE = '#D9E2EC'
+WHITE = '#FFFFFF'
+BG = '#F6F8FB'
+GREEN = '#2A9D8F'
+
+plt.rcParams['font.family'] = 'DejaVu Sans'
+fig = plt.figure(figsize=(16, 9), dpi=150, facecolor=BG)
+ax = fig.add_axes([0, 0, 1, 1])
+ax.set_xlim(0, 16)
+ax.set_ylim(0, 9)
+ax.axis('off')
+
+
+def rounded(x, y, w, h, face, edge=LINE, radius=0.18, lw=1.2):
+    patch = FancyBboxPatch((x, y), w, h,
+                           boxstyle=f'round,pad=0.015,rounding_size={radius}',
+                           facecolor=face, edgecolor=edge, linewidth=lw)
+    ax.add_patch(patch)
+    return patch
+
+
+def txt(x, y, s, size=10, color=INK, weight='normal', ha='left', va='top', linesp=1.15, z=5):
+    ax.text(x, y, s, fontsize=size, color=color, fontweight=weight, ha=ha, va=va,
+            linespacing=linesp, zorder=z)
+
+
+def wrap(s, width):
+    return textwrap.fill(s, width=width, break_long_words=False)
+
+
+def card(x, y, w, h, title, body, accent, fill=WHITE, title_size=10.5, body_size=8.4):
+    rounded(x, y, w, h, fill, edge=LINE)
+    ax.add_patch(FancyBboxPatch((x, y), 0.07, h, boxstyle='square,pad=0',
+                                facecolor=accent, edgecolor=accent, linewidth=0))
+    txt(x+0.22, y+h-0.18, title, size=title_size, color=NAVY, weight='bold')
+    txt(x+0.22, y+h-0.50, wrap(body, max(20, int(w*9))), size=body_size, color=INK, va='top')
+
+# Header
+rounded(0.35, 8.12, 15.3, 0.58, NAVY, edge=NAVY, radius=0.16, lw=0)
+txt(0.65, 8.42, 'PALCO DOS CAMPEÕES — LAS VEGAS', size=20, color=WHITE, weight='bold', va='center')
+txt(12.2, 8.42, 'DASHBOARD • E-MAIL MARKETING MVP', size=9.5, color='#B9D7F5', weight='bold', va='center')
+
+# KPI strip
+kpis = [
+    ('2', 'fluxos simultâneos'),
+    ('2×/sem', 'não inscritos — rotina'),
+    ('1×/sem', 'inscritos — rotina'),
+    ('3', 'modelos de evento reutilizáveis'),
+    ('1', 'regra de migração')
+]
+start_x = 0.35
+for i, (big, small) in enumerate(kpis):
+    x = start_x + i*3.05
+    rounded(x, 7.37, 2.80, 0.55, WHITE, edge=LINE, radius=0.12)
+    txt(x+0.18, 7.65, big, size=16, color=BLUE if i < 2 else TEAL, weight='bold', va='center')
+    txt(x+1.18, 7.66, small, size=7.6, color=MUTED, weight='bold', va='center')
+
+# Main flow panel
+rounded(0.35, 3.82, 8.05, 3.25, WHITE, edge=LINE)
+txt(0.62, 6.80, '1. ARQUITETURA DOS FLUXOS', size=11.5, color=NAVY, weight='bold')
+txt(0.62, 6.54, 'O e-mail funciona como aquisição e relacionamento, mas os fluxos nunca se sobrepõem.', size=8.8, color=MUTED)
+
+# Flow A
+rounded(0.65, 5.10, 3.20, 1.12, PALE_CORAL, edge='#F5C6B9')
+txt(0.88, 6.00, 'FLUXO A • NÃO INSCRITOS', size=10, color=CORAL, weight='bold')
+txt(0.88, 5.69, wrap('Objetivo: transformar base autorizada em inscrições.', 29), size=8.8, color=INK)
+txt(0.88, 5.24, '2×/semana → 3× na reta final', size=8.3, color=CORAL, weight='bold')
+
+# Arrow + migration
+ax.add_patch(FancyArrowPatch((3.92, 5.66), (4.60, 5.66), arrowstyle='-|>', mutation_scale=15,
+                             linewidth=2.2, color=GOLD))
+txt(4.26, 5.98, 'preencheu a LP', size=7.8, color=GOLD, weight='bold', ha='center')
+
+# Flow B
+rounded(4.72, 5.10, 3.20, 1.12, PALE_TEAL, edge='#B7E5DE')
+txt(4.95, 6.00, 'FLUXO B • INSCRITOS', size=10, color=TEAL, weight='bold')
+txt(4.95, 5.69, wrap('Objetivo: nutrir, gerar presença e preparar conversão.', 29), size=8.8, color=INK)
+txt(4.95, 5.24, '1×/semana + eventos', size=8.3, color=TEAL, weight='bold')
+
+# Migration rule
+rounded(0.65, 4.15, 7.30, 0.60, PALE_GOLD, edge='#EFD38C')
+txt(0.88, 4.53, 'REGRA DE MIGRAÇÃO', size=8.1, color='#8A6514', weight='bold', va='center')
+txt(2.62, 4.53, 'inscrição na LP → retirar do Fluxo A → iniciar Fluxo B → registrar origem', size=8.0, color=INK, va='center')
+
+# Essential messages panel
+rounded(8.62, 3.82, 7.03, 3.25, WHITE, edge=LINE)
+txt(8.90, 6.80, '2. DISPAROS ESSENCIAIS', size=11.5, color=NAVY, weight='bold')
+txt(8.90, 6.54, 'Poucos e-mails, um objetivo por envio e conteúdos reaproveitáveis.', size=8.8, color=MUTED)
+
+# columns for A/B
+rounded(8.92, 4.18, 3.12, 1.95, PALE_CORAL, edge='#F5C6B9')
+txt(9.14, 5.85, 'NÃO INSCRITOS', size=9.5, color=CORAL, weight='bold')
+for idx, line in enumerate([
+    'A1  Manifesto + proposta',
+    'A2  Corte + contexto',
+    'A3  Posing + checklist',
+    'A4  Convite do evento',
+    'A5  Última chamada'
+]):
+    txt(9.14, 5.52 - idx*0.27, line, size=7.8, color=INK)
+
+rounded(12.22, 4.18, 3.12, 1.95, PALE_TEAL, edge='#B7E5DE')
+txt(12.44, 5.85, 'INSCRITOS', size=9.5, color=TEAL, weight='bold')
+for idx, line in enumerate([
+    'B1  Confirmação',
+    'B2  Conteúdo inicial',
+    'E   Convite → acesso → replay',
+    'C   Cobertura → ao vivo → replay',
+    'P   Oferta por perfil'
+]):
+    txt(12.44, 5.52 - idx*0.27, line, size=7.8, color=INK)
+
+# Lower left: frequency
+rounded(0.35, 0.45, 5.05, 3.03, WHITE, edge=LINE)
+txt(0.62, 3.20, '3. FREQUÊNCIA E CONTROLE', size=11.5, color=NAVY, weight='bold')
+frequency = [
+    ('Não inscrito', '2×/semana', CORAL),
+    ('Reta final', '3×/semana; máx. 1/dia', GOLD),
+    ('Inscrito', '1×/semana', TEAL),
+    ('Semana de aula', 'convite + acesso + replay', BLUE),
+    ('Cobertura', '1 ao vivo + 1 replay', NAVY),
+]
+for i, (label, val, color) in enumerate(frequency):
+    y = 2.78 - i*0.39
+    ax.add_line(Line2D([0.70, 0.86], [y-0.02, y-0.02], linewidth=6, color=color, solid_capstyle='round'))
+    txt(1.02, y, label, size=8.4, color=INK, weight='bold', va='center')
+    txt(2.60, y, val, size=8.4, color=MUTED, va='center')
+rounded(0.68, 0.68, 4.39, 0.42, PALE_GOLD, edge='#EFD38C')
+txt(0.88, 0.89, '1 objetivo + 1 CTA principal por e-mail', size=8.1, color='#8A6514', weight='bold', va='center')
+
+# Lower middle: event reusable template
+rounded(5.60, 0.45, 5.15, 3.03, WHITE, edge=LINE)
+txt(5.87, 3.20, '4. MODELO REUTILIZÁVEL DE EVENTO', size=11.5, color=NAVY, weight='bold')
+steps = [
+    ('1', 'Convite', '3–5 dias antes', BLUE),
+    ('2', 'Acesso', 'no início', TEAL),
+    ('3', 'Replay', '6–24h depois', CORAL),
+]
+for i, (n, title, timing, color) in enumerate(steps):
+    y = 2.52 - i*0.62
+    rounded(5.90, y-0.20, 0.38, 0.38, color, edge=color, radius=0.08, lw=0)
+    txt(6.09, y-0.01, n, size=10, color=WHITE, weight='bold', ha='center', va='center')
+    txt(6.50, y+0.04, title, size=9.2, color=NAVY, weight='bold', va='center')
+    txt(7.72, y+0.04, timing, size=8.1, color=MUTED, va='center')
+    if i < 2:
+        ax.add_patch(FancyArrowPatch((6.09, y-0.24), (6.09, y-0.47), arrowstyle='-|>', mutation_scale=10, linewidth=1.4, color=LINE))
+rounded(5.90, 0.66, 4.53, 0.55, PALE_BLUE, edge='#BFD6F7')
+txt(6.12, 1.02, wrap('O mesmo modelo é usado nas 3 aulas e na cobertura.', 45), size=8.1, color=BLUE, weight='bold', va='center')
+
+# Lower right: conversion
+rounded(10.95, 0.45, 4.70, 3.03, WHITE, edge=LINE)
+txt(11.22, 3.20, '5. CONVERSÃO PÓS-EVENTO', size=11.5, color=NAVY, weight='bold')
+rounded(11.23, 2.12, 4.14, 0.68, PALE_BLUE, edge='#BFD6F7')
+txt(11.48, 2.56, 'REPLAY GERAL', size=9.2, color=BLUE, weight='bold', va='center')
+txt(11.48, 2.31, 'gravação + destaques + próximo passo', size=8.2, color=INK, va='center')
+# split arrows
+ax.add_patch(FancyArrowPatch((13.30, 2.10), (12.50, 1.65), arrowstyle='-|>', mutation_scale=12, linewidth=1.6, color=BLUE))
+ax.add_patch(FancyArrowPatch((13.30, 2.10), (14.12, 1.65), arrowstyle='-|>', mutation_scale=12, linewidth=1.6, color=BLUE))
+rounded(11.23, 0.83, 1.93, 0.68, PALE_CORAL, edge='#F5C6B9')
+txt(11.42, 1.25, 'PÓS BBC', size=9, color=CORAL, weight='bold', va='center')
+txt(11.42, 1.00, 'profissionais elegíveis', size=7.7, color=INK, va='center')
+rounded(13.52, 0.83, 1.85, 0.68, PALE_TEAL, edge='#B7E5DE')
+txt(13.70, 1.25, 'UPLAY TV', size=9, color=TEAL, weight='bold', va='center')
+txt(13.70, 1.00, 'atletas e entusiastas', size=7.7, color=INK, va='center')
+
+# Footer
+rounded(0.35, 0.12, 15.30, 0.18, NAVY, edge=NAVY, radius=0.05, lw=0)
+txt(0.55, 0.21, 'MVP: configurar status → Fluxo A → Fluxo B → eventos reutilizáveis → replay → oferta por perfil', size=7.7, color=WHITE, va='center')
+txt(15.40, 0.21, 'UNIGUAÇU × Central Bodybuilding', size=7.5, color='#B9D7F5', va='center', ha='right')
+
+fig.savefig(OUT_PNG, dpi=180, facecolor=BG, bbox_inches='tight', pad_inches=0.12)
+fig.savefig(OUT_SVG, format='svg', facecolor=BG, bbox_inches='tight', pad_inches=0.12)
+print(OUT_PNG)
+print(OUT_SVG)
