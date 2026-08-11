@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="pt-BR" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="x-apple-disable-message-reformatting">
+    <title>Um recado do Alex para você</title>
+    <style type="text/css">
+        html,
+        body {
+            margin: 0 !important;
+            padding: 0 !important;
+            height: 100% !important;
+            width: 100% !important;
+        }
+
+        * {
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        table,
+        td {
+            mso-table-lspace: 0pt !important;
+            mso-table-rspace: 0pt !important;
+        }
+
+        table {
+            border-spacing: 0 !important;
+            border-collapse: collapse !important;
+            table-layout: fixed !important;
+            margin: 0 auto !important;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            -ms-interpolation-mode: bicubic;
+            display: block;
+        }
+
+        a[x-apple-data-detectors],
+        .unstyle-auto-detected a,
+        .aBn {
+            border-bottom: 0 !important;
+            cursor: default !important;
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+
+        .a6S {
+            display: none !important;
+            opacity: 0.01 !important;
+        }
+
+        @media screen and (max-width:640px) {
+            .email-container {
+                width: 100% !important;
+            }
+
+            .pad {
+                padding-left: 24px !important;
+                padding-right: 24px !important;
+            }
+
+            .hero {
+                font-size: 35px !important;
+                line-height: 40px !important;
+            }
+
+            .body-text {
+                font-size: 17px !important;
+                line-height: 26px !important;
+            }
+
+            .btn-full {
+                width: 100% !important;
+            }
+
+            .btn-link {
+                display: block !important;
+                padding-left: 16px !important;
+                padding-right: 16px !important;
+            }
+        }
+    </style>
+    <!--[if mso]><style>body, table, td, a { font-family:Arial,Helvetica,sans-serif!important; }</style><![endif]-->
+    <!--[if mso]><xml>
+    <w:WordDocument xmlns:w="urn:schemas-microsoft-com:office:word">
+      <w:DontUseAdvancedTypographyReadingMail/>
+    </w:WordDocument>
+    </xml><![endif]-->
+    <!--[if !mso]><!-- -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet">
+    <!--<![endif]-->
+</head>
+
+<body style="margin:0; padding:0; background-color:#edf1f7;">
+    <center style="width:100%; background-color:#edf1f7;">
+        <div style="display:none; font-size:1px; line-height:1px; max-height:0; max-width:0; opacity:0; overflow:hidden; mso-hide:all;" class="esd-text">O Alex Souto tem um recado para você — e 40% de desconto para começar a sua pós agora.&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌</div>
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#edf1f7;">
+            <tbody>
+                <tr>
+                    <td align="center" style="padding:28px 12px 36px;">
+                        <table role="presentation" class="email-container" width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width:640px; background-color:#030a1e; border-radius:20px; overflow:hidden; box-shadow:0 16px 36px rgba(5,14,40,.18);">
+                            <!-- Linha de energia -->
+                            <tbody>
+                                <tr>
+                                    <td style="height:7px; background:linear-gradient(90deg,#16d66c,#64f3af 46%,#38b6f7 76%,#b56dde);"></td>
+                                </tr><!-- Abertura -->
+                                <tr>
+                                    <td class="pad esd-text" style="padding:12px 48px; background-color:#030a1e;" align="left">
+                                        <p style="margin:0 0 14px; font-family:Arial,sans-serif; font-size:18px; line-height:27px; color:#fff;">Olá, <strong>{{NOME}}</strong></p>
+                                        <h1 class="hero" style="margin:0; font-family:Arial,sans-serif; font-size:42px; line-height:48px; letter-spacing:-1.4px; font-weight:700; color:#fff;">Nem todo mundo recebe essa condição.<br><span style="color:#57c9ff;">Você</span> recebeu.</h1>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="pad esd-text" style="padding:20px 48px 34px; background-color:#030a1e;">
+                                        <p class="body-text" style="margin:0 0 14px; font-family:Arial,sans-serif; font-size:18px; line-height:28px; color:#dbe3f5;">Você chegou até aqui, conheceu a pós-graduação, mas acabou parando no caminho.</p>
+                                        <p class="body-text" style="margin:0; font-family:Arial,sans-serif; font-size:18px; line-height:28px; color:#dbe3f5;">O nosso coordenador Alex Souto não queria deixar essa história terminar assim. Por isso, ele gravou um recado direto para você e liberou uma condição especial para te trazer de volta.</p>
+                                    </td>
+                                </tr><!-- Vídeo -->
+                                <tr>
+                                    <td class="pad" style="padding:0 48px 22px; background-color:#030a1e;"><a href="{{VIDEO_URL}}" target="_blank" style="display:block;"><img src="https://img.youtube.com/vi/NrtC56lcLZI/hqdefault.jpg" alt="Assista ao vídeo do Alex" width="100%" style="display:block; border:1px solid #26365b; border-radius:14px; max-width:100%; height:auto;"></a></td>
+                                </tr><!-- Oferta -->
+                                <tr>
+                                    <td class="pad esd-text" style="padding:36px 48px 12px; background-color:#fff;">
+                                        <p class="body-text" style="margin:0; font-family:Arial,sans-serif; font-size:18px; line-height:28px; color:#15213e;">E agora vem a parte que não é pra qualquer um:</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="pad esd-text" style="padding:6px 48px 18px; background-color:#fff;">
+                                        <p style="margin:0; font-family:Arial,sans-serif; font-size:29px; line-height:37px; letter-spacing:-.6px; font-weight:700; color:#071631;">Esta é a <span style="color:#137fca;">única vez</span> que você vai receber <span style="color:#137fca;">40% de desconto</span> direto.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="pad" style="padding:0 48px 18px; background-color:#fff;">
+                                        <table cellpadding="0" cellspacing="0" border="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="padding:8px 14px; background-color:#fff3e0; border:1px solid #ffb74d; border-radius:999px; font-family:Arial,sans-serif; font-size:17px; line-height:22px; font-weight:700; color:#e65100;" class="esd-text">⏰ Por tempo limitado.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="pad esd-text" style="padding:0 48px 30px; background-color:#fff;">
+                                        <p class="body-text" style="margin:0; font-family:Arial,sans-serif; font-size:18px; line-height:28px; color:#43506a;">Se você esperar, essa oportunidade fecha. E quando abrir de novo, não vai ser com essa condição.</p>
+                                    </td>
+                                </tr><!-- CTA -->
+                                <tr>
+                                    <td class="pad" align="center" style="padding:0 48px 38px; background-color:#fff;">
+                                        <table role="presentation" class="btn-full" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;">
+                                            <tbody>
+                                                <tr>
+                                                    <td align="center" style="border-radius:8px; background:linear-gradient(90deg,#27dc78,#74f6b2);"><a class="btn-link" href="{{CTA_40_OFF_URL}}" target="_blank" style="display: inline-block; padding: 18px 29px; font-family: Arial, sans-serif; font-size: 14px; line-height: 18px; font-weight: 700; letter-spacing: 0.7px; color: #041127; text-transform: uppercase; text-decoration: none;">Garantir meu acesso agora</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr><!-- Encerramento -->
+                                <tr>
+                                    <td class="pad esd-text" style="padding:31px 48px 39px; background-color:#030a1e;">
+                                        <p style="margin:0; font-family:Arial,sans-serif; font-size:22px; line-height:31px; letter-spacing:-.3px; font-weight:700; color:#fff;">O Alex fez a parte dele. <span style="color:#a986e4;">Agora é sua vez de decidir.</span></p>
+                                    </td>
+                                </tr><!-- Rodapé -->
+                                <tr>
+                                    <td class="pad esd-text" style="padding:21px 48px 24px; background-color:#020719; border-top:1px solid #15233f;">
+                                        <p style="margin:0; font-family:Arial,sans-serif; font-size:11px; line-height:17px; color:#8d9ab7;">Você recebeu este e-mail porque demonstrou interesse na nossa pós-graduação. <a href="{{UNSUBSCRIBE_URL}}" target="_blank" style="color:#8d9ab7; text-decoration:underline;">Cancelar inscrição</a>.</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </center>
+</body>
+
+</html>
