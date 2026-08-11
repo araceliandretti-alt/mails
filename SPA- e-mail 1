@@ -119,18 +119,18 @@
                                 </tr><!-- Abertura -->
                                 <tr>
                                     <td class="pad esd-text" style="padding:12px 48px; background-color:#030a1e;" align="left">
-                                        <p style="margin:0 0 14px; font-family:Arial,sans-serif; font-size:18px; line-height:27px; color:#fff;">Olá, <strong>{{NOME}}</strong></p>
+                                        <p style="margin:0 0 14px; font-family:Arial,sans-serif; font-size:18px; line-height:27px; color:#fff;">Olá, %FIRSTNAME%</p>
                                         <h1 class="hero" style="margin:0; font-family:Arial,sans-serif; font-size:42px; line-height:48px; letter-spacing:-1.4px; font-weight:700; color:#fff;">Nem todo mundo recebe essa condição.<br><span style="color:#57c9ff;">Você</span> recebeu.</h1>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="pad esd-text" style="padding:20px 48px 34px; background-color:#030a1e;">
+                                    <td class="pad esd-text" style="padding:20px 48px 34px; background-color:#030a1e;" align="left">
                                         <p class="body-text" style="margin:0 0 14px; font-family:Arial,sans-serif; font-size:18px; line-height:28px; color:#dbe3f5;">Você chegou até aqui, conheceu a pós-graduação, mas acabou parando no caminho.</p>
-                                        <p class="body-text" style="margin:0; font-family:Arial,sans-serif; font-size:18px; line-height:28px; color:#dbe3f5;">O nosso coordenador Alex Souto não queria deixar essa história terminar assim. Por isso, ele gravou um recado direto para você e liberou uma condição especial para te trazer de volta.</p>
+                                        <p class="body-text" style="margin:0; font-family:Arial,sans-serif; font-size:18px; line-height:28px; color:#dbe3f5;">O nosso coordenador Alex Souto não queria deixar essa história terminar assim. Por isso, ele gravou um recado direto para você e liberou uma condição especial para te trazer de volta 👇</p>
                                     </td>
                                 </tr><!-- Vídeo -->
                                 <tr>
-                                    <td class="pad" style="padding:0 48px 22px; background-color:#030a1e;"><a href="{{VIDEO_URL}}" target="_blank" style="display:block;"><img src="https://img.youtube.com/vi/NrtC56lcLZI/hqdefault.jpg" alt="Assista ao vídeo do Alex" width="100%" style="display:block; border:1px solid #26365b; border-radius:14px; max-width:100%; height:auto;"></a></td>
+                                    <td class="pad" style="padding:0 48px 22px; background-color:#030a1e;"><a href="https://www.youtube.com/shorts/NrtC56lcLZI" target="_blank" style="display:block;"><img src="https://img.youtube.com/vi/NrtC56lcLZI/hqdefault.jpg" alt width="100%" style="display:block; border:1px solid #26365b; border-radius:14px; max-width:100%; height:auto;"></a></td>
                                 </tr><!-- Oferta -->
                                 <tr>
                                     <td class="pad esd-text" style="padding:36px 48px 12px; background-color:#fff;">
@@ -138,8 +138,8 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="pad esd-text" style="padding:6px 48px 18px; background-color:#fff;">
-                                        <p style="margin:0; font-family:Arial,sans-serif; font-size:29px; line-height:37px; letter-spacing:-.6px; font-weight:700; color:#071631;">Esta é a <span style="color:#137fca;">única vez</span> que você vai receber <span style="color:#137fca;">40% de desconto</span> direto.</p>
+                                    <td class="pad esd-text" style="padding:6px 48px 18px; background-color:#fff;" align="left">
+                                        <p style="margin:0; font-family:Arial,sans-serif; font-size:29px; line-height:37px; letter-spacing:-.6px; font-weight:700; color:#071631;">Você faz parte do grupo que recebeu acesso aos <span style="color:#137fca;">40% de desconto</span><b>. <br>Agora só falta aproveitar.</b><b></b><b>&nbsp;</b></p>
                                     </td>
                                 </tr>
                                 <tr>
