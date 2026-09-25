@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="x-apple-disable-message-reformatting">
+    <meta name="format-detection" content="telephone=no, date=no, address=no, email=no, url=no">
+    <title>Restam 6 horas | Programa de Bolsa de Estudos</title>
+    <!--
+    Assunto: Restam 6 horas para solicitar sua bolsa, %FIRSTNAME%
+    Preheader: Seu expediente acabou. Seu convite, ainda não. Solicite sua entrevista até as 23h59.
+    Disparo: 24/09, 18h. ATENÇÃO: confirme o encerramento às 23h59 antes do envio.
+  -->
+    <style>
+        html,
+        body {
+            margin: 0 !important;
+            padding: 0 !important;
+            width: 100% !important;
+        }
+
+        body {
+            background-color: #020d1a !important;
+        }
+
+        * {
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        table,
+        td {
+            mso-table-lspace: 0pt !important;
+            mso-table-rspace: 0pt !important;
+        }
+
+        table {
+            border-spacing: 0 !important;
+            border-collapse: collapse !important;
+            table-layout: fixed !important;
+            margin: 0 auto !important;
+        }
+
+        a {
+            text-decoration: none !important;
+        }
+
+        @media screen and (max-width: 620px) {
+            .email-container {
+                width: 100% !important;
+            }
+
+            .mobile-padding {
+                padding-left: 22px !important;
+                padding-right: 22px !important;
+            }
+
+            .big-number {
+                font-size: 120px !important;
+                line-height: 110px !important;
+            }
+
+            .hero-title {
+                font-size: 30px !important;
+                line-height: 36px !important;
+            }
+
+            .hero-copy {
+                font-size: 16px !important;
+                line-height: 24px !important;
+            }
+
+            .cta {
+                display: block !important;
+                width: auto !important;
+                padding-left: 12px !important;
+                padding-right: 12px !important;
+            }
+
+            .faq-q {
+                font-size: 16px !important;
+                line-height: 22px !important;
+            }
+
+            .faq-a {
+                font-size: 15px !important;
+                line-height: 22px !important;
+            }
+        }
+    </style>
+    <!--[if mso]><xml>
+    <w:WordDocument xmlns:w="urn:schemas-microsoft-com:office:word">
+      <w:DontUseAdvancedTypographyReadingMail/>
+    </w:WordDocument>
+    </xml><![endif]-->
+    <!--[if !mso]><!-- -->
+    <link href="https://uniguacu24074.activehosted.com/api/3/ai/fonts/stylesheet?v=0" rel="stylesheet">
+    <!--<![endif]-->
+</head>
+
+<body width="100%" style="margin:0; padding:0; background-color:#020d1a;">
+    <div style="display:none; font-size:1px; line-height:1px; max-height:0; max-width:0; opacity:0; overflow:hidden; mso-hide:all;" class="esd-text"> Seu expediente acabou. Seu convite, ainda não. Solicite sua entrevista até as 23h59. ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ </div>
+    <center role="article" aria-roledescription="email" lang="pt-BR" style="width:100%; background-color:#020d1a;">
+        <!--[if mso | IE]>
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color:#020d1a;"><tr><td>
+    <![endif]-->
+        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="width:100%; background-color:#020d1a;">
+            <tbody>
+                <tr>
+                    <td align="center" style="padding:20px 10px;">
+                        <!--[if mso | IE]>
+          <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="650"><tr><td>
+          <![endif]-->
+                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="650" class="email-container" style="width:100%; max-width:650px; background-color:#061a30;">
+                            <tbody>
+                                <!-- HEADER -->
+                                <tr>
+                                    <td class="mobile-padding" style="padding:24px 48px; background-color:#f5324f;">
+                                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="width:100%;">
+                                            <tbody>
+                                                <tr>
+                                                    <td align="left" style="font-family:Helvetica,Arial,sans-serif; font-size:15px; line-height:20px; font-weight:700; letter-spacing:1.5px; color:#ffffff;" class="esd-text"> FACULDADE UNIGUAÇU </td>
+                                                    <td align="right" style="font-family:Helvetica,Arial,sans-serif; font-size:10px; line-height:14px; font-weight:700; letter-spacing:1px; color:#ffe3e7; text-transform:uppercase;" class="esd-text"> Pós-graduação </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr><!-- HERO: CONTAGEM -->
+                                <tr>
+                                    <td align="center" class="mobile-padding" style="padding:0 48px 44px; background-color:#f5324f;">
+                                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="width:100%;">
+                                            <tbody>
+                                                <tr>
+                                                    <td align="center" style="padding-top:18px; font-family:Helvetica,Arial,sans-serif; font-size:13px; line-height:18px; font-weight:700; letter-spacing:2.5px; color:#ffffff; text-transform:uppercase;" class="esd-text"> Restam apenas </td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="center" class="big-number esd-text" style="padding-top:6px; font-family:Helvetica,Arial,sans-serif; font-size:160px; line-height:150px; font-weight:700; color:#ffffff;"> 6h </td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="center" style="padding-top:8px; font-family:Helvetica,Arial,sans-serif; font-size:15px; line-height:21px; font-weight:700; letter-spacing:1.5px; color:#ffffff; text-transform:uppercase;" class="esd-text"> para solicitar sua bolsa • até 23h59 de hoje </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr><!-- MENSAGEM -->
+                                <tr>
+                                    <td class="mobile-padding" style="padding:46px 48px 0; background-color:#061a30;">
+                                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="width:100%;">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="font-family:Roboto,Arial,sans-serif; font-size:16px; line-height:24px; color:#9fb8d3;" class="esd-text"> Olá, %FIRSTNAME% </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="hero-title esd-text" style="padding-top:10px; font-family:Helvetica,Arial,sans-serif; font-size:38px; line-height:44px; font-weight:700; color:#ffffff;"> Seu expediente acabou. <span style="color:#ff3b54;">Seu convite, ainda não.</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="hero-copy esd-text" style="padding-top:18px; font-family:Roboto,Arial,sans-serif; font-size:17px; line-height:27px; color:#c9d9ea;"> Você ainda pode solicitar sua entrevista no Programa de Bolsa de Estudos para Pós-graduação da Faculdade UNIGUAÇU, com bolsas de <strong style="color:#ffffff;">até 100%</strong>, conforme as condições disponíveis. </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="hero-copy esd-text" style="padding-top:14px; font-family:Roboto,Arial,sans-serif; font-size:17px; line-height:27px; color:#c9d9ea;"> Hoje você não precisa decidir nada. Só precisa garantir o seu lugar na conversa. </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr><!-- CTA PRINCIPAL -->
+                                <tr>
+                                    <td align="center" class="mobile-padding" style="padding:32px 48px 0; background-color:#061a30;">
+                                        <!--[if mso]>
+                <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="https://endn8n.innovathk.com.br/webhook/reativacao?dealId=IDNEGOCIO&utm_source=mail&utm_medium=email&utm_campaign=acao-bolsas-ultimo-dia&utm_content=18h-cta-topo&k=gj7bnjR6oyJF" style="height:58px;v-text-anchor:middle;width:554px;" arcsize="10%" strokecolor="#f5324f" fillcolor="#f5324f">
+                  <w:anchorlock/>
+                  <center style="color:#ffffff;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:bold;letter-spacing:1px;">GARANTIR MINHA ENTREVISTA</center>
+                </v:roundrect>
+                <![endif]--><a class="cta" href="https://endn8n.innovathk.com.br/webhook/reativacao?dealId=IDNEGOCIO&utm_source=mail&utm_medium=email&utm_campaign=acao-bolsas-ultimo-dia&utm_content=18h-cta-topo&k=gj7bnjR6oyJF" target="_blank" style="display:block; padding:20px 25px; background-color:#f5324f; border-radius:6px; color:#ffffff; font-family:Helvetica,Arial,sans-serif; font-size:16px; line-height:18px; font-weight:700; letter-spacing:1px; text-align:center; text-transform:uppercase;">Garantir minha entrevista</a>
+                                    </td>
+                                </tr><!-- DÚVIDAS RÁPIDAS -->
+                                <tr>
+                                    <td class="mobile-padding" style="padding:52px 48px 0; background-color:#061a30;">
+                                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="width:100%;">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="font-family:Helvetica,Arial,sans-serif; font-size:12px; line-height:16px; font-weight:700; letter-spacing:2px; color:#ff5b6e; text-transform:uppercase;" class="esd-text"> Antes de deixar para depois </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="padding-top:10px; font-family:Helvetica,Arial,sans-serif; font-size:26px; line-height:33px; font-weight:700; color:#ffffff;" class="esd-text"> O que você precisa saber </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="mobile-padding" style="padding:22px 48px 0; background-color:#061a30;">
+                                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="width:100%;">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="padding:22px 24px; background-color:#0c2b4d;">
+                                                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="width:100%;">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="faq-q esd-text" style="font-family:Helvetica,Arial,sans-serif; font-size:17px; line-height:23px; font-weight:700; color:#ffffff;"> Preciso decidir hoje? </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="faq-a esd-text" style="padding-top:6px; font-family:Roboto,Arial,sans-serif; font-size:15px; line-height:23px; color:#c9d9ea;"> Não. Hoje você só solicita a entrevista. A decisão vem depois, com todas as informações em mãos. </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td height="8" style="height:8px; font-size:0; line-height:0;" class="esd-text">&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="padding:22px 24px; background-color:#0c2b4d;">
+                                                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="width:100%;">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="faq-q esd-text" style="font-family:Helvetica,Arial,sans-serif; font-size:17px; line-height:23px; font-weight:700; color:#ffffff;"> O que acontece depois que eu clico? </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="faq-a esd-text" style="padding-top:6px; font-family:Roboto,Arial,sans-serif; font-size:15px; line-height:23px; color:#c9d9ea;"> Nossa equipe entra em contato para apresentar o programa e tirar suas dúvidas. </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td height="8" style="height:8px; font-size:0; line-height:0;" class="esd-text">&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="padding:22px 24px; background-color:#0c2b4d;">
+                                                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="width:100%;">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="faq-q esd-text" style="font-family:Helvetica,Arial,sans-serif; font-size:17px; line-height:23px; font-weight:700; color:#ffffff;"> Como sei quanto de bolsa posso ter? </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="faq-a esd-text" style="padding-top:6px; font-family:Roboto,Arial,sans-serif; font-size:15px; line-height:23px; color:#c9d9ea;"> As bolsas chegam a até 100%, conforme as condições disponíveis. Na entrevista, você descobre as possibilidades para o seu perfil. </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr><!-- FECHAMENTO ASPIRACIONAL -->
+                                <tr>
+                                    <td align="center" class="mobile-padding" style="padding:48px 48px 0; background-color:#061a30;">
+                                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="width:100%;">
+                                            <tbody>
+                                                <tr>
+                                                    <td align="center" style="font-family:Helvetica,Arial,sans-serif; font-size:24px; line-height:32px; font-weight:700; color:#ffffff;" class="esd-text"> A especialização que você adia há tempos pode começar com <span style="color:#ff3b54;">uma decisão tomada hoje.</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="center" style="padding-top:26px;">
+                                                        <!--[if mso]>
+                <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="https://endn8n.innovathk.com.br/webhook/reativacao?dealId=IDNEGOCIO&utm_source=mail&utm_medium=email&utm_campaign=acao-bolsas-ultimo-dia&utm_content=18h-cta-final&k=gj7bnjR6oyJF" style="height:52px;v-text-anchor:middle;width:340px;" arcsize="10%" strokecolor="#f5324f" fillcolor="#f5324f">
+                  <w:anchorlock/>
+                  <center style="color:#ffffff;font-family:Helvetica,Arial,sans-serif;font-size:15px;font-weight:bold;letter-spacing:1px;">QUERO MINHA BOLSA</center>
+                </v:roundrect>
+                <![endif]--><a class="cta" href="https://endn8n.innovathk.com.br/webhook/reativacao?dealId=IDNEGOCIO&utm_source=mail&utm_medium=email&utm_campaign=acao-bolsas-ultimo-dia&utm_content=18h-cta-final&k=gj7bnjR6oyJF" target="_blank" style="display:inline-block; padding:17px 40px; background-color:#f5324f; border-radius:6px; color:#ffffff; font-family:Helvetica,Arial,sans-serif; font-size:15px; line-height:18px; font-weight:700; letter-spacing:1px; text-align:center; text-transform:uppercase;">Quero minha bolsa</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="center" style="padding-top:12px; font-family:Roboto,Arial,sans-serif; font-size:13px; line-height:19px; color:#7f9dbd;" class="esd-text"> Convite válido até hoje, 24/09, às 23h59. </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr><!-- ASSINATURA -->
+                                <tr>
+                                    <td class="mobile-padding" style="padding:40px 48px 40px; background-color:#061a30;">
+                                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="width:100%;">
+                                            <tbody>
+                                                <tr>
+                                                    <td height="1" style="height:1px; background-color:#15385d; font-size:0; line-height:0;" class="esd-text">&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="padding-top:22px; font-family:Roboto,Arial,sans-serif; font-size:14px; line-height:22px; color:#9fb8d3;" class="esd-text"> Atenciosamente,<br><strong style="color:#ffffff;">Diretoria de Pós-Graduação</strong><br> Faculdade UNIGUAÇU </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr><!-- RODAPÉ -->
+                                <tr>
+                                    <td class="mobile-padding" style="padding:22px 48px 24px; background-color:#031324;">
+                                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="width:100%;">
+                                            <tbody>
+                                                <tr>
+                                                    <td align="center" style="font-family:Roboto,Arial,sans-serif; font-size:11px; line-height:17px; color:#6f8cab;" class="esd-text"> Faculdade UNIGUAÇU &nbsp;|&nbsp; Diretoria de Pós-Graduação<br> Você está recebendo esta comunicação porque foi convidado para conhecer o programa. </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!--[if mso | IE]></td></tr></table><![endif]-->
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <!--[if mso | IE]></td></tr></table><![endif]-->
+    </center>
+    <table class="es-footer ac-footer" cellspacing="0" cellpadding="0" align="center">
+        <tbody>
+            <tr>
+                <td align="center" class="es-footer-body esd-text" style="padding-top:20px; padding-bottom:20px; background: inherit; font-family: inherit; font-size: 12px; color: inherit;">
+                    <p style="font-family: inherit; font-size: inherit; color: inherit;"> Enviado para: %EMAIL%</p>
+                    <p><br></p>
+                    <p><a style="font-family: inherit; font-size: inherit; color: inherit; font-weight: inherit;" href="%UNSUBSCRIBELINK%" target="_blank">Cancelar inscrição</a></p>
+                    <p><br></p>
+                    <p><span class="perstag_address" style="color: inherit; font-family: inherit; font-size: inherit; color: inherit;">%SENDER-INFO-SINGLELINE%</span></p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
